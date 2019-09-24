@@ -161,24 +161,8 @@ The source files include a directory (`experiments`) with the description of a s
 
 ## Changelog
 
-* **2019-09-?? Version 1.0**: reorganisation of the experiment code for public release
-* **2019-01-17 Version 0.9.0**: possibility of generating problems without data
-* **2018-09-11 Version 0.8.0**: new PDDL encoding (as technical report) and domain reduction based on guard constants (*works* only without inequalities!)
-* **2018-08-31 Version 0.7.3**: rewritten subprocess interface and robustness of trace handling
-* **2018-08-23 Version 0.7.2**: changes to the Docker container definition
-* **2018-0 Version 0.7.1**: minor fixes to benchmarks generator
-* **2018-08-01 Version 0.7.0**: new code for benchmark generation
-* **2018-03-08 Version 0.6.0**: added the possibility of using JSON parser (YAML parser was too slow on big models), fixed problem related to [EasyProcess](https://pypi.python.org/pypi/EasyProcess) timeout handling
-* **2018-02-15 Version 0.5.2**: added logging to file
-* **2018-02-15 Version 0.5.1**: better reporting and macro expansion in automated benchmark reporting, read benchmarks descriptions from folders
-* **2018-02-02 Version 0.2**: first tests with Docker
-
+* **2019-09-25 Version 1.0**: first public release
 
 ## Authors
 
 * **Sergio Tessaris** - *scripts* 
-
-
-## License
-
-_#TODO_
