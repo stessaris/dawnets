@@ -1,0 +1,30 @@
+model: M4_dawnet_1
+name: t1_c25
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3RPQ_a
+  updates: {dawnet_1_3RPQ_first: '4', dawnet_1_3RPQ_fourth: '3', dawnet_1_3RPQ_second: '2',
+    dawnet_1_3RPQ_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3RPQ_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3RPQ_i
+  updates: {dawnet_1_3RPQ_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TMSA_a
+  updates: {dawnet_1_TMSA_first: '4', dawnet_1_TMSA_fourth: '3', dawnet_1_TMSA_second: '2',
+    dawnet_1_TMSA_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TMSA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TMSA_i
+  updates: {dawnet_1_TMSA_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_EXMA_a
+  updates: {dawnet_1_EXMA_first: '4', dawnet_1_EXMA_fourth: '3', dawnet_1_EXMA_second: '2',
+    dawnet_1_EXMA_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_EXMA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_EXMA_i
+  updates: {dawnet_1_EXMA_number: '5'}

@@ -1,0 +1,69 @@
+{% macro indentFormulae(formulae, op='&', indent=0) %}
+{% for f in formulae %}
+{{ formula2string(f)|indent(width=indent, indentfirst=True) }}{% if not loop.last %} {{ op }}
+{% endif %}
+{% endfor %}
+{% endmacro%}
+{% macro renderTopLevelFormula(formula, indent=0) %}
+{% if formula.isAnd() %}
+{{ indentFormulae(formula.subformulae, op='&', indent=indent) }}
+{% elif formula.isOr() %}
+{{ indentFormulae(formula.subformulae, op='|', indent=indent) }}
+{% elif formula.isCase() %}
+case
+{% for (head, body) in formula.cases %}
+{{ formula2string(head)|indent(width=indent, indentfirst=True) }} :
+{{ formula2string(body)|indent(width=indent+2, indentfirst=True) }};
+{% endfor %}
+esac
+{% else %}
+{{ formula2string(formula) }}
+{% endif %}
+{% endmacro%}
+MODULE {{ module }}
+
+VAR
+
+{% if var and var|length > 0 %}
+{% for (varname, dom) in var.items() %}
+{{ varname }} : {{ dom if dom is string else '{' ~ dom|join(', ') ~ '}' }};
+{% endfor %}
+{% else %}
+-- No variables
+{% endif %}
+{% if define and define|length > 0 %}
+
+DEFINE
+
+{% for (id, formula) in define.items() %}
+{{ id }} := {{ formula2string(formula) }};
+{% endfor %}
+
+{% endif %}
+{% if init %}
+
+INIT
+
+{{ renderTopLevelFormula(init) }};
+
+{% endif %}
+{% if trans %}
+{% for te in trans %}
+
+TRANS
+
+{{ renderTopLevelFormula(te) }};
+
+{% endfor %}
+{% else %}
+
+-- No transitions
+{% endif %}
+{% if ltlspec %}
+
+LTLSPEC
+
+{{ renderTopLevelFormula(ltlspec) }};
+
+{% endif %}
+

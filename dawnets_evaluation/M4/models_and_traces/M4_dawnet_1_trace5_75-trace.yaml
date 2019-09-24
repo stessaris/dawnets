@@ -1,0 +1,26 @@
+model: M4_dawnet_1_trace5_75
+trace:
+- transition: nDHGA_a
+  updates:
+    nDHGA_fourth: '1'
+    nDHGA_second: '5'
+    nDHGA_first: '4'
+    nDHGA_third: '3'
+- transition: nDHGA_d
+- transition: nDHGA_o
+- transition: nGA2A_a
+  updates:
+    nGA2A_fourth: '1'
+    nGA2A_third: '3'
+    nGA2A_second: '5'
+    nGA2A_first: '4'
+- transition: nGA2A_d
+- transition: nGA2A_o
+- transition: nTYIA_a
+  updates:
+    nTYIA_fourth: '1'
+    nTYIA_third: '3'
+    nTYIA_second: '5'
+    nTYIA_first: '4'
+- transition: nTYIA_d
+- transition: nTYIA_o

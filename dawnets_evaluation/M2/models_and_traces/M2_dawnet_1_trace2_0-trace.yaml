@@ -1,0 +1,58 @@
+model: M2_dawnet_1_trace2_0
+trace:
+- transition: nMK4A_a
+  updates:
+    nMK4A_third: '2'
+    nMK4A_first: '1'
+    nMK4A_fourth: '5'
+    nMK4A_second: '4'
+- transition: nMK4A_c
+- transition: nMK4A_e
+- transition: nMK4A_f
+- transition: nMK4A_h
+- transition: nMK4A_i
+  updates:
+    nMK4A_number: '3'
+- transition: nMK4A_l
+- transition: nMK4A_i
+  updates:
+    nMK4A_number: '2'
+- transition: nMK4A_l
+- transition: nMK4A_i
+  updates:
+    nMK4A_number: '5'
+- transition: nMK4A_g
+  updates:
+    nMK4A_fifth: '3'
+- transition: nMK4A_m
+- transition: nMK4A_n
+- transition: nMK4A_r
+- transition: nMK4A_u
+- transition: n3ATA_a
+  updates:
+    n3ATA_second: '4'
+    n3ATA_fourth: '5'
+    n3ATA_third: '2'
+    n3ATA_first: '1'
+- transition: n3ATA_c
+- transition: n3ATA_e
+- transition: n3ATA_f
+- transition: n3ATA_h
+- transition: n3ATA_i
+  updates:
+    n3ATA_number: '3'
+- transition: n3ATA_l
+- transition: n3ATA_i
+  updates:
+    n3ATA_number: '2'
+- transition: n3ATA_l
+- transition: n3ATA_i
+  updates:
+    n3ATA_number: '5'
+- transition: n3ATA_g
+  updates:
+    n3ATA_fifth: '3'
+- transition: n3ATA_m
+- transition: n3ATA_n
+- transition: n3ATA_r
+- transition: n3ATA_u

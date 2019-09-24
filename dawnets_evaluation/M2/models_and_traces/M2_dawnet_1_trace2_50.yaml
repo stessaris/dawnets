@@ -1,0 +1,290 @@
+transitions:
+  nJVKQ_d:
+    outflows:
+    - nJVKQ_p4
+    inflows:
+    - nJVKQ_p2
+  nJVKQ_o:
+    guard: nJVKQ_second=2
+    outflows:
+    - nJVKQ_p14
+    inflows:
+    - nJVKQ_p12
+  nJVKQ_e:
+    outflows:
+    - nJVKQ_p4
+    inflows:
+    - nJVKQ_p3
+  nJVKQ_h:
+    outflows:
+    - nJVKQ_p9
+    inflows:
+    - nJVKQ_p6
+  nJVKQ_s:
+    outflows:
+    - nJVKQ_p16
+    inflows:
+    - nJVKQ_p14
+  nJVKQ_f:
+    outflows:
+    - nJVKQ_p5
+    - nJVKQ_p6
+    - nJVKQ_p7
+    inflows:
+    - nJVKQ_p4
+  nJVKQ_n:
+    guard: nJVKQ_first=1
+    outflows:
+    - nJVKQ_p13
+    inflows:
+    - nJVKQ_p12
+  nJVKQ_g:
+    outflows:
+    - nJVKQ_p8
+    updates:
+      nJVKQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nJVKQ_p5
+  nJVKQ_a:
+    outflows:
+    - nJVKQ_p1
+    updates:
+      nJVKQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nJVKQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nJVKQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nJVKQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nO6UA_end
+  nO6UA_m:
+    guard: nO6UA_number=5
+    outflows:
+    - nO6UA_p12
+    inflows:
+    - nO6UA_p10
+    - nO6UA_p8
+    - nO6UA_p9
+  nO6UA_l:
+    guard: nO6UA_number!=5
+    outflows:
+    - nO6UA_p7
+    inflows:
+    - nO6UA_p10
+  nO6UA_o:
+    guard: nO6UA_second=2
+    outflows:
+    - nO6UA_p14
+    inflows:
+    - nO6UA_p12
+  nO6UA_n:
+    guard: nO6UA_first=1
+    outflows:
+    - nO6UA_p13
+    inflows:
+    - nO6UA_p12
+  nO6UA_i:
+    outflows:
+    - nO6UA_p10
+    updates:
+      nO6UA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nO6UA_p7
+  nO6UA_h:
+    outflows:
+    - nO6UA_p9
+    inflows:
+    - nO6UA_p6
+  nJVKQ_b:
+    outflows:
+    - nJVKQ_p2
+    inflows:
+    - nJVKQ_p1
+  nJVKQ_c:
+    outflows:
+    - nJVKQ_p3
+    inflows:
+    - nJVKQ_p1
+  nO6UA_e:
+    outflows:
+    - nO6UA_p4
+    inflows:
+    - nO6UA_p3
+  nO6UA_d:
+    outflows:
+    - nO6UA_p4
+    inflows:
+    - nO6UA_p2
+  nO6UA_g:
+    outflows:
+    - nO6UA_p8
+    updates:
+      nO6UA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nO6UA_p5
+  nO6UA_f:
+    outflows:
+    - nO6UA_p5
+    - nO6UA_p6
+    - nO6UA_p7
+    inflows:
+    - nO6UA_p4
+  nO6UA_a:
+    outflows:
+    - nO6UA_p1
+    updates:
+      nO6UA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nO6UA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nO6UA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nO6UA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nO6UA_start
+  nJVKQ_i:
+    outflows:
+    - nJVKQ_p10
+    updates:
+      nJVKQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nJVKQ_p7
+  nO6UA_c:
+    outflows:
+    - nO6UA_p3
+    inflows:
+    - nO6UA_p1
+  nO6UA_b:
+    outflows:
+    - nO6UA_p2
+    inflows:
+    - nO6UA_p1
+  nJVKQ_t:
+    outflows:
+    - nJVKQ_p16
+    inflows:
+    - nJVKQ_p15
+  nJVKQ_l:
+    guard: nJVKQ_number!=5
+    outflows:
+    - nJVKQ_p7
+    inflows:
+    - nJVKQ_p10
+  nJVKQ_p:
+    guard: nJVKQ_third=3
+    outflows:
+    - nJVKQ_p15
+    inflows:
+    - nJVKQ_p12
+  nJVKQ_u:
+    outflows:
+    - nJVKQ_end
+    inflows:
+    - nJVKQ_p16
+  nJVKQ_r:
+    outflows:
+    - nJVKQ_p16
+    inflows:
+    - nJVKQ_p13
+  nJVKQ_m:
+    guard: nJVKQ_number=5
+    outflows:
+    - nJVKQ_p12
+    inflows:
+    - nJVKQ_p10
+    - nJVKQ_p8
+    - nJVKQ_p9
+  nO6UA_u:
+    outflows:
+    - nO6UA_end
+    inflows:
+    - nO6UA_p16
+  nO6UA_t:
+    outflows:
+    - nO6UA_p16
+    inflows:
+    - nO6UA_p15
+  nO6UA_p:
+    guard: nO6UA_third=3
+    outflows:
+    - nO6UA_p15
+    inflows:
+    - nO6UA_p12
+  nO6UA_s:
+    outflows:
+    - nO6UA_p16
+    inflows:
+    - nO6UA_p14
+  nO6UA_r:
+    outflows:
+    - nO6UA_p16
+    inflows:
+    - nO6UA_p13
+name: M2_dawnet_1_trace2_50

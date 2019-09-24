@@ -1,0 +1,454 @@
+transitions:
+  n5LTA_n:
+    guard: n5LTA_first=1
+    outflows:
+    - n5LTA_p13
+    inflows:
+    - n5LTA_p12
+  n5LTA_o:
+    guard: n5LTA_second=2
+    outflows:
+    - n5LTA_p14
+    inflows:
+    - n5LTA_p12
+  n3SMA_p:
+    guard: n3SMA_third=3
+    outflows:
+    - n3SMA_p15
+    inflows:
+    - n3SMA_p12
+  n3SMA_r:
+    outflows:
+    - n3SMA_p16
+    inflows:
+    - n3SMA_p13
+  n3SMA_s:
+    outflows:
+    - n3SMA_p16
+    inflows:
+    - n3SMA_p14
+  n3SMA_t:
+    outflows:
+    - n3SMA_p16
+    inflows:
+    - n3SMA_p15
+  n3SMA_u:
+    outflows:
+    - n3SMA_end
+    inflows:
+    - n3SMA_p16
+  n3SMA_h:
+    outflows:
+    - n3SMA_p9
+    inflows:
+    - n3SMA_p6
+  n3SMA_i:
+    outflows:
+    - n3SMA_p10
+    updates:
+      n3SMA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n3SMA_p7
+  n5LTA_m:
+    guard: n5LTA_number=5
+    outflows:
+    - n5LTA_p12
+    inflows:
+    - n5LTA_p10
+    - n5LTA_p8
+    - n5LTA_p9
+  n3SMA_l:
+    guard: n3SMA_number!=5
+    outflows:
+    - n3SMA_p7
+    inflows:
+    - n3SMA_p10
+  n3SMA_m:
+    guard: n3SMA_number=5
+    outflows:
+    - n3SMA_p12
+    inflows:
+    - n3SMA_p10
+    - n3SMA_p8
+    - n3SMA_p9
+  n3SMA_n:
+    guard: n3SMA_first=1
+    outflows:
+    - n3SMA_p13
+    inflows:
+    - n3SMA_p12
+  n3SMA_o:
+    guard: n3SMA_second=2
+    outflows:
+    - n3SMA_p14
+    inflows:
+    - n3SMA_p12
+  n3SMA_a:
+    outflows:
+    - n3SMA_p1
+    updates:
+      n3SMA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3SMA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3SMA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3SMA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n3SMA_start
+  n3SMA_b:
+    outflows:
+    - n3SMA_p2
+    inflows:
+    - n3SMA_p1
+  n3SMA_c:
+    outflows:
+    - n3SMA_p3
+    inflows:
+    - n3SMA_p1
+  n3SMA_d:
+    outflows:
+    - n3SMA_p4
+    inflows:
+    - n3SMA_p2
+  n3SMA_e:
+    outflows:
+    - n3SMA_p4
+    inflows:
+    - n3SMA_p3
+  n3SMA_f:
+    outflows:
+    - n3SMA_p5
+    - n3SMA_p6
+    - n3SMA_p7
+    inflows:
+    - n3SMA_p4
+  n3SMA_g:
+    outflows:
+    - n3SMA_p8
+    updates:
+      n3SMA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n3SMA_p5
+  n5LTA_u:
+    outflows:
+    - n5LTA_end
+    inflows:
+    - n5LTA_p16
+  n5LTA_l:
+    guard: n5LTA_number!=5
+    outflows:
+    - n5LTA_p7
+    inflows:
+    - n5LTA_p10
+  n5LTA_h:
+    outflows:
+    - n5LTA_p9
+    inflows:
+    - n5LTA_p6
+  n5LTA_r:
+    outflows:
+    - n5LTA_p16
+    inflows:
+    - n5LTA_p13
+  n5LTA_a:
+    outflows:
+    - n5LTA_p1
+    updates:
+      n5LTA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5LTA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5LTA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5LTA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBORQ_end
+  n5LTA_i:
+    outflows:
+    - n5LTA_p10
+    updates:
+      n5LTA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5LTA_p7
+  n5LTA_s:
+    outflows:
+    - n5LTA_p16
+    inflows:
+    - n5LTA_p14
+  n5LTA_f:
+    outflows:
+    - n5LTA_p5
+    - n5LTA_p6
+    - n5LTA_p7
+    inflows:
+    - n5LTA_p4
+  n5LTA_e:
+    outflows:
+    - n5LTA_p4
+    inflows:
+    - n5LTA_p3
+  n5LTA_p:
+    guard: n5LTA_third=3
+    outflows:
+    - n5LTA_p15
+    inflows:
+    - n5LTA_p12
+  rt_xj_n3SMA:
+    outflows:
+    - rp_e_M5_dawnet_1_trace5_50
+    inflows:
+    - n3SMA_end
+  rt_xs_nIMTQ:
+    outflows:
+    - nBORQ_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace5_50
+  n5LTA_d:
+    outflows:
+    - n5LTA_p4
+    inflows:
+    - n5LTA_p2
+  nBORQ_n:
+    guard: nBORQ_first=1
+    outflows:
+    - nBORQ_p13
+    inflows:
+    - nBORQ_p12
+  nBORQ_o:
+    guard: nBORQ_second=2
+    outflows:
+    - nBORQ_p14
+    inflows:
+    - nBORQ_p12
+  nBORQ_l:
+    guard: nBORQ_number!=5
+    outflows:
+    - nBORQ_p7
+    inflows:
+    - nBORQ_p10
+  nBORQ_m:
+    guard: nBORQ_number=5
+    outflows:
+    - nBORQ_p12
+    inflows:
+    - nBORQ_p10
+    - nBORQ_p8
+    - nBORQ_p9
+  nBORQ_h:
+    outflows:
+    - nBORQ_p9
+    inflows:
+    - nBORQ_p6
+  nBORQ_i:
+    outflows:
+    - nBORQ_p10
+    updates:
+      nBORQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBORQ_p7
+  nBORQ_f:
+    outflows:
+    - nBORQ_p5
+    - nBORQ_p6
+    - nBORQ_p7
+    inflows:
+    - nBORQ_p4
+  nBORQ_g:
+    outflows:
+    - nBORQ_p8
+    updates:
+      nBORQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBORQ_p5
+  nBORQ_d:
+    outflows:
+    - nBORQ_p4
+    inflows:
+    - nBORQ_p2
+  nBORQ_e:
+    outflows:
+    - nBORQ_p4
+    inflows:
+    - nBORQ_p3
+  nBORQ_b:
+    outflows:
+    - nBORQ_p2
+    inflows:
+    - nBORQ_p1
+  nBORQ_c:
+    outflows:
+    - nBORQ_p3
+    inflows:
+    - nBORQ_p1
+  nBORQ_a:
+    outflows:
+    - nBORQ_p1
+    updates:
+      nBORQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBORQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBORQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBORQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBORQ_start
+  n5LTA_b:
+    outflows:
+    - n5LTA_p2
+    inflows:
+    - n5LTA_p1
+  rt_xj_nIMTQ:
+    outflows:
+    - rp_e_M5_dawnet_1_trace5_50
+    inflows:
+    - n5LTA_end
+  nBORQ_t:
+    outflows:
+    - nBORQ_p16
+    inflows:
+    - nBORQ_p15
+  nBORQ_u:
+    outflows:
+    - nBORQ_end
+    inflows:
+    - nBORQ_p16
+  nBORQ_r:
+    outflows:
+    - nBORQ_p16
+    inflows:
+    - nBORQ_p13
+  nBORQ_s:
+    outflows:
+    - nBORQ_p16
+    inflows:
+    - nBORQ_p14
+  nBORQ_p:
+    guard: nBORQ_third=3
+    outflows:
+    - nBORQ_p15
+    inflows:
+    - nBORQ_p12
+  rt_xs_n3SMA:
+    outflows:
+    - n3SMA_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace5_50
+  n5LTA_c:
+    outflows:
+    - n5LTA_p3
+    inflows:
+    - n5LTA_p1
+  n5LTA_t:
+    outflows:
+    - n5LTA_p16
+    inflows:
+    - n5LTA_p15
+  n5LTA_g:
+    outflows:
+    - n5LTA_p8
+    updates:
+      n5LTA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5LTA_p5
+name: M5_dawnet_1_trace5_50

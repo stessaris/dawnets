@@ -1,0 +1,12 @@
+model: M1_dawnet_1
+name: t1b_c25
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6KHQ_a
+  updates: {dawnet_1_6KHQ_first: '4', dawnet_1_6KHQ_fourth: '3', dawnet_1_6KHQ_second: '2',
+    dawnet_1_6KHQ_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6KHQ_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6KHQ_i
+  updates: {dawnet_1_6KHQ_number: '5'}

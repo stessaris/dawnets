@@ -1,0 +1,69 @@
+{% macro element_color(name) %}
+{% if name.startswith('tr_') %}
+red
+{% elif name.startswith('rp_') %}
+green
+{% elif name.startswith('rt_') %}
+green
+{% else %}
+black
+{% endif %}
+{% endmacro %}
+
+digraph "{{ name }}" {
+    rankdir=LR;
+    forcelabels=true;
+    graph [fontname = "helvetica", fontsize=12, bgcolor=transparent];
+    node [fontname = "helvetica", fillcolor=white, style=filled];
+    edge [fontname = "helvetica"];
+
+    node [shape=plain]; 
+    {% for (tid, tdata) in transitions.items() -%}
+    {{ tid }} [color={{ element_color(tid) }}, fontcolor={{ element_color(tid) }}, label=<
+        <table border='0'  cellborder='1' cellspacing='2'>
+            <tr>
+                <td cellpadding='6'><b>{{ tdata.name if 'name' in tdata else tid }}</b></td>
+            </tr>
+            {% if 'guard' in tdata -%}
+            <tr>
+                <td>
+                    <table border='0'>
+                    <tr><td>? {{ tdata['guard'] if tdata['guard'] is string else tdata['guard']['default']}}</td></tr>
+                    </table>
+                </td>
+            </tr>
+            {% endif -%}
+            {% if 'updates' in tdata -%}
+            <tr>
+                <td>
+                    <table border='0'>
+                    {% for (var, range) in tdata['updates'].items() -%}
+                    <tr><td>{{var}} &larr;</td><td>{{ '{' ~ range|join(', ') ~ '}' }}</td></tr>
+                    {% endfor -%}
+                    </table>
+                </td>
+            </tr>
+            {% endif -%}
+        </table>>];
+    {% endfor %}
+    node [shape=circle, fixedsize=true, width=0.3];
+    {% for p in places -%}
+    {% if p == dawnet.startPlace() -%}
+        {{p}} [color={{ element_color(p) }}, fontcolor={{ element_color(p) }}, label=<<FONT POINT-SIZE="26">&#9658;</FONT>>, margin=0, width=0.7, labelloc=b, xlabel="{{p}}"];
+    {% elif p == dawnet.endPlace() -%}
+        {{p}} [color={{ element_color(p) }}, fontcolor={{ element_color(p) }}, label=<<FONT POINT-SIZE="26">&#9724;</FONT>>, margin=0, width=0.7, labelloc=b, xlabel="{{p}}"];
+    {% else -%}
+        {{p}} [color={{ element_color(p) }}, fontcolor={{ element_color(p) }}, label="", xlabel="{{p}}"];
+    {% endif -%}
+    {% endfor %} 
+
+    {% for (tid, tdata) in transitions.items() -%}
+    {% for pid in tdata['inflows'] -%}
+    {{ pid }} -> {{ tid }} [ color={{ element_color(tid) }}, fontcolor={{ element_color(tid) }} ];
+    {% endfor -%}
+    {% for pid in tdata['outflows'] -%}
+    {{ tid }} -> {{ pid }} [ color={{ element_color(tid) }}, fontcolor={{ element_color(tid) }} ];
+    {% endfor -%}
+    {% endfor %}
+}
+

@@ -1,0 +1,86 @@
+model: M4_dawnet_1_trace6_0
+trace:
+- transition: nX3WA_a
+  updates:
+    nX3WA_fourth: '1'
+    nX3WA_third: '5'
+    nX3WA_second: '2'
+    nX3WA_first: '4'
+- transition: nX3WA_c
+- transition: nX3WA_e
+- transition: nX3WA_f
+- transition: nX3WA_h
+- transition: nX3WA_i
+  updates:
+    nX3WA_number: '5'
+- transition: nX3WA_l
+- transition: nX3WA_i
+  updates:
+    nX3WA_number: '5'
+- transition: nX3WA_l
+- transition: nX3WA_i
+  updates:
+    nX3WA_number: '5'
+- transition: nX3WA_g
+  updates:
+    nX3WA_fifth: '2'
+- transition: nX3WA_m
+- transition: nX3WA_o
+- transition: nX3WA_s
+- transition: nX3WA_u
+- transition: nKMBQ_a
+  updates:
+    nKMBQ_fourth: '1'
+    nKMBQ_third: '5'
+    nKMBQ_second: '2'
+    nKMBQ_first: '4'
+- transition: nKMBQ_c
+- transition: nKMBQ_e
+- transition: nKMBQ_f
+- transition: nKMBQ_h
+- transition: nKMBQ_i
+  updates:
+    nKMBQ_number: '5'
+- transition: nKMBQ_l
+- transition: nKMBQ_i
+  updates:
+    nKMBQ_number: '5'
+- transition: nKMBQ_l
+- transition: nKMBQ_i
+  updates:
+    nKMBQ_number: '5'
+- transition: nKMBQ_g
+  updates:
+    nKMBQ_fifth: '2'
+- transition: nKMBQ_m
+- transition: nKMBQ_o
+- transition: nKMBQ_s
+- transition: nKMBQ_u
+- transition: nP5XA_a
+  updates:
+    nP5XA_fourth: '1'
+    nP5XA_second: '2'
+    nP5XA_first: '4'
+    nP5XA_third: '5'
+- transition: nP5XA_c
+- transition: nP5XA_e
+- transition: nP5XA_f
+- transition: nP5XA_h
+- transition: nP5XA_i
+  updates:
+    nP5XA_number: '5'
+- transition: nP5XA_l
+- transition: nP5XA_i
+  updates:
+    nP5XA_number: '5'
+- transition: nP5XA_l
+- transition: nP5XA_i
+  updates:
+    nP5XA_number: '5'
+- transition: nP5XA_g
+  updates:
+    nP5XA_fifth: '2'
+- transition: nP5XA_m
+- transition: nP5XA_o
+- transition: nP5XA_s
+- transition: nP5XA_u

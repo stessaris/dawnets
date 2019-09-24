@@ -1,0 +1,22 @@
+model: M3_dawnet_1_trace1_75
+trace:
+- transition: nSZ7A_a
+  updates:
+    nSZ7A_second: '2'
+    nSZ7A_first: '4'
+    nSZ7A_third: '4'
+    nSZ7A_fourth: '3'
+- transition: nSZ7A_d
+- transition: nSZ7A_i
+  updates:
+    nSZ7A_number: '5'
+- transition: nUFEQ_a
+  updates:
+    nUFEQ_second: '2'
+    nUFEQ_first: '4'
+    nUFEQ_fourth: '3'
+    nUFEQ_third: '4'
+- transition: nUFEQ_d
+- transition: nUFEQ_i
+  updates:
+    nUFEQ_number: '5'

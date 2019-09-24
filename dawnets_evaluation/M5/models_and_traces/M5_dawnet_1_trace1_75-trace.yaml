@@ -1,0 +1,12 @@
+model: M5_dawnet_1_trace1_75
+trace:
+- transition: n6GJA_a
+  updates:
+    n6GJA_first: '4'
+    n6GJA_third: '4'
+    n6GJA_second: '2'
+    n6GJA_fourth: '3'
+- transition: n6GJA_d
+- transition: n6GJA_i
+  updates:
+    n6GJA_number: '5'

@@ -1,0 +1,43 @@
+model: M3_dawnet_1
+name: t5_c75
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OKQA_a
+  updates: {dawnet_1_OKQA_first: '4', dawnet_1_OKQA_fourth: '1', dawnet_1_OKQA_second: '5',
+    dawnet_1_OKQA_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OKQA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_PIWA_a
+  updates: {dawnet_1_PIWA_first: '4', dawnet_1_PIWA_fourth: '1', dawnet_1_PIWA_second: '5',
+    dawnet_1_PIWA_third: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_OKQA_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_OKQA_g
+  updates: {dawnet_1_OKQA_fifth: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_PIWA_d
+- onlyin: [c75]
+  transition: dawnet_1_OKQA_h
+- onlyin: [c75]
+  transition: dawnet_1_PIWA_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_PIWA_g
+  updates: {dawnet_1_PIWA_fifth: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_PIWA_h
+- onlyin: [c75, c50]
+  transition: dawnet_1_OKQA_i
+  updates: {dawnet_1_OKQA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_PIWA_i
+  updates: {dawnet_1_PIWA_number: '5'}
+- onlyin: [c75]
+  transition: dawnet_1_PIWA_m
+- onlyin: [c75]
+  transition: dawnet_1_OKQA_m
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_PIWA_o
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OKQA_o

@@ -1,0 +1,59 @@
+model: M4_dawnet_1_trace2_50
+trace:
+- transition: nDFMA_a
+  updates:
+    nDFMA_fourth: '5'
+    nDFMA_second: '4'
+    nDFMA_first: '1'
+    nDFMA_third: '2'
+- transition: nDFMA_c
+- transition: nDFMA_l
+- transition: nDFMA_i
+  updates:
+    nDFMA_number: '2'
+- transition: nDFMA_i
+  updates:
+    nDFMA_number: '5'
+- transition: nDFMA_g
+  updates:
+    nDFMA_fifth: '3'
+- transition: nDFMA_m
+- transition: nDFMA_u
+- transition: nSOOA_a
+  updates:
+    nSOOA_first: '1'
+    nSOOA_third: '2'
+    nSOOA_second: '4'
+    nSOOA_fourth: '5'
+- transition: nSOOA_c
+- transition: nSOOA_l
+- transition: nSOOA_i
+  updates:
+    nSOOA_number: '2'
+- transition: nSOOA_i
+  updates:
+    nSOOA_number: '5'
+- transition: nSOOA_g
+  updates:
+    nSOOA_fifth: '3'
+- transition: nSOOA_m
+- transition: nSOOA_u
+- transition: nKYFA_a
+  updates:
+    nKYFA_fourth: '5'
+    nKYFA_third: '2'
+    nKYFA_second: '4'
+    nKYFA_first: '1'
+- transition: nKYFA_c
+- transition: nKYFA_l
+- transition: nKYFA_i
+  updates:
+    nKYFA_number: '2'
+- transition: nKYFA_i
+  updates:
+    nKYFA_number: '5'
+- transition: nKYFA_g
+  updates:
+    nKYFA_fifth: '3'
+- transition: nKYFA_m
+- transition: nKYFA_u

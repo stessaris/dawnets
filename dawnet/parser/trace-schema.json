@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    
+    "title": "JSON schema for a trace",
+    
+    "definitions": {
+        "varValue": {
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        "traceItem": {
+            "type": "object",
+            "properties": {
+                "transition": {
+                    "type": "string",
+                    "pattern": "^[_a-zA-Z][-_.a-zA-Z0-9]*$"
+                },
+                "updates": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^[_a-zA-Z][-_.a-zA-Z0-9]*$": {
+                            "$ref": "#/definitions/varValue"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "transition"
+            ]
+        }
+    },
+
+
+    "type": "object",
+    "properties": {
+        "model": { "type": "string" },
+        "trace": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/traceItem" }
+        }
+    },
+    "required": [ "model", "trace"]
+}

@@ -1,0 +1,21 @@
+model: M5_dawnet_1_trace6_50
+trace:
+- transition: nUDRA_a
+  updates:
+    nUDRA_fourth: '1'
+    nUDRA_second: '2'
+    nUDRA_first: '4'
+    nUDRA_third: '5'
+- transition: nUDRA_c
+- transition: nUDRA_l
+- transition: nUDRA_i
+  updates:
+    nUDRA_number: '5'
+- transition: nUDRA_i
+  updates:
+    nUDRA_number: '5'
+- transition: nUDRA_g
+  updates:
+    nUDRA_fifth: '2'
+- transition: nUDRA_m
+- transition: nUDRA_u

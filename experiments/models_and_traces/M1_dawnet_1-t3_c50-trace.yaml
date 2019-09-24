@@ -1,0 +1,21 @@
+model: M1_dawnet_1
+name: t3_c50
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_RVJA_a
+  updates: {dawnet_1_RVJA_first: '3', dawnet_1_RVJA_fourth: '2', dawnet_1_RVJA_second: '1',
+    dawnet_1_RVJA_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_RVJA_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_RVJA_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_RVJA_e
+- onlyin: [c75, c50]
+  transition: dawnet_1_RVJA_g
+  updates: {dawnet_1_RVJA_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_RVJA_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_RVJA_i
+  updates: {dawnet_1_RVJA_number: '5'}

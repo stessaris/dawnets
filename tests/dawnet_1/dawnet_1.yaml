@@ -1,0 +1,70 @@
+name: dawnet_1
+transitions:
+  a:
+    inflows: [start]
+    outflows: [p1]
+    updates:
+      first: ['0', '1', '2', '3', '4', '5']
+      fourth: ['0', '1', '2', '3', '4', '5']
+      second: ['0', '1', '2', '3', '4', '5']
+      third: ['0', '1', '2', '3', '4', '5']
+  b:
+    inflows: [p1]
+    outflows: [p2]
+  c:
+    inflows: [p1]
+    outflows: [p3]
+  d:
+    inflows: [p2]
+    outflows: [p4]
+  e:
+    inflows: [p3]
+    outflows: [p4]
+  f:
+    inflows: [p4]
+    outflows: [p5, p6, p7]
+  g:
+    inflows: [p5]
+    outflows: [p8]
+    updates:
+      fifth: ['0', '1', '2', '3', '4', '5']
+  h:
+    inflows: [p6]
+    outflows: [p9]
+  i:
+    inflows: [p7]
+    outflows: [p10]
+    updates:
+      number: ['0', '1', '2', '3', '4', '5']
+  l:
+    inflows: [p10]
+    outflows: [p7]
+    guard: number!=5
+  m:
+    inflows: [p10, p8, p9]
+    outflows: [p12]
+    guard: number=5
+  n:
+    inflows: [p12]
+    outflows: [p13]
+    guard: first=1
+  o:
+    inflows: [p12]
+    outflows: [p14]
+    guard: second=2
+  p:
+    inflows: [p12]
+    outflows: [p15]
+    guard: third=3
+  r:
+    inflows: [p13]
+    outflows: [p16]
+  s:
+    inflows: [p14]
+    outflows: [p16]
+  t:
+    inflows: [p15]
+    outflows: [p16]
+  u:
+    inflows: [p16]
+    outflows: [end]

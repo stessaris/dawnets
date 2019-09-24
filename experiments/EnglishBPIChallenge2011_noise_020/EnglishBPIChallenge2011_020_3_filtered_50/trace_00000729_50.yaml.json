@@ -1,0 +1,1 @@
+{"$schema":"../../parser/trace-schema.json","model":"EnglishBPIChallenge2011_020_annotated_3","trace":[{"transition":"First_outpatient_consultation","updates":{"Activity_code":"410100","Producer_code":"SGNA","Section":"Section_2"}}]}

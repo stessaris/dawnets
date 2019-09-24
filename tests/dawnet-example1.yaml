@@ -1,0 +1,52 @@
+$schema: ../parser/dawnet-schema.json
+name: example 1
+transitions:
+  t1:
+    inflows:  [ start ]
+    outflows:  [ p1 ]
+    updates:
+      loanType:  [ s, w ]
+  t10:
+    inflows:  [ p6 ]
+    outflows:  [ p8 ]
+  t11:
+    inflows:  [ p7 ]
+    outflows:  [ p9 ]
+  t12:
+    inflows:  [ p8, p9 ]
+    outflows:  [ end ]
+    updates:
+      loanType: []
+  t2:
+    inflows:  [ p1 ]
+    outflows:  [ p2 ]
+    guard: { default: loanType=s }
+  t3:
+    inflows:  [ p1 ]
+    outflows:  [ p3 ]
+    guard: loanType=w
+  t4:
+    inflows:  [ p2 ]
+    outflows:  [ p4 ]
+    updates:
+      request:  [ low, mid, high ]
+  t5:
+    inflows:  [ p3 ]
+    outflows:  [ p4 ]
+    updates:
+      request:  [ low, mid, high ]
+  t6:
+    inflows:  [ p4 ]
+    outflows:  [ p5 ]
+    guard: request=low
+  t7:
+    inflows:  [ p4 ]
+    outflows:  [ p5 ]
+    guard: request=mid
+  t8:
+    inflows:  [ p4 ]
+    outflows:  [ p5 ]
+    guard: request=high
+  t9:
+    inflows:  [ p5 ]
+    outflows:  [ p6, p7 ]

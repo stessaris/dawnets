@@ -1,0 +1,570 @@
+transitions:
+  n3ATA_a:
+    outflows:
+    - n3ATA_p1
+    updates:
+      n3ATA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3ATA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3ATA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n3ATA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMK4A_end
+  n3ATA_c:
+    outflows:
+    - n3ATA_p3
+    inflows:
+    - n3ATA_p1
+  n3ATA_b:
+    outflows:
+    - n3ATA_p2
+    inflows:
+    - n3ATA_p1
+  n3ATA_e:
+    outflows:
+    - n3ATA_p4
+    inflows:
+    - n3ATA_p3
+  n3ATA_d:
+    outflows:
+    - n3ATA_p4
+    inflows:
+    - n3ATA_p2
+  n3ATA_g:
+    outflows:
+    - n3ATA_p8
+    updates:
+      n3ATA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n3ATA_p5
+  n3ATA_f:
+    outflows:
+    - n3ATA_p5
+    - n3ATA_p6
+    - n3ATA_p7
+    inflows:
+    - n3ATA_p4
+  nMK4A_u:
+    outflows:
+    - nMK4A_end
+    inflows:
+    - nMK4A_p16
+  nMK4A_t:
+    outflows:
+    - nMK4A_p16
+    inflows:
+    - nMK4A_p15
+  n3ATA_p:
+    guard: n3ATA_third=3
+    outflows:
+    - n3ATA_p15
+    inflows:
+    - n3ATA_p12
+  n3ATA_r:
+    outflows:
+    - n3ATA_p16
+    inflows:
+    - n3ATA_p13
+  n3ATA_m:
+    guard: n3ATA_number=5
+    outflows:
+    - n3ATA_p12
+    inflows:
+    - n3ATA_p10
+    - n3ATA_p8
+    - n3ATA_p9
+  nMK4A_p:
+    guard: nMK4A_third=3
+    outflows:
+    - nMK4A_p15
+    inflows:
+    - nMK4A_p12
+  nMK4A_s:
+    outflows:
+    - nMK4A_p16
+    inflows:
+    - nMK4A_p14
+  nMK4A_r:
+    outflows:
+    - nMK4A_p16
+    inflows:
+    - nMK4A_p13
+  nMK4A_m:
+    guard: nMK4A_number=5
+    outflows:
+    - nMK4A_p12
+    inflows:
+    - nMK4A_p10
+    - nMK4A_p8
+    - nMK4A_p9
+  nMK4A_l:
+    guard: nMK4A_number!=5
+    outflows:
+    - nMK4A_p7
+    inflows:
+    - nMK4A_p10
+  nMK4A_o:
+    guard: nMK4A_second=2
+    outflows:
+    - nMK4A_p14
+    inflows:
+    - nMK4A_p12
+  nMK4A_n:
+    guard: nMK4A_first=1
+    outflows:
+    - nMK4A_p13
+    inflows:
+    - nMK4A_p12
+  nMK4A_i:
+    outflows:
+    - nMK4A_p10
+    updates:
+      nMK4A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMK4A_p7
+  nMK4A_h:
+    outflows:
+    - nMK4A_p9
+    inflows:
+    - nMK4A_p6
+  nMK4A_e:
+    outflows:
+    - nMK4A_p4
+    inflows:
+    - nMK4A_p3
+  nMK4A_d:
+    outflows:
+    - nMK4A_p4
+    inflows:
+    - nMK4A_p2
+  nMK4A_g:
+    outflows:
+    - nMK4A_p8
+    updates:
+      nMK4A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMK4A_p5
+  nMK4A_f:
+    outflows:
+    - nMK4A_p5
+    - nMK4A_p6
+    - nMK4A_p7
+    inflows:
+    - nMK4A_p4
+  nMK4A_a:
+    outflows:
+    - nMK4A_p1
+    updates:
+      nMK4A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMK4A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMK4A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMK4A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMK4A_start
+  nMK4A_c:
+    outflows:
+    - nMK4A_p3
+    inflows:
+    - nMK4A_p1
+  nMK4A_b:
+    outflows:
+    - nMK4A_p2
+    inflows:
+    - nMK4A_p1
+  n3ATA_l:
+    guard: n3ATA_number!=5
+    outflows:
+    - n3ATA_p7
+    inflows:
+    - n3ATA_p10
+  n3ATA_s:
+    outflows:
+    - n3ATA_p16
+    inflows:
+    - n3ATA_p14
+  n3ATA_o:
+    guard: n3ATA_second=2
+    outflows:
+    - n3ATA_p14
+    inflows:
+    - n3ATA_p12
+  n3ATA_i:
+    outflows:
+    - n3ATA_p10
+    updates:
+      n3ATA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n3ATA_p7
+  n3ATA_n:
+    guard: n3ATA_first=1
+    outflows:
+    - n3ATA_p13
+    inflows:
+    - n3ATA_p12
+  n3ATA_h:
+    outflows:
+    - n3ATA_p9
+    inflows:
+    - n3ATA_p6
+  n3ATA_u:
+    outflows:
+    - n3ATA_end
+    inflows:
+    - n3ATA_p16
+  n3ATA_t:
+    outflows:
+    - n3ATA_p16
+    inflows:
+    - n3ATA_p15
+  tr_nMK4A_a_1:
+    outflows:
+    - nMK4A_p1
+    - tr_stp1
+    updates:
+      nMK4A_third:
+      - '2'
+      nMK4A_first:
+      - '1'
+      nMK4A_second:
+      - '4'
+      nMK4A_fourth:
+      - '5'
+    inflows:
+    - nMK4A_start
+    - tr_stp0
+  tr_nMK4A_c_2:
+    outflows:
+    - nMK4A_p3
+    - tr_stp2
+    inflows:
+    - nMK4A_p1
+    - tr_stp1
+  tr_nMK4A_e_3:
+    outflows:
+    - nMK4A_p4
+    - tr_stp3
+    inflows:
+    - nMK4A_p3
+    - tr_stp2
+  tr_nMK4A_f_4:
+    outflows:
+    - nMK4A_p5
+    - nMK4A_p6
+    - nMK4A_p7
+    - tr_stp4
+    inflows:
+    - nMK4A_p4
+    - tr_stp3
+  tr_nMK4A_h_5:
+    outflows:
+    - nMK4A_p9
+    - tr_stp5
+    inflows:
+    - nMK4A_p6
+    - tr_stp4
+  tr_nMK4A_i_6:
+    outflows:
+    - nMK4A_p10
+    - tr_stp6
+    updates:
+      nMK4A_number:
+      - '3'
+    inflows:
+    - nMK4A_p7
+    - tr_stp5
+  tr_nMK4A_l_7:
+    guard: nMK4A_number!=5
+    outflows:
+    - nMK4A_p7
+    - tr_stp7
+    inflows:
+    - nMK4A_p10
+    - tr_stp6
+  tr_nMK4A_i_8:
+    outflows:
+    - nMK4A_p10
+    - tr_stp8
+    updates:
+      nMK4A_number:
+      - '2'
+    inflows:
+    - nMK4A_p7
+    - tr_stp7
+  tr_nMK4A_l_9:
+    guard: nMK4A_number!=5
+    outflows:
+    - nMK4A_p7
+    - tr_stp9
+    inflows:
+    - nMK4A_p10
+    - tr_stp8
+  tr_nMK4A_i_10:
+    outflows:
+    - nMK4A_p10
+    - tr_stp10
+    updates:
+      nMK4A_number:
+      - '5'
+    inflows:
+    - nMK4A_p7
+    - tr_stp9
+  tr_nMK4A_g_11:
+    outflows:
+    - nMK4A_p8
+    - tr_stp11
+    updates:
+      nMK4A_fifth:
+      - '3'
+    inflows:
+    - nMK4A_p5
+    - tr_stp10
+  tr_nMK4A_m_12:
+    guard: nMK4A_number=5
+    outflows:
+    - nMK4A_p12
+    - tr_stp12
+    inflows:
+    - nMK4A_p10
+    - nMK4A_p8
+    - nMK4A_p9
+    - tr_stp11
+  tr_nMK4A_n_13:
+    guard: nMK4A_first=1
+    outflows:
+    - nMK4A_p13
+    - tr_stp13
+    inflows:
+    - nMK4A_p12
+    - tr_stp12
+  tr_nMK4A_r_14:
+    outflows:
+    - nMK4A_p16
+    - tr_stp14
+    inflows:
+    - nMK4A_p13
+    - tr_stp13
+  tr_nMK4A_u_15:
+    outflows:
+    - nMK4A_end
+    - tr_stp15
+    inflows:
+    - nMK4A_p16
+    - tr_stp14
+  tr_n3ATA_a_16:
+    outflows:
+    - n3ATA_p1
+    - tr_stp16
+    updates:
+      n3ATA_second:
+      - '4'
+      n3ATA_fourth:
+      - '5'
+      n3ATA_third:
+      - '2'
+      n3ATA_first:
+      - '1'
+    inflows:
+    - nMK4A_end
+    - tr_stp15
+  tr_n3ATA_c_17:
+    outflows:
+    - n3ATA_p3
+    - tr_stp17
+    inflows:
+    - n3ATA_p1
+    - tr_stp16
+  tr_n3ATA_e_18:
+    outflows:
+    - n3ATA_p4
+    - tr_stp18
+    inflows:
+    - n3ATA_p3
+    - tr_stp17
+  tr_n3ATA_f_19:
+    outflows:
+    - n3ATA_p5
+    - n3ATA_p6
+    - n3ATA_p7
+    - tr_stp19
+    inflows:
+    - n3ATA_p4
+    - tr_stp18
+  tr_n3ATA_h_20:
+    outflows:
+    - n3ATA_p9
+    - tr_stp20
+    inflows:
+    - n3ATA_p6
+    - tr_stp19
+  tr_n3ATA_i_21:
+    outflows:
+    - n3ATA_p10
+    - tr_stp21
+    updates:
+      n3ATA_number:
+      - '3'
+    inflows:
+    - n3ATA_p7
+    - tr_stp20
+  tr_n3ATA_l_22:
+    guard: n3ATA_number!=5
+    outflows:
+    - n3ATA_p7
+    - tr_stp22
+    inflows:
+    - n3ATA_p10
+    - tr_stp21
+  tr_n3ATA_i_23:
+    outflows:
+    - n3ATA_p10
+    - tr_stp23
+    updates:
+      n3ATA_number:
+      - '2'
+    inflows:
+    - n3ATA_p7
+    - tr_stp22
+  tr_n3ATA_l_24:
+    guard: n3ATA_number!=5
+    outflows:
+    - n3ATA_p7
+    - tr_stp24
+    inflows:
+    - n3ATA_p10
+    - tr_stp23
+  tr_n3ATA_i_25:
+    outflows:
+    - n3ATA_p10
+    - tr_stp25
+    updates:
+      n3ATA_number:
+      - '5'
+    inflows:
+    - n3ATA_p7
+    - tr_stp24
+  tr_n3ATA_g_26:
+    outflows:
+    - n3ATA_p8
+    - tr_stp26
+    updates:
+      n3ATA_fifth:
+      - '3'
+    inflows:
+    - n3ATA_p5
+    - tr_stp25
+  tr_n3ATA_m_27:
+    guard: n3ATA_number=5
+    outflows:
+    - n3ATA_p12
+    - tr_stp27
+    inflows:
+    - n3ATA_p10
+    - n3ATA_p8
+    - n3ATA_p9
+    - tr_stp26
+  tr_n3ATA_n_28:
+    guard: n3ATA_first=1
+    outflows:
+    - n3ATA_p13
+    - tr_stp28
+    inflows:
+    - n3ATA_p12
+    - tr_stp27
+  tr_n3ATA_r_29:
+    outflows:
+    - n3ATA_p16
+    - tr_stp29
+    inflows:
+    - n3ATA_p13
+    - tr_stp28
+  tr_n3ATA_u_30:
+    outflows:
+    - n3ATA_end
+    - tr_stp30
+    inflows:
+    - n3ATA_p16
+    - tr_stp29
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nMK4A_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp30
+    - n3ATA_end
+name: M2_dawnet_1_trace2_0

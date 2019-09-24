@@ -1,0 +1,54 @@
+model: M5_dawnet_1_trace4_25
+trace:
+- transition: nPLFA_a
+  updates:
+    nPLFA_fourth: '2'
+    nPLFA_third: '4'
+    nPLFA_second: '2'
+    nPLFA_first: '2'
+- transition: nPLFA_b
+- transition: nPLFA_d
+- transition: nPLFA_c
+- transition: nPLFA_e
+- transition: nPLFA_i
+  updates:
+    nPLFA_number: '1'
+- transition: nPLFA_l
+- transition: nPLFA_i
+  updates:
+    nPLFA_number: '2'
+- transition: nPLFA_l
+- transition: nPLFA_i
+  updates:
+    nPLFA_number: '5'
+- transition: nPLFA_g
+  updates:
+    nPLFA_fifth: '3'
+- transition: nPLFA_m
+- transition: nPLFA_u
+- transition: nPMJQ_a
+  updates:
+    nPMJQ_first: '2'
+    nPMJQ_third: '4'
+    nPMJQ_second: '2'
+    nPMJQ_fourth: '2'
+- transition: nPMJQ_b
+- transition: nPMJQ_d
+- transition: nPMJQ_c
+- transition: nPMJQ_e
+- transition: nPMJQ_i
+  updates:
+    nPMJQ_number: '1'
+- transition: nPMJQ_l
+- transition: nPMJQ_i
+  updates:
+    nPMJQ_number: '2'
+- transition: nPMJQ_l
+- transition: nPMJQ_i
+  updates:
+    nPMJQ_number: '5'
+- transition: nPMJQ_g
+  updates:
+    nPMJQ_fifth: '3'
+- transition: nPMJQ_m
+- transition: nPMJQ_u

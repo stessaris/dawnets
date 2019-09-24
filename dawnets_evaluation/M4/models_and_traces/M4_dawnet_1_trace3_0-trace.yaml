@@ -1,0 +1,68 @@
+model: M4_dawnet_1_trace3_0
+trace:
+- transition: nVY3A_a
+  updates:
+    nVY3A_second: '1'
+    nVY3A_first: '3'
+    nVY3A_fourth: '2'
+    nVY3A_third: '3'
+- transition: nVY3A_b
+- transition: nVY3A_d
+- transition: nVY3A_c
+- transition: nVY3A_e
+- transition: nVY3A_f
+- transition: nVY3A_g
+  updates:
+    nVY3A_fifth: '1'
+- transition: nVY3A_h
+- transition: nVY3A_i
+  updates:
+    nVY3A_number: '5'
+- transition: nVY3A_m
+- transition: nVY3A_p
+- transition: nVY3A_t
+- transition: nVY3A_u
+- transition: nFR3Q_a
+  updates:
+    nFR3Q_fourth: '2'
+    nFR3Q_second: '1'
+    nFR3Q_first: '3'
+    nFR3Q_third: '3'
+- transition: nFR3Q_b
+- transition: nFR3Q_d
+- transition: nFR3Q_c
+- transition: nFR3Q_e
+- transition: nFR3Q_f
+- transition: nFR3Q_g
+  updates:
+    nFR3Q_fifth: '1'
+- transition: nFR3Q_h
+- transition: nFR3Q_i
+  updates:
+    nFR3Q_number: '5'
+- transition: nFR3Q_m
+- transition: nFR3Q_p
+- transition: nFR3Q_t
+- transition: nFR3Q_u
+- transition: nWW5Q_a
+  updates:
+    nWW5Q_second: '1'
+    nWW5Q_first: '3'
+    nWW5Q_third: '3'
+    nWW5Q_fourth: '2'
+- transition: nWW5Q_b
+- transition: nWW5Q_d
+- transition: nWW5Q_c
+- transition: nWW5Q_e
+- transition: nWW5Q_f
+- transition: nWW5Q_g
+  updates:
+    nWW5Q_fifth: '1'
+- transition: nWW5Q_h
+- transition: nWW5Q_i
+  updates:
+    nWW5Q_number: '5'
+- transition: nWW5Q_m
+- transition: nWW5Q_p
+- transition: nWW5Q_t
+- transition: nWW5Q_u

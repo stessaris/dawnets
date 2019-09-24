@@ -1,0 +1,26 @@
+model: M5_dawnet_1_trace2_25
+trace:
+- transition: nCNFQ_a
+  updates:
+    nCNFQ_fourth: '5'
+    nCNFQ_second: '4'
+    nCNFQ_first: '1'
+    nCNFQ_third: '2'
+- transition: nCNFQ_c
+- transition: nCNFQ_e
+- transition: nCNFQ_i
+  updates:
+    nCNFQ_number: '3'
+- transition: nCNFQ_l
+- transition: nCNFQ_i
+  updates:
+    nCNFQ_number: '2'
+- transition: nCNFQ_l
+- transition: nCNFQ_i
+  updates:
+    nCNFQ_number: '5'
+- transition: nCNFQ_g
+  updates:
+    nCNFQ_fifth: '3'
+- transition: nCNFQ_m
+- transition: nCNFQ_u

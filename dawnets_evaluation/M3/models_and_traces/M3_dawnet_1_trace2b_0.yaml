@@ -1,0 +1,302 @@
+transitions:
+  nEHVA_d:
+    outflows:
+    - nEHVA_p4
+    inflows:
+    - nEHVA_p2
+  nEHVA_e:
+    outflows:
+    - nEHVA_p4
+    inflows:
+    - nEHVA_p3
+  nEHVA_f:
+    outflows:
+    - nEHVA_p5
+    - nEHVA_p6
+    - nEHVA_p7
+    inflows:
+    - nEHVA_p4
+  nEHVA_g:
+    outflows:
+    - nEHVA_p8
+    updates:
+      nEHVA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEHVA_p5
+  nEHVA_a:
+    outflows:
+    - nEHVA_p1
+    updates:
+      nEHVA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEHVA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEHVA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEHVA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEHVA_start
+  nEHVA_b:
+    outflows:
+    - nEHVA_p2
+    inflows:
+    - nEHVA_p1
+  nEHVA_c:
+    outflows:
+    - nEHVA_p3
+    inflows:
+    - nEHVA_p1
+  nEHVA_l:
+    guard: nEHVA_number!=5
+    outflows:
+    - nEHVA_p7
+    inflows:
+    - nEHVA_p10
+  nEHVA_m:
+    guard: nEHVA_number=5
+    outflows:
+    - nEHVA_p12
+    inflows:
+    - nEHVA_p10
+    - nEHVA_p8
+    - nEHVA_p9
+  nEHVA_n:
+    guard: nEHVA_first=1
+    outflows:
+    - nEHVA_p13
+    inflows:
+    - nEHVA_p12
+  nEHVA_o:
+    guard: nEHVA_second=2
+    outflows:
+    - nEHVA_p14
+    inflows:
+    - nEHVA_p12
+  nEHVA_h:
+    outflows:
+    - nEHVA_p9
+    inflows:
+    - nEHVA_p6
+  nEHVA_i:
+    outflows:
+    - nEHVA_p10
+    updates:
+      nEHVA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEHVA_p7
+  n2RLA_t:
+    outflows:
+    - n2RLA_p16
+    inflows:
+    - n2RLA_p15
+  nEHVA_t:
+    outflows:
+    - nEHVA_p16
+    inflows:
+    - nEHVA_p15
+  nEHVA_u:
+    outflows:
+    - nEHVA_end
+    inflows:
+    - nEHVA_p16
+  nEHVA_p:
+    guard: nEHVA_third=3
+    outflows:
+    - nEHVA_p15
+    inflows:
+    - nEHVA_p12
+  n2RLA_l:
+    guard: n2RLA_number!=5
+    outflows:
+    - n2RLA_p7
+    inflows:
+    - n2RLA_p10
+  nEHVA_r:
+    outflows:
+    - nEHVA_p16
+    inflows:
+    - nEHVA_p13
+  nEHVA_s:
+    outflows:
+    - nEHVA_p16
+    inflows:
+    - nEHVA_p14
+  n2RLA_a:
+    outflows:
+    - n2RLA_p1
+    updates:
+      n2RLA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2RLA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2RLA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2RLA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n2RLA_start
+  n2RLA_o:
+    guard: n2RLA_second=2
+    outflows:
+    - n2RLA_p14
+    inflows:
+    - n2RLA_p12
+  n2RLA_b:
+    outflows:
+    - n2RLA_p2
+    inflows:
+    - n2RLA_p1
+  n2RLA_e:
+    outflows:
+    - n2RLA_p4
+    inflows:
+    - n2RLA_p3
+  n2RLA_c:
+    outflows:
+    - n2RLA_p3
+    inflows:
+    - n2RLA_p1
+  n2RLA_g:
+    outflows:
+    - n2RLA_p8
+    updates:
+      n2RLA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n2RLA_p5
+  n2RLA_f:
+    outflows:
+    - n2RLA_p5
+    - n2RLA_p6
+    - n2RLA_p7
+    inflows:
+    - n2RLA_p4
+  n2RLA_i:
+    outflows:
+    - n2RLA_p10
+    updates:
+      n2RLA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n2RLA_p7
+  n2RLA_h:
+    outflows:
+    - n2RLA_p9
+    inflows:
+    - n2RLA_p6
+  n2RLA_u:
+    outflows:
+    - n2RLA_end
+    inflows:
+    - n2RLA_p16
+  n2RLA_d:
+    outflows:
+    - n2RLA_p4
+    inflows:
+    - n2RLA_p2
+  rt_pj_M3_dawnet_1_trace2b_0:
+    outflows:
+    - rp_e_M3_dawnet_1_trace2b_0
+    inflows:
+    - nEHVA_end
+    - n2RLA_end
+  n2RLA_r:
+    outflows:
+    - n2RLA_p16
+    inflows:
+    - n2RLA_p13
+  rt_ps_M3_dawnet_1_trace2b_0:
+    outflows:
+    - nEHVA_start
+    - n2RLA_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace2b_0
+  n2RLA_p:
+    guard: n2RLA_third=3
+    outflows:
+    - n2RLA_p15
+    inflows:
+    - n2RLA_p12
+  n2RLA_n:
+    guard: n2RLA_first=1
+    outflows:
+    - n2RLA_p13
+    inflows:
+    - n2RLA_p12
+  n2RLA_m:
+    guard: n2RLA_number=5
+    outflows:
+    - n2RLA_p12
+    inflows:
+    - n2RLA_p10
+    - n2RLA_p8
+    - n2RLA_p9
+  n2RLA_s:
+    outflows:
+    - n2RLA_p16
+    inflows:
+    - n2RLA_p14
+name: M3_dawnet_1_trace2b_0

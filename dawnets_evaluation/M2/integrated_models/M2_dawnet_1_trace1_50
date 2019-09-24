@@ -1,0 +1,402 @@
+transitions:
+  nUWMA_b:
+    outflows:
+    - nUWMA_p2
+    inflows:
+    - nUWMA_p1
+  nUWMA_c:
+    outflows:
+    - nUWMA_p3
+    inflows:
+    - nUWMA_p1
+  nUWMA_a:
+    outflows:
+    - nUWMA_p1
+    updates:
+      nUWMA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUWMA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUWMA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUWMA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUWMA_start
+  nUWMA_f:
+    outflows:
+    - nUWMA_p5
+    - nUWMA_p6
+    - nUWMA_p7
+    inflows:
+    - nUWMA_p4
+  nUWMA_g:
+    outflows:
+    - nUWMA_p8
+    updates:
+      nUWMA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUWMA_p5
+  nUWMA_d:
+    outflows:
+    - nUWMA_p4
+    inflows:
+    - nUWMA_p2
+  nUWMA_e:
+    outflows:
+    - nUWMA_p4
+    inflows:
+    - nUWMA_p3
+  nGAWQ_a:
+    outflows:
+    - nGAWQ_p1
+    updates:
+      nGAWQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGAWQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGAWQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGAWQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUWMA_end
+  nUWMA_h:
+    outflows:
+    - nUWMA_p9
+    inflows:
+    - nUWMA_p6
+  nUWMA_i:
+    outflows:
+    - nUWMA_p10
+    updates:
+      nUWMA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUWMA_p7
+  nUWMA_n:
+    guard: nUWMA_first=1
+    outflows:
+    - nUWMA_p13
+    inflows:
+    - nUWMA_p12
+  nUWMA_o:
+    guard: nUWMA_second=2
+    outflows:
+    - nUWMA_p14
+    inflows:
+    - nUWMA_p12
+  nUWMA_l:
+    guard: nUWMA_number!=5
+    outflows:
+    - nUWMA_p7
+    inflows:
+    - nUWMA_p10
+  nUWMA_m:
+    guard: nUWMA_number=5
+    outflows:
+    - nUWMA_p12
+    inflows:
+    - nUWMA_p10
+    - nUWMA_p8
+    - nUWMA_p9
+  nUWMA_r:
+    outflows:
+    - nUWMA_p16
+    inflows:
+    - nUWMA_p13
+  nUWMA_s:
+    outflows:
+    - nUWMA_p16
+    inflows:
+    - nUWMA_p14
+  nUWMA_p:
+    guard: nUWMA_third=3
+    outflows:
+    - nUWMA_p15
+    inflows:
+    - nUWMA_p12
+  nGAWQ_f:
+    outflows:
+    - nGAWQ_p5
+    - nGAWQ_p6
+    - nGAWQ_p7
+    inflows:
+    - nGAWQ_p4
+  nUWMA_t:
+    outflows:
+    - nUWMA_p16
+    inflows:
+    - nUWMA_p15
+  nUWMA_u:
+    outflows:
+    - nUWMA_end
+    inflows:
+    - nUWMA_p16
+  nGAWQ_p:
+    guard: nGAWQ_third=3
+    outflows:
+    - nGAWQ_p15
+    inflows:
+    - nGAWQ_p12
+  nGAWQ_l:
+    guard: nGAWQ_number!=5
+    outflows:
+    - nGAWQ_p7
+    inflows:
+    - nGAWQ_p10
+  nGAWQ_r:
+    outflows:
+    - nGAWQ_p16
+    inflows:
+    - nGAWQ_p13
+  nGAWQ_g:
+    outflows:
+    - nGAWQ_p8
+    updates:
+      nGAWQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nGAWQ_p5
+  nGAWQ_e:
+    outflows:
+    - nGAWQ_p4
+    inflows:
+    - nGAWQ_p3
+  nGAWQ_i:
+    outflows:
+    - nGAWQ_p10
+    updates:
+      nGAWQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nGAWQ_p7
+  nGAWQ_m:
+    guard: nGAWQ_number=5
+    outflows:
+    - nGAWQ_p12
+    inflows:
+    - nGAWQ_p10
+    - nGAWQ_p8
+    - nGAWQ_p9
+  nGAWQ_s:
+    outflows:
+    - nGAWQ_p16
+    inflows:
+    - nGAWQ_p14
+  nGAWQ_n:
+    guard: nGAWQ_first=1
+    outflows:
+    - nGAWQ_p13
+    inflows:
+    - nGAWQ_p12
+  nGAWQ_t:
+    outflows:
+    - nGAWQ_p16
+    inflows:
+    - nGAWQ_p15
+  nGAWQ_h:
+    outflows:
+    - nGAWQ_p9
+    inflows:
+    - nGAWQ_p6
+  nGAWQ_o:
+    guard: nGAWQ_second=2
+    outflows:
+    - nGAWQ_p14
+    inflows:
+    - nGAWQ_p12
+  nGAWQ_u:
+    outflows:
+    - nGAWQ_end
+    inflows:
+    - nGAWQ_p16
+  nGAWQ_d:
+    outflows:
+    - nGAWQ_p4
+    inflows:
+    - nGAWQ_p2
+  nGAWQ_c:
+    outflows:
+    - nGAWQ_p3
+    inflows:
+    - nGAWQ_p1
+  nGAWQ_b:
+    outflows:
+    - nGAWQ_p2
+    inflows:
+    - nGAWQ_p1
+  tr_nUWMA_a_1:
+    outflows:
+    - nUWMA_p1
+    - tr_stp1
+    updates:
+      nUWMA_first:
+      - '4'
+      nUWMA_third:
+      - '4'
+      nUWMA_second:
+      - '2'
+      nUWMA_fourth:
+      - '3'
+    inflows:
+    - nUWMA_start
+    - tr_stp0
+  tr_nUWMA_d_2:
+    outflows:
+    - nUWMA_p4
+    - tr_stp2
+    inflows:
+    - nUWMA_p2
+    - tr_stp1
+  tr_nUWMA_g_3:
+    outflows:
+    - nUWMA_p8
+    - tr_stp3
+    updates:
+      nUWMA_fifth:
+      - '2'
+    inflows:
+    - nUWMA_p5
+    - tr_stp2
+  tr_nUWMA_h_4:
+    outflows:
+    - nUWMA_p9
+    - tr_stp4
+    inflows:
+    - nUWMA_p6
+    - tr_stp3
+  tr_nUWMA_i_5:
+    outflows:
+    - nUWMA_p10
+    - tr_stp5
+    updates:
+      nUWMA_number:
+      - '5'
+    inflows:
+    - nUWMA_p7
+    - tr_stp4
+  tr_nGAWQ_a_6:
+    outflows:
+    - nGAWQ_p1
+    - tr_stp6
+    updates:
+      nGAWQ_second:
+      - '2'
+      nGAWQ_first:
+      - '4'
+      nGAWQ_third:
+      - '4'
+      nGAWQ_fourth:
+      - '3'
+    inflows:
+    - nUWMA_end
+    - tr_stp5
+  tr_nGAWQ_d_7:
+    outflows:
+    - nGAWQ_p4
+    - tr_stp7
+    inflows:
+    - nGAWQ_p2
+    - tr_stp6
+  tr_nGAWQ_g_8:
+    outflows:
+    - nGAWQ_p8
+    - tr_stp8
+    updates:
+      nGAWQ_fifth:
+      - '2'
+    inflows:
+    - nGAWQ_p5
+    - tr_stp7
+  tr_nGAWQ_h_9:
+    outflows:
+    - nGAWQ_p9
+    - tr_stp9
+    inflows:
+    - nGAWQ_p6
+    - tr_stp8
+  tr_nGAWQ_i_10:
+    outflows:
+    - nGAWQ_p10
+    - tr_stp10
+    updates:
+      nGAWQ_number:
+      - '5'
+    inflows:
+    - nGAWQ_p7
+    - tr_stp9
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nUWMA_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp10
+    - nGAWQ_end
+name: M2_dawnet_1_trace1_50

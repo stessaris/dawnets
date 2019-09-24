@@ -1,0 +1,86 @@
+model: M4_dawnet_1_trace2b_0
+trace:
+- transition: nWCWA_a
+  updates:
+    nWCWA_first: '1'
+    nWCWA_third: '2'
+    nWCWA_second: '2'
+    nWCWA_fourth: '5'
+- transition: nWCWA_c
+- transition: nWCWA_e
+- transition: nWCWA_f
+- transition: nWCWA_h
+- transition: nWCWA_i
+  updates:
+    nWCWA_number: '3'
+- transition: nWCWA_l
+- transition: nWCWA_i
+  updates:
+    nWCWA_number: 2
+- transition: nWCWA_l
+- transition: nWCWA_i
+  updates:
+    nWCWA_number: '5'
+- transition: nWCWA_g
+  updates:
+    nWCWA_fifth: '3'
+- transition: nWCWA_m
+- transition: nWCWA_n
+- transition: nWCWA_r
+- transition: nWCWA_u
+- transition: nHYPQ_a
+  updates:
+    nHYPQ_second: '2'
+    nHYPQ_first: '1'
+    nHYPQ_third: '2'
+    nHYPQ_fourth: '5'
+- transition: nHYPQ_c
+- transition: nHYPQ_e
+- transition: nHYPQ_f
+- transition: nHYPQ_h
+- transition: nHYPQ_i
+  updates:
+    nHYPQ_number: '3'
+- transition: nHYPQ_l
+- transition: nHYPQ_i
+  updates:
+    nHYPQ_number: 2
+- transition: nHYPQ_l
+- transition: nHYPQ_i
+  updates:
+    nHYPQ_number: '5'
+- transition: nHYPQ_g
+  updates:
+    nHYPQ_fifth: '3'
+- transition: nHYPQ_m
+- transition: nHYPQ_n
+- transition: nHYPQ_r
+- transition: nHYPQ_u
+- transition: nIHXQ_a
+  updates:
+    nIHXQ_first: '1'
+    nIHXQ_third: '2'
+    nIHXQ_second: '2'
+    nIHXQ_fourth: '5'
+- transition: nIHXQ_c
+- transition: nIHXQ_e
+- transition: nIHXQ_f
+- transition: nIHXQ_h
+- transition: nIHXQ_i
+  updates:
+    nIHXQ_number: '3'
+- transition: nIHXQ_l
+- transition: nIHXQ_i
+  updates:
+    nIHXQ_number: 2
+- transition: nIHXQ_l
+- transition: nIHXQ_i
+  updates:
+    nIHXQ_number: '5'
+- transition: nIHXQ_g
+  updates:
+    nIHXQ_fifth: '3'
+- transition: nIHXQ_m
+- transition: nIHXQ_n
+- transition: nIHXQ_r
+- transition: nIHXQ_u

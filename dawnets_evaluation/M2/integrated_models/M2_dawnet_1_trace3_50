@@ -1,0 +1,430 @@
+transitions:
+  nARPA_t:
+    outflows:
+    - nARPA_p16
+    inflows:
+    - nARPA_p15
+  nARPA_u:
+    outflows:
+    - nARPA_end
+    inflows:
+    - nARPA_p16
+  nARPA_p:
+    guard: nARPA_third=3
+    outflows:
+    - nARPA_p15
+    inflows:
+    - nARPA_p12
+  nP72Q_b:
+    outflows:
+    - nP72Q_p2
+    inflows:
+    - nP72Q_p1
+  nARPA_r:
+    outflows:
+    - nARPA_p16
+    inflows:
+    - nARPA_p13
+  nARPA_s:
+    outflows:
+    - nARPA_p16
+    inflows:
+    - nARPA_p14
+  nP72Q_n:
+    guard: nP72Q_first=1
+    outflows:
+    - nP72Q_p13
+    inflows:
+    - nP72Q_p12
+  nP72Q_c:
+    outflows:
+    - nP72Q_p3
+    inflows:
+    - nP72Q_p1
+  nARPA_d:
+    outflows:
+    - nARPA_p4
+    inflows:
+    - nARPA_p2
+  nARPA_e:
+    outflows:
+    - nARPA_p4
+    inflows:
+    - nARPA_p3
+  nARPA_f:
+    outflows:
+    - nARPA_p5
+    - nARPA_p6
+    - nARPA_p7
+    inflows:
+    - nARPA_p4
+  nARPA_g:
+    outflows:
+    - nARPA_p8
+    updates:
+      nARPA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nARPA_p5
+  nP72Q_l:
+    guard: nP72Q_number!=5
+    outflows:
+    - nP72Q_p7
+    inflows:
+    - nP72Q_p10
+  nARPA_a:
+    outflows:
+    - nARPA_p1
+    updates:
+      nARPA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nARPA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nARPA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nARPA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nARPA_start
+  nARPA_b:
+    outflows:
+    - nARPA_p2
+    inflows:
+    - nARPA_p1
+  nARPA_c:
+    outflows:
+    - nARPA_p3
+    inflows:
+    - nARPA_p1
+  nARPA_l:
+    guard: nARPA_number!=5
+    outflows:
+    - nARPA_p7
+    inflows:
+    - nARPA_p10
+  nARPA_m:
+    guard: nARPA_number=5
+    outflows:
+    - nARPA_p12
+    inflows:
+    - nARPA_p10
+    - nARPA_p8
+    - nARPA_p9
+  nARPA_n:
+    guard: nARPA_first=1
+    outflows:
+    - nARPA_p13
+    inflows:
+    - nARPA_p12
+  nARPA_o:
+    guard: nARPA_second=2
+    outflows:
+    - nARPA_p14
+    inflows:
+    - nARPA_p12
+  nARPA_h:
+    outflows:
+    - nARPA_p9
+    inflows:
+    - nARPA_p6
+  nARPA_i:
+    outflows:
+    - nARPA_p10
+    updates:
+      nARPA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nARPA_p7
+  nP72Q_d:
+    outflows:
+    - nP72Q_p4
+    inflows:
+    - nP72Q_p2
+  nP72Q_u:
+    outflows:
+    - nP72Q_end
+    inflows:
+    - nP72Q_p16
+  nP72Q_o:
+    guard: nP72Q_second=2
+    outflows:
+    - nP72Q_p14
+    inflows:
+    - nP72Q_p12
+  nP72Q_t:
+    outflows:
+    - nP72Q_p16
+    inflows:
+    - nP72Q_p15
+  nP72Q_e:
+    outflows:
+    - nP72Q_p4
+    inflows:
+    - nP72Q_p3
+  nP72Q_h:
+    outflows:
+    - nP72Q_p9
+    inflows:
+    - nP72Q_p6
+  nP72Q_s:
+    outflows:
+    - nP72Q_p16
+    inflows:
+    - nP72Q_p14
+  nP72Q_f:
+    outflows:
+    - nP72Q_p5
+    - nP72Q_p6
+    - nP72Q_p7
+    inflows:
+    - nP72Q_p4
+  nP72Q_i:
+    outflows:
+    - nP72Q_p10
+    updates:
+      nP72Q_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nP72Q_p7
+  nP72Q_m:
+    guard: nP72Q_number=5
+    outflows:
+    - nP72Q_p12
+    inflows:
+    - nP72Q_p10
+    - nP72Q_p8
+    - nP72Q_p9
+  nP72Q_g:
+    outflows:
+    - nP72Q_p8
+    updates:
+      nP72Q_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nP72Q_p5
+  nP72Q_r:
+    outflows:
+    - nP72Q_p16
+    inflows:
+    - nP72Q_p13
+  nP72Q_p:
+    guard: nP72Q_third=3
+    outflows:
+    - nP72Q_p15
+    inflows:
+    - nP72Q_p12
+  nP72Q_a:
+    outflows:
+    - nP72Q_p1
+    updates:
+      nP72Q_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nP72Q_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nP72Q_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nP72Q_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nARPA_end
+  tr_nARPA_a_1:
+    outflows:
+    - nARPA_p1
+    - tr_stp1
+    updates:
+      nARPA_third:
+      - '3'
+      nARPA_fourth:
+      - '2'
+      nARPA_first:
+      - '3'
+      nARPA_second:
+      - '1'
+    inflows:
+    - nARPA_start
+    - tr_stp0
+  tr_nARPA_d_2:
+    outflows:
+    - nARPA_p4
+    - tr_stp2
+    inflows:
+    - nARPA_p2
+    - tr_stp1
+  tr_nARPA_c_3:
+    outflows:
+    - nARPA_p3
+    - tr_stp3
+    inflows:
+    - nARPA_p1
+    - tr_stp2
+  tr_nARPA_e_4:
+    outflows:
+    - nARPA_p4
+    - tr_stp4
+    inflows:
+    - nARPA_p3
+    - tr_stp3
+  tr_nARPA_g_5:
+    outflows:
+    - nARPA_p8
+    - tr_stp5
+    updates:
+      nARPA_fifth:
+      - '1'
+    inflows:
+    - nARPA_p5
+    - tr_stp4
+  tr_nARPA_h_6:
+    outflows:
+    - nARPA_p9
+    - tr_stp6
+    inflows:
+    - nARPA_p6
+    - tr_stp5
+  tr_nARPA_i_7:
+    outflows:
+    - nARPA_p10
+    - tr_stp7
+    updates:
+      nARPA_number:
+      - '5'
+    inflows:
+    - nARPA_p7
+    - tr_stp6
+  tr_nP72Q_a_8:
+    outflows:
+    - nP72Q_p1
+    - tr_stp8
+    updates:
+      nP72Q_third:
+      - '3'
+      nP72Q_fourth:
+      - '2'
+      nP72Q_first:
+      - '3'
+      nP72Q_second:
+      - '1'
+    inflows:
+    - nARPA_end
+    - tr_stp7
+  tr_nP72Q_d_9:
+    outflows:
+    - nP72Q_p4
+    - tr_stp9
+    inflows:
+    - nP72Q_p2
+    - tr_stp8
+  tr_nP72Q_c_10:
+    outflows:
+    - nP72Q_p3
+    - tr_stp10
+    inflows:
+    - nP72Q_p1
+    - tr_stp9
+  tr_nP72Q_e_11:
+    outflows:
+    - nP72Q_p4
+    - tr_stp11
+    inflows:
+    - nP72Q_p3
+    - tr_stp10
+  tr_nP72Q_g_12:
+    outflows:
+    - nP72Q_p8
+    - tr_stp12
+    updates:
+      nP72Q_fifth:
+      - '1'
+    inflows:
+    - nP72Q_p5
+    - tr_stp11
+  tr_nP72Q_h_13:
+    outflows:
+    - nP72Q_p9
+    - tr_stp13
+    inflows:
+    - nP72Q_p6
+    - tr_stp12
+  tr_nP72Q_i_14:
+    outflows:
+    - nP72Q_p10
+    - tr_stp14
+    updates:
+      nP72Q_number:
+      - '5'
+    inflows:
+    - nP72Q_p7
+    - tr_stp13
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nARPA_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp14
+    - nP72Q_end
+name: M2_dawnet_1_trace3_50

@@ -1,0 +1,19 @@
+model: M5_dawnet_1_trace1_25
+trace:
+- transition: nWOHQ_a
+  updates:
+    nWOHQ_fourth: '3'
+    nWOHQ_third: '4'
+    nWOHQ_second: '2'
+    nWOHQ_first: '4'
+- transition: nWOHQ_b
+- transition: nWOHQ_d
+- transition: nWOHQ_f
+- transition: nWOHQ_g
+  updates:
+    nWOHQ_fifth: '2'
+- transition: nWOHQ_h
+- transition: nWOHQ_i
+  updates:
+    nWOHQ_number: '5'
+- transition: nWOHQ_m

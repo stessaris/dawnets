@@ -1,0 +1,144 @@
+name: M3_dawnet_1
+transitions:
+  dawnet_1_3SHQ_a:
+    inflows: [dawnet_1_3SHQ_start]
+    outflows: [dawnet_1_3SHQ_p1]
+    updates:
+      dawnet_1_3SHQ_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_3SHQ_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_3SHQ_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_3SHQ_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_3SHQ_b:
+    inflows: [dawnet_1_3SHQ_p1]
+    outflows: [dawnet_1_3SHQ_p2]
+  dawnet_1_3SHQ_c:
+    inflows: [dawnet_1_3SHQ_p1]
+    outflows: [dawnet_1_3SHQ_p3]
+  dawnet_1_3SHQ_d:
+    inflows: [dawnet_1_3SHQ_p2]
+    outflows: [dawnet_1_3SHQ_p4]
+  dawnet_1_3SHQ_e:
+    inflows: [dawnet_1_3SHQ_p3]
+    outflows: [dawnet_1_3SHQ_p4]
+  dawnet_1_3SHQ_f:
+    inflows: [dawnet_1_3SHQ_p4]
+    outflows: [dawnet_1_3SHQ_p5, dawnet_1_3SHQ_p6, dawnet_1_3SHQ_p7]
+  dawnet_1_3SHQ_g:
+    inflows: [dawnet_1_3SHQ_p5]
+    outflows: [dawnet_1_3SHQ_p8]
+    updates:
+      dawnet_1_3SHQ_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_3SHQ_h:
+    inflows: [dawnet_1_3SHQ_p6]
+    outflows: [dawnet_1_3SHQ_p9]
+  dawnet_1_3SHQ_i:
+    inflows: [dawnet_1_3SHQ_p7]
+    outflows: [dawnet_1_3SHQ_p10]
+    updates:
+      dawnet_1_3SHQ_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_3SHQ_l:
+    guard: dawnet_1_3SHQ_number!=5
+    inflows: [dawnet_1_3SHQ_p10]
+    outflows: [dawnet_1_3SHQ_p7]
+  dawnet_1_3SHQ_m:
+    guard: dawnet_1_3SHQ_number=5
+    inflows: [dawnet_1_3SHQ_p10, dawnet_1_3SHQ_p8, dawnet_1_3SHQ_p9]
+    outflows: [dawnet_1_3SHQ_p12]
+  dawnet_1_3SHQ_n:
+    guard: dawnet_1_3SHQ_first=1
+    inflows: [dawnet_1_3SHQ_p12]
+    outflows: [dawnet_1_3SHQ_p13]
+  dawnet_1_3SHQ_o:
+    guard: dawnet_1_3SHQ_second=2
+    inflows: [dawnet_1_3SHQ_p12]
+    outflows: [dawnet_1_3SHQ_p14]
+  dawnet_1_3SHQ_p:
+    guard: dawnet_1_3SHQ_third=3
+    inflows: [dawnet_1_3SHQ_p12]
+    outflows: [dawnet_1_3SHQ_p15]
+  dawnet_1_3SHQ_r:
+    inflows: [dawnet_1_3SHQ_p13]
+    outflows: [dawnet_1_3SHQ_p16]
+  dawnet_1_3SHQ_s:
+    inflows: [dawnet_1_3SHQ_p14]
+    outflows: [dawnet_1_3SHQ_p16]
+  dawnet_1_3SHQ_t:
+    inflows: [dawnet_1_3SHQ_p15]
+    outflows: [dawnet_1_3SHQ_p16]
+  dawnet_1_3SHQ_u:
+    inflows: [dawnet_1_3SHQ_p16]
+    outflows: [dawnet_1_3SHQ_end]
+  dawnet_1_UZEQ_a:
+    inflows: [dawnet_1_UZEQ_start]
+    outflows: [dawnet_1_UZEQ_p1]
+    updates:
+      dawnet_1_UZEQ_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UZEQ_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UZEQ_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UZEQ_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UZEQ_b:
+    inflows: [dawnet_1_UZEQ_p1]
+    outflows: [dawnet_1_UZEQ_p2]
+  dawnet_1_UZEQ_c:
+    inflows: [dawnet_1_UZEQ_p1]
+    outflows: [dawnet_1_UZEQ_p3]
+  dawnet_1_UZEQ_d:
+    inflows: [dawnet_1_UZEQ_p2]
+    outflows: [dawnet_1_UZEQ_p4]
+  dawnet_1_UZEQ_e:
+    inflows: [dawnet_1_UZEQ_p3]
+    outflows: [dawnet_1_UZEQ_p4]
+  dawnet_1_UZEQ_f:
+    inflows: [dawnet_1_UZEQ_p4]
+    outflows: [dawnet_1_UZEQ_p5, dawnet_1_UZEQ_p6, dawnet_1_UZEQ_p7]
+  dawnet_1_UZEQ_g:
+    inflows: [dawnet_1_UZEQ_p5]
+    outflows: [dawnet_1_UZEQ_p8]
+    updates:
+      dawnet_1_UZEQ_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UZEQ_h:
+    inflows: [dawnet_1_UZEQ_p6]
+    outflows: [dawnet_1_UZEQ_p9]
+  dawnet_1_UZEQ_i:
+    inflows: [dawnet_1_UZEQ_p7]
+    outflows: [dawnet_1_UZEQ_p10]
+    updates:
+      dawnet_1_UZEQ_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UZEQ_l:
+    guard: dawnet_1_UZEQ_number!=5
+    inflows: [dawnet_1_UZEQ_p10]
+    outflows: [dawnet_1_UZEQ_p7]
+  dawnet_1_UZEQ_m:
+    guard: dawnet_1_UZEQ_number=5
+    inflows: [dawnet_1_UZEQ_p10, dawnet_1_UZEQ_p8, dawnet_1_UZEQ_p9]
+    outflows: [dawnet_1_UZEQ_p12]
+  dawnet_1_UZEQ_n:
+    guard: dawnet_1_UZEQ_first=1
+    inflows: [dawnet_1_UZEQ_p12]
+    outflows: [dawnet_1_UZEQ_p13]
+  dawnet_1_UZEQ_o:
+    guard: dawnet_1_UZEQ_second=2
+    inflows: [dawnet_1_UZEQ_p12]
+    outflows: [dawnet_1_UZEQ_p14]
+  dawnet_1_UZEQ_p:
+    guard: dawnet_1_UZEQ_third=3
+    inflows: [dawnet_1_UZEQ_p12]
+    outflows: [dawnet_1_UZEQ_p15]
+  dawnet_1_UZEQ_r:
+    inflows: [dawnet_1_UZEQ_p13]
+    outflows: [dawnet_1_UZEQ_p16]
+  dawnet_1_UZEQ_s:
+    inflows: [dawnet_1_UZEQ_p14]
+    outflows: [dawnet_1_UZEQ_p16]
+  dawnet_1_UZEQ_t:
+    inflows: [dawnet_1_UZEQ_p15]
+    outflows: [dawnet_1_UZEQ_p16]
+  dawnet_1_UZEQ_u:
+    inflows: [dawnet_1_UZEQ_p16]
+    outflows: [dawnet_1_UZEQ_end]
+  rt_pj_par_RDFA:
+    inflows: [dawnet_1_UZEQ_end, dawnet_1_3SHQ_end]
+    outflows: [rp_e_par_RDFA]
+  rt_ps_par_RDFA:
+    inflows: [rp_s_par_RDFA]
+    outflows: [dawnet_1_UZEQ_start, dawnet_1_3SHQ_start]

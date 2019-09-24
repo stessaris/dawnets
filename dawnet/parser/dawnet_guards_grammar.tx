@@ -1,0 +1,23 @@
+/* 
+    TextX grammar for DAWNETS guards
+    see <http://www.igordejanovic.net/textX/> for details
+*/
+
+Guard:
+    expr=Or_expr ;
+
+And_expr : terms+=Simple_expr['and'] ;
+Or_expr : terms+=And_expr['or'] ;
+
+Simple_expr : Atom | Parens_expr ;
+
+Parens_expr : '(' expr=Guard ')' ;
+Atom : Truth | Comparison ;
+
+Truth : value='True' | value='False';
+
+Comparison : lhs=Var op=Comp_op rhs=Comp_arg ;
+Var : id=ID ;
+Const : value=STRING | value=INT ;
+Comp_arg : Var | Const ;
+Comp_op : '=' | '!=' | '<>' | '<' | '>' ;

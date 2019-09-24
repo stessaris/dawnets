@@ -1,0 +1,8 @@
+name: atomic
+transitions:
+  task:
+    inflows: [start]
+    outflows: [end]
+    guard: "v != 'w'"
+    updates:
+      v: [s, w, z]

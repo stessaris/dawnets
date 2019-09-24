@@ -1,0 +1,290 @@
+transitions:
+  nBJVA_s:
+    outflows:
+    - nBJVA_p16
+    inflows:
+    - nBJVA_p14
+  nBJVA_r:
+    outflows:
+    - nBJVA_p16
+    inflows:
+    - nBJVA_p13
+  nIMAQ_r:
+    outflows:
+    - nIMAQ_p16
+    inflows:
+    - nIMAQ_p13
+  nBJVA_p:
+    guard: nBJVA_third=3
+    outflows:
+    - nBJVA_p15
+    inflows:
+    - nBJVA_p12
+  nIMAQ_t:
+    outflows:
+    - nIMAQ_p16
+    inflows:
+    - nIMAQ_p15
+  nIMAQ_u:
+    outflows:
+    - nIMAQ_end
+    inflows:
+    - nIMAQ_p16
+  nBJVA_u:
+    outflows:
+    - nBJVA_end
+    inflows:
+    - nBJVA_p16
+  nBJVA_t:
+    outflows:
+    - nBJVA_p16
+    inflows:
+    - nBJVA_p15
+  nIMAQ_g:
+    outflows:
+    - nIMAQ_p8
+    updates:
+      nIMAQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIMAQ_p5
+  nBJVA_c:
+    outflows:
+    - nBJVA_p3
+    inflows:
+    - nBJVA_p1
+  nBJVA_b:
+    outflows:
+    - nBJVA_p2
+    inflows:
+    - nBJVA_p1
+  nBJVA_a:
+    outflows:
+    - nBJVA_p1
+    updates:
+      nBJVA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBJVA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBJVA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBJVA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBJVA_start
+  nIMAQ_s:
+    outflows:
+    - nIMAQ_p16
+    inflows:
+    - nIMAQ_p14
+  nBJVA_g:
+    outflows:
+    - nBJVA_p8
+    updates:
+      nBJVA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBJVA_p5
+  nBJVA_f:
+    outflows:
+    - nBJVA_p5
+    - nBJVA_p6
+    - nBJVA_p7
+    inflows:
+    - nBJVA_p4
+  nBJVA_e:
+    outflows:
+    - nBJVA_p4
+    inflows:
+    - nBJVA_p3
+  nBJVA_d:
+    outflows:
+    - nBJVA_p4
+    inflows:
+    - nBJVA_p2
+  nIMAQ_h:
+    outflows:
+    - nIMAQ_p9
+    inflows:
+    - nIMAQ_p6
+  nIMAQ_i:
+    outflows:
+    - nIMAQ_p10
+    updates:
+      nIMAQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIMAQ_p7
+  nBJVA_i:
+    outflows:
+    - nBJVA_p10
+    updates:
+      nBJVA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBJVA_p7
+  nBJVA_h:
+    outflows:
+    - nBJVA_p9
+    inflows:
+    - nBJVA_p6
+  nBJVA_o:
+    guard: nBJVA_second=2
+    outflows:
+    - nBJVA_p14
+    inflows:
+    - nBJVA_p12
+  nBJVA_n:
+    guard: nBJVA_first=1
+    outflows:
+    - nBJVA_p13
+    inflows:
+    - nBJVA_p12
+  nBJVA_m:
+    guard: nBJVA_number=5
+    outflows:
+    - nBJVA_p12
+    inflows:
+    - nBJVA_p10
+    - nBJVA_p8
+    - nBJVA_p9
+  nBJVA_l:
+    guard: nBJVA_number!=5
+    outflows:
+    - nBJVA_p7
+    inflows:
+    - nBJVA_p10
+  nIMAQ_a:
+    outflows:
+    - nIMAQ_p1
+    updates:
+      nIMAQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIMAQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIMAQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIMAQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBJVA_end
+  nIMAQ_l:
+    guard: nIMAQ_number!=5
+    outflows:
+    - nIMAQ_p7
+    inflows:
+    - nIMAQ_p10
+  nIMAQ_b:
+    outflows:
+    - nIMAQ_p2
+    inflows:
+    - nIMAQ_p1
+  nIMAQ_m:
+    guard: nIMAQ_number=5
+    outflows:
+    - nIMAQ_p12
+    inflows:
+    - nIMAQ_p10
+    - nIMAQ_p8
+    - nIMAQ_p9
+  nIMAQ_c:
+    outflows:
+    - nIMAQ_p3
+    inflows:
+    - nIMAQ_p1
+  nIMAQ_n:
+    guard: nIMAQ_first=1
+    outflows:
+    - nIMAQ_p13
+    inflows:
+    - nIMAQ_p12
+  nIMAQ_d:
+    outflows:
+    - nIMAQ_p4
+    inflows:
+    - nIMAQ_p2
+  nIMAQ_o:
+    guard: nIMAQ_second=2
+    outflows:
+    - nIMAQ_p14
+    inflows:
+    - nIMAQ_p12
+  nIMAQ_f:
+    outflows:
+    - nIMAQ_p5
+    - nIMAQ_p6
+    - nIMAQ_p7
+    inflows:
+    - nIMAQ_p4
+  nIMAQ_p:
+    guard: nIMAQ_third=3
+    outflows:
+    - nIMAQ_p15
+    inflows:
+    - nIMAQ_p12
+  nIMAQ_e:
+    outflows:
+    - nIMAQ_p4
+    inflows:
+    - nIMAQ_p3
+name: M2_dawnet_1_trace1b_25

@@ -1,0 +1,28 @@
+model: M2_dawnet_1_trace6_75
+trace:
+- transition: nL6LA_a
+  updates:
+    nL6LA_fourth: '1'
+    nL6LA_third: '5'
+    nL6LA_second: '2'
+    nL6LA_first: '4'
+- transition: nL6LA_c
+- transition: nL6LA_i
+  updates:
+    nL6LA_number: '5'
+- transition: nL6LA_i
+  updates:
+    nL6LA_number: '5'
+- transition: nRATA_a
+  updates:
+    nRATA_fourth: '1'
+    nRATA_first: '4'
+    nRATA_third: '5'
+    nRATA_second: '2'
+- transition: nRATA_c
+- transition: nRATA_i
+  updates:
+    nRATA_number: '5'
+- transition: nRATA_i
+  updates:
+    nRATA_number: '5'

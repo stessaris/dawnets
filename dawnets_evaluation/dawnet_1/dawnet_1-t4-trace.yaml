@@ -1,0 +1,74 @@
+name: t4
+model: dawnet_1
+trace:
+- transition: a
+  updates:
+    first: '2'
+    second: '2'
+    third: '4'
+    fourth: '2'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: b
+  onlyin:
+  - c75
+  - c50
+- transition: d
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: c
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: e
+  onlyin:
+  - c75
+- transition: f
+- transition: h
+- transition: i
+  updates:
+    number: '1'
+  onlyin:
+  - c75
+- transition: l
+  onlyin:
+  - c75
+  - c50
+- transition: i
+  updates:
+    number: '2'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: l
+  onlyin:
+  - c75
+- transition: i
+  updates:
+    number: '5'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: g
+  updates:
+    fifth: '3'
+  onlyin:
+  - c75
+  - c50
+- transition: m
+  onlyin:
+  - c75
+  - c50
+- transition: o
+- transition: s
+- transition: u
+  onlyin:
+  - c75
+  - c50

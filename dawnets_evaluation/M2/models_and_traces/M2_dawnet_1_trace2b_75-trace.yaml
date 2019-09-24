@@ -1,0 +1,28 @@
+model: M2_dawnet_1_trace2b_75
+trace:
+- transition: nG2XA_a
+  updates:
+    nG2XA_fourth: '5'
+    nG2XA_first: '1'
+    nG2XA_third: '2'
+    nG2XA_second: '2'
+- transition: nG2XA_c
+- transition: nG2XA_i
+  updates:
+    nG2XA_number: '2'
+- transition: nG2XA_i
+  updates:
+    nG2XA_number: '5'
+- transition: nKZDA_a
+  updates:
+    nKZDA_fourth: '5'
+    nKZDA_first: '1'
+    nKZDA_third: '2'
+    nKZDA_second: '2'
+- transition: nKZDA_c
+- transition: nKZDA_i
+  updates:
+    nKZDA_number: '2'
+- transition: nKZDA_i
+  updates:
+    nKZDA_number: '5'

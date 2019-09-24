@@ -1,0 +1,30 @@
+model: M5_dawnet_1_trace2b_0
+trace:
+- transition: nWISQ_a
+  updates:
+    nWISQ_fourth: '5'
+    nWISQ_second: '2'
+    nWISQ_first: '1'
+    nWISQ_third: '2'
+- transition: nWISQ_c
+- transition: nWISQ_e
+- transition: nWISQ_f
+- transition: nWISQ_h
+- transition: nWISQ_i
+  updates:
+    nWISQ_number: '3'
+- transition: nWISQ_l
+- transition: nWISQ_i
+  updates:
+    nWISQ_number: 2
+- transition: nWISQ_l
+- transition: nWISQ_i
+  updates:
+    nWISQ_number: '5'
+- transition: nWISQ_g
+  updates:
+    nWISQ_fifth: '3'
+- transition: nWISQ_m
+- transition: nWISQ_n
+- transition: nWISQ_r
+- transition: nWISQ_u

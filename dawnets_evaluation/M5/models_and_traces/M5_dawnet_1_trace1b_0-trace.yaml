@@ -1,0 +1,22 @@
+model: M5_dawnet_1_trace1b_0
+trace:
+- transition: nKWPQ_a
+  updates:
+    nKWPQ_second: '2'
+    nKWPQ_first: '4'
+    nKWPQ_fourth: '3'
+    nKWPQ_third: '3'
+- transition: nKWPQ_b
+- transition: nKWPQ_d
+- transition: nKWPQ_f
+- transition: nKWPQ_g
+  updates:
+    nKWPQ_fifth: '2'
+- transition: nKWPQ_h
+- transition: nKWPQ_i
+  updates:
+    nKWPQ_number: '5'
+- transition: nKWPQ_m
+- transition: nKWPQ_o
+- transition: nKWPQ_s
+- transition: nKWPQ_u

@@ -1,0 +1,434 @@
+transitions:
+  nEUBA_a:
+    outflows:
+    - nEUBA_p1
+    updates:
+      nEUBA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEUBA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEUBA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEUBA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nZAYQ_end
+  nEUBA_u:
+    outflows:
+    - nEUBA_end
+    inflows:
+    - nEUBA_p16
+  nEUBA_c:
+    outflows:
+    - nEUBA_p3
+    inflows:
+    - nEUBA_p1
+  nEUBA_g:
+    outflows:
+    - nEUBA_p8
+    updates:
+      nEUBA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEUBA_p5
+  nEUBA_t:
+    outflows:
+    - nEUBA_p16
+    inflows:
+    - nEUBA_p15
+  nEUBA_f:
+    outflows:
+    - nEUBA_p5
+    - nEUBA_p6
+    - nEUBA_p7
+    inflows:
+    - nEUBA_p4
+  nYGYA_r:
+    outflows:
+    - nYGYA_p16
+    inflows:
+    - nYGYA_p13
+  nYGYA_s:
+    outflows:
+    - nYGYA_p16
+    inflows:
+    - nYGYA_p14
+  nYGYA_p:
+    guard: nYGYA_third=3
+    outflows:
+    - nYGYA_p15
+    inflows:
+    - nYGYA_p12
+  nEUBA_b:
+    outflows:
+    - nEUBA_p2
+    inflows:
+    - nEUBA_p1
+  nEUBA_e:
+    outflows:
+    - nEUBA_p4
+    inflows:
+    - nEUBA_p3
+  nEUBA_d:
+    outflows:
+    - nEUBA_p4
+    inflows:
+    - nEUBA_p2
+  nYGYA_t:
+    outflows:
+    - nYGYA_p16
+    inflows:
+    - nYGYA_p15
+  nYGYA_u:
+    outflows:
+    - nYGYA_end
+    inflows:
+    - nYGYA_p16
+  nEUBA_i:
+    outflows:
+    - nEUBA_p10
+    updates:
+      nEUBA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEUBA_p7
+  nEUBA_h:
+    outflows:
+    - nEUBA_p9
+    inflows:
+    - nEUBA_p6
+  nEUBA_m:
+    guard: nEUBA_number=5
+    outflows:
+    - nEUBA_p12
+    inflows:
+    - nEUBA_p10
+    - nEUBA_p8
+    - nEUBA_p9
+  nEUBA_l:
+    guard: nEUBA_number!=5
+    outflows:
+    - nEUBA_p7
+    inflows:
+    - nEUBA_p10
+  nEUBA_o:
+    guard: nEUBA_second=2
+    outflows:
+    - nEUBA_p14
+    inflows:
+    - nEUBA_p12
+  nEUBA_n:
+    guard: nEUBA_first=1
+    outflows:
+    - nEUBA_p13
+    inflows:
+    - nEUBA_p12
+  nYGYA_b:
+    outflows:
+    - nYGYA_p2
+    inflows:
+    - nYGYA_p1
+  nYGYA_c:
+    outflows:
+    - nYGYA_p3
+    inflows:
+    - nYGYA_p1
+  nEUBA_s:
+    outflows:
+    - nEUBA_p16
+    inflows:
+    - nEUBA_p14
+  nYGYA_a:
+    outflows:
+    - nYGYA_p1
+    updates:
+      nYGYA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nYGYA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nYGYA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nYGYA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nYGYA_start
+  nYGYA_f:
+    outflows:
+    - nYGYA_p5
+    - nYGYA_p6
+    - nYGYA_p7
+    inflows:
+    - nYGYA_p4
+  nYGYA_g:
+    outflows:
+    - nYGYA_p8
+    updates:
+      nYGYA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nYGYA_p5
+  nYGYA_d:
+    outflows:
+    - nYGYA_p4
+    inflows:
+    - nYGYA_p2
+  nYGYA_e:
+    outflows:
+    - nYGYA_p4
+    inflows:
+    - nYGYA_p3
+  nYGYA_h:
+    outflows:
+    - nYGYA_p9
+    inflows:
+    - nYGYA_p6
+  nYGYA_i:
+    outflows:
+    - nYGYA_p10
+    updates:
+      nYGYA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nYGYA_p7
+  nYGYA_n:
+    guard: nYGYA_first=1
+    outflows:
+    - nYGYA_p13
+    inflows:
+    - nYGYA_p12
+  nYGYA_o:
+    guard: nYGYA_second=2
+    outflows:
+    - nYGYA_p14
+    inflows:
+    - nYGYA_p12
+  nYGYA_l:
+    guard: nYGYA_number!=5
+    outflows:
+    - nYGYA_p7
+    inflows:
+    - nYGYA_p10
+  nYGYA_m:
+    guard: nYGYA_number=5
+    outflows:
+    - nYGYA_p12
+    inflows:
+    - nYGYA_p10
+    - nYGYA_p8
+    - nYGYA_p9
+  nZAYQ_p:
+    guard: nZAYQ_third=3
+    outflows:
+    - nZAYQ_p15
+    inflows:
+    - nZAYQ_p12
+  nZAYQ_s:
+    outflows:
+    - nZAYQ_p16
+    inflows:
+    - nZAYQ_p14
+  nZAYQ_r:
+    outflows:
+    - nZAYQ_p16
+    inflows:
+    - nZAYQ_p13
+  nZAYQ_u:
+    outflows:
+    - nZAYQ_end
+    inflows:
+    - nZAYQ_p16
+  nZAYQ_t:
+    outflows:
+    - nZAYQ_p16
+    inflows:
+    - nZAYQ_p15
+  nEUBA_p:
+    guard: nEUBA_third=3
+    outflows:
+    - nEUBA_p15
+    inflows:
+    - nEUBA_p12
+  nEUBA_r:
+    outflows:
+    - nEUBA_p16
+    inflows:
+    - nEUBA_p13
+  nZAYQ_a:
+    outflows:
+    - nZAYQ_p1
+    updates:
+      nZAYQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nZAYQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nZAYQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nZAYQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nYGYA_end
+  nZAYQ_c:
+    outflows:
+    - nZAYQ_p3
+    inflows:
+    - nZAYQ_p1
+  nZAYQ_b:
+    outflows:
+    - nZAYQ_p2
+    inflows:
+    - nZAYQ_p1
+  nZAYQ_e:
+    outflows:
+    - nZAYQ_p4
+    inflows:
+    - nZAYQ_p3
+  nZAYQ_d:
+    outflows:
+    - nZAYQ_p4
+    inflows:
+    - nZAYQ_p2
+  nZAYQ_g:
+    outflows:
+    - nZAYQ_p8
+    updates:
+      nZAYQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nZAYQ_p5
+  nZAYQ_f:
+    outflows:
+    - nZAYQ_p5
+    - nZAYQ_p6
+    - nZAYQ_p7
+    inflows:
+    - nZAYQ_p4
+  nZAYQ_i:
+    outflows:
+    - nZAYQ_p10
+    updates:
+      nZAYQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nZAYQ_p7
+  nZAYQ_h:
+    outflows:
+    - nZAYQ_p9
+    inflows:
+    - nZAYQ_p6
+  nZAYQ_m:
+    guard: nZAYQ_number=5
+    outflows:
+    - nZAYQ_p12
+    inflows:
+    - nZAYQ_p10
+    - nZAYQ_p8
+    - nZAYQ_p9
+  nZAYQ_l:
+    guard: nZAYQ_number!=5
+    outflows:
+    - nZAYQ_p7
+    inflows:
+    - nZAYQ_p10
+  nZAYQ_o:
+    guard: nZAYQ_second=2
+    outflows:
+    - nZAYQ_p14
+    inflows:
+    - nZAYQ_p12
+  nZAYQ_n:
+    guard: nZAYQ_first=1
+    outflows:
+    - nZAYQ_p13
+    inflows:
+    - nZAYQ_p12
+name: M4_dawnet_1_trace3_50

@@ -1,0 +1,82 @@
+Petri net discoverred with the inductive miner, by using the default configuration except for the noise threshold, which has been set to 0.05.
+This configuration allows for getting a Petri net with single entry and exit point while preserving a high number of activities, although in the traces other infrequent activities can still occur. 
+
+Once obtained the Petri net, the data discovery plugin by De Leoni has been applied by removing all the case-specific attributes. 
+
+Concerning the traces, they have been filtered as many of them are not compliant (due to the fact that they contain activities that do not appear in the Petri net) with the Petri net extracted with the noise threshold set to 0.05. 
+In detail, only 571 out of 1143 traces have been kept. 
+
+The traces contained in these 571 activities have been made incomplete, by applying an incompleteness degree of 25%, 50% and 75%.
+Since some of the traces were short (e.g., they contain only one or two events), the reduction applied to some of them has produced an empty log: in this case we have removed the empty log. 
+
+In detail, when applying the incompleteness of the 50%, the following traces became empty and hence have been removed:
+00000418
+00000484
+00000510
+00000920
+
+In detail, when applying the incompleteness of the 75%, the following traces became empty and hence have been removed:
+00000037
+00000070
+00000104
+00000147
+00000176
+00000235
+00000240
+00000274
+00000279
+00000289
+00000380
+00000408
+00000418
+00000445
+00000455
+00000459
+00000461
+00000472
+00000484
+00000490
+00000510
+00000544
+00000604
+00000640
+00000649
+00000654
+00000659
+00000660
+00000672
+00000689
+00000691
+00000701
+00000706
+00000712
+00000718
+00000719
+00000752
+00000754
+00000760
+00000765
+00000768
+00000774
+00000775
+00000779
+00000794
+00000799
+00000701
+00000806
+00000815
+00000831
+00000839
+00000859
+00000865
+00000878
+00000920
+00000927
+00000931
+00000997
+00001016
+00001065
+00001068
+00001075
+00001109
+00001133

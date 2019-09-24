@@ -1,0 +1,99 @@
+model: M4_dawnet_1
+name: t2
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ULCA_a
+  updates: {dawnet_1_ULCA_first: '1', dawnet_1_ULCA_fourth: '5', dawnet_1_ULCA_second: '4',
+    dawnet_1_ULCA_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ULCA_c
+- onlyin: [c75]
+  transition: dawnet_1_ULCA_e
+- {transition: dawnet_1_ULCA_f}
+- {transition: dawnet_1_ULCA_h}
+- onlyin: [c75]
+  transition: dawnet_1_ULCA_i
+  updates: {dawnet_1_ULCA_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ULCA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ULCA_i
+  updates: {dawnet_1_ULCA_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_ULCA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ULCA_i
+  updates: {dawnet_1_ULCA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ULCA_g
+  updates: {dawnet_1_ULCA_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ULCA_m
+- {transition: dawnet_1_ULCA_n}
+- {transition: dawnet_1_ULCA_r}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ULCA_u
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_4S3Q_a
+  updates: {dawnet_1_4S3Q_first: '1', dawnet_1_4S3Q_fourth: '5', dawnet_1_4S3Q_second: '4',
+    dawnet_1_4S3Q_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_4S3Q_c
+- onlyin: [c75]
+  transition: dawnet_1_4S3Q_e
+- {transition: dawnet_1_4S3Q_f}
+- {transition: dawnet_1_4S3Q_h}
+- onlyin: [c75]
+  transition: dawnet_1_4S3Q_i
+  updates: {dawnet_1_4S3Q_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_4S3Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_4S3Q_i
+  updates: {dawnet_1_4S3Q_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_4S3Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_4S3Q_i
+  updates: {dawnet_1_4S3Q_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_4S3Q_g
+  updates: {dawnet_1_4S3Q_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_4S3Q_m
+- {transition: dawnet_1_4S3Q_n}
+- {transition: dawnet_1_4S3Q_r}
+- onlyin: [c75, c50]
+  transition: dawnet_1_4S3Q_u
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_42OA_a
+  updates: {dawnet_1_42OA_first: '1', dawnet_1_42OA_fourth: '5', dawnet_1_42OA_second: '4',
+    dawnet_1_42OA_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_42OA_c
+- onlyin: [c75]
+  transition: dawnet_1_42OA_e
+- {transition: dawnet_1_42OA_f}
+- {transition: dawnet_1_42OA_h}
+- onlyin: [c75]
+  transition: dawnet_1_42OA_i
+  updates: {dawnet_1_42OA_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_42OA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_42OA_i
+  updates: {dawnet_1_42OA_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_42OA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_42OA_i
+  updates: {dawnet_1_42OA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_42OA_g
+  updates: {dawnet_1_42OA_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_42OA_m
+- {transition: dawnet_1_42OA_n}
+- {transition: dawnet_1_42OA_r}
+- onlyin: [c75, c50]
+  transition: dawnet_1_42OA_u

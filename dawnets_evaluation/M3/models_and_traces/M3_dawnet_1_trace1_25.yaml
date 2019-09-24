@@ -1,0 +1,302 @@
+transitions:
+  nQU2A_m:
+    guard: nQU2A_number=5
+    outflows:
+    - nQU2A_p12
+    inflows:
+    - nQU2A_p10
+    - nQU2A_p8
+    - nQU2A_p9
+  nQU2A_f:
+    outflows:
+    - nQU2A_p5
+    - nQU2A_p6
+    - nQU2A_p7
+    inflows:
+    - nQU2A_p4
+  nQU2A_l:
+    guard: nQU2A_number!=5
+    outflows:
+    - nQU2A_p7
+    inflows:
+    - nQU2A_p10
+  nQU2A_a:
+    outflows:
+    - nQU2A_p1
+    updates:
+      nQU2A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nQU2A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nQU2A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nQU2A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nQU2A_start
+  nQU2A_p:
+    guard: nQU2A_third=3
+    outflows:
+    - nQU2A_p15
+    inflows:
+    - nQU2A_p12
+  rt_pj_M3_dawnet_1_trace1_25:
+    outflows:
+    - rp_e_M3_dawnet_1_trace1_25
+    inflows:
+    - nRZDA_end
+    - nQU2A_end
+  nQU2A_g:
+    outflows:
+    - nQU2A_p8
+    updates:
+      nQU2A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nQU2A_p5
+  nQU2A_c:
+    outflows:
+    - nQU2A_p3
+    inflows:
+    - nQU2A_p1
+  rt_ps_M3_dawnet_1_trace1_25:
+    outflows:
+    - nRZDA_start
+    - nQU2A_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace1_25
+  nQU2A_t:
+    outflows:
+    - nQU2A_p16
+    inflows:
+    - nQU2A_p15
+  nQU2A_i:
+    outflows:
+    - nQU2A_p10
+    updates:
+      nQU2A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nQU2A_p7
+  nQU2A_b:
+    outflows:
+    - nQU2A_p2
+    inflows:
+    - nQU2A_p1
+  nQU2A_h:
+    outflows:
+    - nQU2A_p9
+    inflows:
+    - nQU2A_p6
+  nRZDA_i:
+    outflows:
+    - nRZDA_p10
+    updates:
+      nRZDA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nRZDA_p7
+  nRZDA_h:
+    outflows:
+    - nRZDA_p9
+    inflows:
+    - nRZDA_p6
+  nQU2A_o:
+    guard: nQU2A_second=2
+    outflows:
+    - nQU2A_p14
+    inflows:
+    - nQU2A_p12
+  nQU2A_n:
+    guard: nQU2A_first=1
+    outflows:
+    - nQU2A_p13
+    inflows:
+    - nQU2A_p12
+  nRZDA_m:
+    guard: nRZDA_number=5
+    outflows:
+    - nRZDA_p12
+    inflows:
+    - nRZDA_p10
+    - nRZDA_p8
+    - nRZDA_p9
+  nRZDA_l:
+    guard: nRZDA_number!=5
+    outflows:
+    - nRZDA_p7
+    inflows:
+    - nRZDA_p10
+  nRZDA_o:
+    guard: nRZDA_second=2
+    outflows:
+    - nRZDA_p14
+    inflows:
+    - nRZDA_p12
+  nRZDA_n:
+    guard: nRZDA_first=1
+    outflows:
+    - nRZDA_p13
+    inflows:
+    - nRZDA_p12
+  nRZDA_a:
+    outflows:
+    - nRZDA_p1
+    updates:
+      nRZDA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRZDA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRZDA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRZDA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nRZDA_start
+  nQU2A_d:
+    outflows:
+    - nQU2A_p4
+    inflows:
+    - nQU2A_p2
+  nRZDA_c:
+    outflows:
+    - nRZDA_p3
+    inflows:
+    - nRZDA_p1
+  nRZDA_b:
+    outflows:
+    - nRZDA_p2
+    inflows:
+    - nRZDA_p1
+  nRZDA_e:
+    outflows:
+    - nRZDA_p4
+    inflows:
+    - nRZDA_p3
+  nRZDA_d:
+    outflows:
+    - nRZDA_p4
+    inflows:
+    - nRZDA_p2
+  nRZDA_g:
+    outflows:
+    - nRZDA_p8
+    updates:
+      nRZDA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nRZDA_p5
+  nRZDA_f:
+    outflows:
+    - nRZDA_p5
+    - nRZDA_p6
+    - nRZDA_p7
+    inflows:
+    - nRZDA_p4
+  nQU2A_e:
+    outflows:
+    - nQU2A_p4
+    inflows:
+    - nQU2A_p3
+  nQU2A_u:
+    outflows:
+    - nQU2A_end
+    inflows:
+    - nQU2A_p16
+  nRZDA_p:
+    guard: nRZDA_third=3
+    outflows:
+    - nRZDA_p15
+    inflows:
+    - nRZDA_p12
+  nRZDA_s:
+    outflows:
+    - nRZDA_p16
+    inflows:
+    - nRZDA_p14
+  nRZDA_r:
+    outflows:
+    - nRZDA_p16
+    inflows:
+    - nRZDA_p13
+  nRZDA_u:
+    outflows:
+    - nRZDA_end
+    inflows:
+    - nRZDA_p16
+  nRZDA_t:
+    outflows:
+    - nRZDA_p16
+    inflows:
+    - nRZDA_p15
+  nQU2A_s:
+    outflows:
+    - nQU2A_p16
+    inflows:
+    - nQU2A_p14
+  nQU2A_r:
+    outflows:
+    - nQU2A_p16
+    inflows:
+    - nQU2A_p13
+name: M3_dawnet_1_trace1_25

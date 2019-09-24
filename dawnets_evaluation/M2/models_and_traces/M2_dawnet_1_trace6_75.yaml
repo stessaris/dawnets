@@ -1,0 +1,290 @@
+transitions:
+  nL6LA_s:
+    outflows:
+    - nL6LA_p16
+    inflows:
+    - nL6LA_p14
+  nL6LA_r:
+    outflows:
+    - nL6LA_p16
+    inflows:
+    - nL6LA_p13
+  nL6LA_p:
+    guard: nL6LA_third=3
+    outflows:
+    - nL6LA_p15
+    inflows:
+    - nL6LA_p12
+  nL6LA_u:
+    outflows:
+    - nL6LA_end
+    inflows:
+    - nL6LA_p16
+  nL6LA_t:
+    outflows:
+    - nL6LA_p16
+    inflows:
+    - nL6LA_p15
+  nL6LA_c:
+    outflows:
+    - nL6LA_p3
+    inflows:
+    - nL6LA_p1
+  nL6LA_b:
+    outflows:
+    - nL6LA_p2
+    inflows:
+    - nL6LA_p1
+  nL6LA_a:
+    outflows:
+    - nL6LA_p1
+    updates:
+      nL6LA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nL6LA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nL6LA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nL6LA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nL6LA_start
+  nL6LA_g:
+    outflows:
+    - nL6LA_p8
+    updates:
+      nL6LA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nL6LA_p5
+  nL6LA_f:
+    outflows:
+    - nL6LA_p5
+    - nL6LA_p6
+    - nL6LA_p7
+    inflows:
+    - nL6LA_p4
+  nL6LA_e:
+    outflows:
+    - nL6LA_p4
+    inflows:
+    - nL6LA_p3
+  nL6LA_d:
+    outflows:
+    - nL6LA_p4
+    inflows:
+    - nL6LA_p2
+  nL6LA_i:
+    outflows:
+    - nL6LA_p10
+    updates:
+      nL6LA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nL6LA_p7
+  nL6LA_h:
+    outflows:
+    - nL6LA_p9
+    inflows:
+    - nL6LA_p6
+  nL6LA_o:
+    guard: nL6LA_second=2
+    outflows:
+    - nL6LA_p14
+    inflows:
+    - nL6LA_p12
+  nL6LA_n:
+    guard: nL6LA_first=1
+    outflows:
+    - nL6LA_p13
+    inflows:
+    - nL6LA_p12
+  nL6LA_m:
+    guard: nL6LA_number=5
+    outflows:
+    - nL6LA_p12
+    inflows:
+    - nL6LA_p10
+    - nL6LA_p8
+    - nL6LA_p9
+  nL6LA_l:
+    guard: nL6LA_number!=5
+    outflows:
+    - nL6LA_p7
+    inflows:
+    - nL6LA_p10
+  nRATA_t:
+    outflows:
+    - nRATA_p16
+    inflows:
+    - nRATA_p15
+  nRATA_u:
+    outflows:
+    - nRATA_end
+    inflows:
+    - nRATA_p16
+  nRATA_r:
+    outflows:
+    - nRATA_p16
+    inflows:
+    - nRATA_p13
+  nRATA_s:
+    outflows:
+    - nRATA_p16
+    inflows:
+    - nRATA_p14
+  nRATA_p:
+    guard: nRATA_third=3
+    outflows:
+    - nRATA_p15
+    inflows:
+    - nRATA_p12
+  nRATA_f:
+    outflows:
+    - nRATA_p5
+    - nRATA_p6
+    - nRATA_p7
+    inflows:
+    - nRATA_p4
+  nRATA_g:
+    outflows:
+    - nRATA_p8
+    updates:
+      nRATA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nRATA_p5
+  nRATA_d:
+    outflows:
+    - nRATA_p4
+    inflows:
+    - nRATA_p2
+  nRATA_e:
+    outflows:
+    - nRATA_p4
+    inflows:
+    - nRATA_p3
+  nRATA_b:
+    outflows:
+    - nRATA_p2
+    inflows:
+    - nRATA_p1
+  nRATA_c:
+    outflows:
+    - nRATA_p3
+    inflows:
+    - nRATA_p1
+  nRATA_a:
+    outflows:
+    - nRATA_p1
+    updates:
+      nRATA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRATA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRATA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nRATA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nL6LA_end
+  nRATA_n:
+    guard: nRATA_first=1
+    outflows:
+    - nRATA_p13
+    inflows:
+    - nRATA_p12
+  nRATA_o:
+    guard: nRATA_second=2
+    outflows:
+    - nRATA_p14
+    inflows:
+    - nRATA_p12
+  nRATA_l:
+    guard: nRATA_number!=5
+    outflows:
+    - nRATA_p7
+    inflows:
+    - nRATA_p10
+  nRATA_m:
+    guard: nRATA_number=5
+    outflows:
+    - nRATA_p12
+    inflows:
+    - nRATA_p10
+    - nRATA_p8
+    - nRATA_p9
+  nRATA_h:
+    outflows:
+    - nRATA_p9
+    inflows:
+    - nRATA_p6
+  nRATA_i:
+    outflows:
+    - nRATA_p10
+    updates:
+      nRATA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nRATA_p7
+name: M2_dawnet_1_trace6_75

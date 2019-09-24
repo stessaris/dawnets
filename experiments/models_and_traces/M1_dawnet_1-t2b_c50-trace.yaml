@@ -1,0 +1,24 @@
+model: M1_dawnet_1
+name: t2b_c50
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TU3Q_a
+  updates: {dawnet_1_TU3Q_first: '1', dawnet_1_TU3Q_fourth: '5', dawnet_1_TU3Q_second: '2',
+    dawnet_1_TU3Q_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TU3Q_c
+- onlyin: [c75, c50]
+  transition: dawnet_1_TU3Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TU3Q_i
+  updates: {dawnet_1_TU3Q_number: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_TU3Q_i
+  updates: {dawnet_1_TU3Q_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_TU3Q_g
+  updates: {dawnet_1_TU3Q_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_TU3Q_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_TU3Q_u

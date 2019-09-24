@@ -1,0 +1,13 @@
+model: M5_dawnet_1_trace3_75
+trace:
+- transition: n5SOA_a
+  updates:
+    n5SOA_second: '1'
+    n5SOA_first: '3'
+    n5SOA_third: '3'
+    n5SOA_fourth: '2'
+- transition: n5SOA_d
+- transition: n5SOA_e
+- transition: n5SOA_i
+  updates:
+    n5SOA_number: '5'

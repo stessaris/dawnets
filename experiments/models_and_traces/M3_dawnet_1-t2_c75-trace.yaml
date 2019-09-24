@@ -1,0 +1,59 @@
+model: M3_dawnet_1
+name: t2_c75
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_CVTQ_a
+  updates: {dawnet_1_CVTQ_first: '1', dawnet_1_CVTQ_fourth: '5', dawnet_1_CVTQ_second: '4',
+    dawnet_1_CVTQ_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3J6Q_a
+  updates: {dawnet_1_3J6Q_first: '1', dawnet_1_3J6Q_fourth: '5', dawnet_1_3J6Q_second: '4',
+    dawnet_1_3J6Q_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_CVTQ_c
+- onlyin: [c75]
+  transition: dawnet_1_CVTQ_e
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3J6Q_c
+- onlyin: [c75]
+  transition: dawnet_1_CVTQ_i
+  updates: {dawnet_1_CVTQ_number: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_3J6Q_e
+- onlyin: [c75]
+  transition: dawnet_1_3J6Q_i
+  updates: {dawnet_1_3J6Q_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_CVTQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_CVTQ_i
+  updates: {dawnet_1_CVTQ_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_CVTQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_CVTQ_i
+  updates: {dawnet_1_CVTQ_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_CVTQ_g
+  updates: {dawnet_1_CVTQ_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_3J6Q_l
+- onlyin: [c75, c50]
+  transition: dawnet_1_CVTQ_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_CVTQ_u
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3J6Q_i
+  updates: {dawnet_1_3J6Q_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_3J6Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3J6Q_i
+  updates: {dawnet_1_3J6Q_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_3J6Q_g
+  updates: {dawnet_1_3J6Q_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_3J6Q_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_3J6Q_u

@@ -1,0 +1,58 @@
+model: M3_dawnet_1_trace6_0
+trace:
+- transition: nWVVQ_a
+  updates:
+    nWVVQ_second: '2'
+    nWVVQ_first: '4'
+    nWVVQ_third: '5'
+    nWVVQ_fourth: '1'
+- transition: nWVVQ_c
+- transition: nBGPQ_a
+  updates:
+    nBGPQ_second: '2'
+    nBGPQ_first: '4'
+    nBGPQ_third: '5'
+    nBGPQ_fourth: '1'
+- transition: nWVVQ_e
+- transition: nBGPQ_c
+- transition: nWVVQ_f
+- transition: nBGPQ_e
+- transition: nWVVQ_h
+- transition: nWVVQ_i
+  updates:
+    nWVVQ_number: '5'
+- transition: nBGPQ_f
+- transition: nWVVQ_l
+- transition: nBGPQ_h
+- transition: nBGPQ_i
+  updates:
+    nBGPQ_number: '5'
+- transition: nWVVQ_i
+  updates:
+    nWVVQ_number: '5'
+- transition: nBGPQ_l
+- transition: nBGPQ_i
+  updates:
+    nBGPQ_number: '5'
+- transition: nBGPQ_l
+- transition: nWVVQ_l
+- transition: nWVVQ_i
+  updates:
+    nWVVQ_number: '5'
+- transition: nBGPQ_i
+  updates:
+    nBGPQ_number: '5'
+- transition: nBGPQ_g
+  updates:
+    nBGPQ_fifth: '2'
+- transition: nBGPQ_m
+- transition: nWVVQ_g
+  updates:
+    nWVVQ_fifth: '2'
+- transition: nBGPQ_o
+- transition: nWVVQ_m
+- transition: nWVVQ_o
+- transition: nBGPQ_s
+- transition: nWVVQ_s
+- transition: nWVVQ_u
+- transition: nBGPQ_u

@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%
+%%%% Data Encoding
+%%%%%%%%%%%%%%%%%
+
+%%%% Static predicates
+% variable(V)
+% set(V,T,X) values for variable V assigned by T
+% unset(V,T) variable V is undefined by T
+% has_guard(T) transition T has a guard (to avoid setting them to true)
+
+<asp>
+%% Variable names
+{% for vid in variables -%}
+variable({{ coalaConst(vid) }}).
+{% endfor %}
+
+%% Variables set/unset by actions
+{% for (tid, tdata) in transitions.items() -%}
+{% if 'updates' in tdata -%}
+{% for (vid, vrange) in dawnet.updates(tid).items() -%}
+{% if vrange|length > 0 -%}
+{% for val in vrange -%}
+set({{coalaConst(vid)}},{{ coalaConst(tid) }},{{ coalaConst(val) }}).
+{% endfor -%}
+{% else -%}
+unset({{coalaConst(vid)}},{{ coalaConst(tid) }}).
+{% endif -%}
+{% endfor -%}
+{% endif -%}
+{% endfor %}
+
+%% Declare guard fluents
+{% for head in guard_fluents -%}
+has_{{ head }}.
+{% endfor %}
+</asp>
+
+%%%%% Guards
+
+{% for rules in guard_rules.values() -%}
+{% for (head, body) in rules -%}
+{{ head }} <if> {{ body|join(', ') }}.
+{% endfor %}
+{% endfor %}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Static part of the file
+
+<asp>
+dom(V,X) :- set(V,T,X).
+</asp>
+
+<fluent> V = X <where> variable(V), dom(V,X).
+<fluent> V = null <where> variable(V).
+<inertial> V <where> variable(V).
+
+<fluent> assigned(V) <where> variable(V).
+<default> -assigned(V) <where> variable(V).
+
+
+% action undefines variable
+V=null <after> exec(T) <where> unset(V,T).
+
+% action set value
+V=X <after> exec(T) <ifcons> V=X <where> set(V,T,X).
+
+% rule out NULL assignment if the transition sets a value
+assigned(V) <after> exec(T) <where> set(V,T,X).
+<impossible> V=null, assigned(V) <where> variable(V).
+
+%%%%% Guards
+
+<fluent> guard(T) <where> transition(T), has_guard(T).
+<default> -guard(T) <where> transition(T), has_guard(T).
+
+<fluent> guard(T,N) <where> transition(T), has_guard(T,N).
+<default> -guard(T,N) <where> transition(T), has_guard(T,N).
+
+% action can be executed only if the guard is satisfied
+<nonexecutable> exec(T) <if> not guard(T) <where> transition(T), has_guard(T).

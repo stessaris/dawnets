@@ -1,0 +1,32 @@
+model: M2_dawnet_1_trace4_75
+trace:
+- transition: n7JTA_a
+  updates:
+    n7JTA_first: '2'
+    n7JTA_third: '4'
+    n7JTA_second: '2'
+    n7JTA_fourth: '2'
+- transition: n7JTA_d
+- transition: n7JTA_c
+- transition: n7JTA_l
+- transition: n7JTA_i
+  updates:
+    n7JTA_number: '2'
+- transition: n7JTA_i
+  updates:
+    n7JTA_number: '5'
+- transition: nDOJA_a
+  updates:
+    nDOJA_second: '2'
+    nDOJA_first: '2'
+    nDOJA_third: '4'
+    nDOJA_fourth: '2'
+- transition: nDOJA_d
+- transition: nDOJA_c
+- transition: nDOJA_l
+- transition: nDOJA_i
+  updates:
+    nDOJA_number: '2'
+- transition: nDOJA_i
+  updates:
+    nDOJA_number: '5'

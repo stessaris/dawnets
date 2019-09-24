@@ -1,0 +1,539 @@
+transitions:
+  nDHGA_l:
+    guard: nDHGA_number!=5
+    outflows:
+    - nDHGA_p7
+    inflows:
+    - nDHGA_p10
+  nDHGA_m:
+    guard: nDHGA_number=5
+    outflows:
+    - nDHGA_p12
+    inflows:
+    - nDHGA_p10
+    - nDHGA_p8
+    - nDHGA_p9
+  nDHGA_n:
+    guard: nDHGA_first=1
+    outflows:
+    - nDHGA_p13
+    inflows:
+    - nDHGA_p12
+  nDHGA_o:
+    guard: nDHGA_second=2
+    outflows:
+    - nDHGA_p14
+    inflows:
+    - nDHGA_p12
+  nDHGA_h:
+    outflows:
+    - nDHGA_p9
+    inflows:
+    - nDHGA_p6
+  nDHGA_i:
+    outflows:
+    - nDHGA_p10
+    updates:
+      nDHGA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDHGA_p7
+  nDHGA_d:
+    outflows:
+    - nDHGA_p4
+    inflows:
+    - nDHGA_p2
+  nDHGA_e:
+    outflows:
+    - nDHGA_p4
+    inflows:
+    - nDHGA_p3
+  nDHGA_f:
+    outflows:
+    - nDHGA_p5
+    - nDHGA_p6
+    - nDHGA_p7
+    inflows:
+    - nDHGA_p4
+  nDHGA_g:
+    outflows:
+    - nDHGA_p8
+    updates:
+      nDHGA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDHGA_p5
+  nDHGA_a:
+    outflows:
+    - nDHGA_p1
+    updates:
+      nDHGA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDHGA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDHGA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDHGA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDHGA_start
+  nDHGA_b:
+    outflows:
+    - nDHGA_p2
+    inflows:
+    - nDHGA_p1
+  nDHGA_c:
+    outflows:
+    - nDHGA_p3
+    inflows:
+    - nDHGA_p1
+  nDHGA_t:
+    outflows:
+    - nDHGA_p16
+    inflows:
+    - nDHGA_p15
+  nDHGA_u:
+    outflows:
+    - nDHGA_end
+    inflows:
+    - nDHGA_p16
+  nDHGA_p:
+    guard: nDHGA_third=3
+    outflows:
+    - nDHGA_p15
+    inflows:
+    - nDHGA_p12
+  nDHGA_r:
+    outflows:
+    - nDHGA_p16
+    inflows:
+    - nDHGA_p13
+  nDHGA_s:
+    outflows:
+    - nDHGA_p16
+    inflows:
+    - nDHGA_p14
+  nGA2A_s:
+    outflows:
+    - nGA2A_p16
+    inflows:
+    - nGA2A_p14
+  nGA2A_r:
+    outflows:
+    - nGA2A_p16
+    inflows:
+    - nGA2A_p13
+  nGA2A_p:
+    guard: nGA2A_third=3
+    outflows:
+    - nGA2A_p15
+    inflows:
+    - nGA2A_p12
+  nGA2A_u:
+    outflows:
+    - nGA2A_end
+    inflows:
+    - nGA2A_p16
+  nGA2A_t:
+    outflows:
+    - nGA2A_p16
+    inflows:
+    - nGA2A_p15
+  nGA2A_c:
+    outflows:
+    - nGA2A_p3
+    inflows:
+    - nGA2A_p1
+  nGA2A_b:
+    outflows:
+    - nGA2A_p2
+    inflows:
+    - nGA2A_p1
+  nGA2A_a:
+    outflows:
+    - nGA2A_p1
+    updates:
+      nGA2A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGA2A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGA2A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nGA2A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDHGA_end
+  nGA2A_g:
+    outflows:
+    - nGA2A_p8
+    updates:
+      nGA2A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nGA2A_p5
+  nGA2A_f:
+    outflows:
+    - nGA2A_p5
+    - nGA2A_p6
+    - nGA2A_p7
+    inflows:
+    - nGA2A_p4
+  nGA2A_e:
+    outflows:
+    - nGA2A_p4
+    inflows:
+    - nGA2A_p3
+  nGA2A_d:
+    outflows:
+    - nGA2A_p4
+    inflows:
+    - nGA2A_p2
+  nGA2A_i:
+    outflows:
+    - nGA2A_p10
+    updates:
+      nGA2A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nGA2A_p7
+  nGA2A_h:
+    outflows:
+    - nGA2A_p9
+    inflows:
+    - nGA2A_p6
+  nGA2A_o:
+    guard: nGA2A_second=2
+    outflows:
+    - nGA2A_p14
+    inflows:
+    - nGA2A_p12
+  nGA2A_n:
+    guard: nGA2A_first=1
+    outflows:
+    - nGA2A_p13
+    inflows:
+    - nGA2A_p12
+  nGA2A_m:
+    guard: nGA2A_number=5
+    outflows:
+    - nGA2A_p12
+    inflows:
+    - nGA2A_p10
+    - nGA2A_p8
+    - nGA2A_p9
+  nGA2A_l:
+    guard: nGA2A_number!=5
+    outflows:
+    - nGA2A_p7
+    inflows:
+    - nGA2A_p10
+  nTYIA_s:
+    outflows:
+    - nTYIA_p16
+    inflows:
+    - nTYIA_p14
+  nTYIA_r:
+    outflows:
+    - nTYIA_p16
+    inflows:
+    - nTYIA_p13
+  nTYIA_p:
+    guard: nTYIA_third=3
+    outflows:
+    - nTYIA_p15
+    inflows:
+    - nTYIA_p12
+  nTYIA_u:
+    outflows:
+    - nTYIA_end
+    inflows:
+    - nTYIA_p16
+  nTYIA_t:
+    outflows:
+    - nTYIA_p16
+    inflows:
+    - nTYIA_p15
+  nTYIA_c:
+    outflows:
+    - nTYIA_p3
+    inflows:
+    - nTYIA_p1
+  nTYIA_b:
+    outflows:
+    - nTYIA_p2
+    inflows:
+    - nTYIA_p1
+  nTYIA_a:
+    outflows:
+    - nTYIA_p1
+    updates:
+      nTYIA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nTYIA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nTYIA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nTYIA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nGA2A_end
+  nTYIA_g:
+    outflows:
+    - nTYIA_p8
+    updates:
+      nTYIA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nTYIA_p5
+  nTYIA_f:
+    outflows:
+    - nTYIA_p5
+    - nTYIA_p6
+    - nTYIA_p7
+    inflows:
+    - nTYIA_p4
+  nTYIA_e:
+    outflows:
+    - nTYIA_p4
+    inflows:
+    - nTYIA_p3
+  nTYIA_d:
+    outflows:
+    - nTYIA_p4
+    inflows:
+    - nTYIA_p2
+  nTYIA_i:
+    outflows:
+    - nTYIA_p10
+    updates:
+      nTYIA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nTYIA_p7
+  nTYIA_h:
+    outflows:
+    - nTYIA_p9
+    inflows:
+    - nTYIA_p6
+  nTYIA_o:
+    guard: nTYIA_second=2
+    outflows:
+    - nTYIA_p14
+    inflows:
+    - nTYIA_p12
+  nTYIA_n:
+    guard: nTYIA_first=1
+    outflows:
+    - nTYIA_p13
+    inflows:
+    - nTYIA_p12
+  nTYIA_m:
+    guard: nTYIA_number=5
+    outflows:
+    - nTYIA_p12
+    inflows:
+    - nTYIA_p10
+    - nTYIA_p8
+    - nTYIA_p9
+  nTYIA_l:
+    guard: nTYIA_number!=5
+    outflows:
+    - nTYIA_p7
+    inflows:
+    - nTYIA_p10
+  tr_nDHGA_a_1:
+    outflows:
+    - nDHGA_p1
+    - tr_stp1
+    updates:
+      nDHGA_third:
+      - '3'
+      nDHGA_fourth:
+      - '1'
+      nDHGA_first:
+      - '4'
+      nDHGA_second:
+      - '5'
+    inflows:
+    - nDHGA_start
+    - tr_stp0
+  tr_nDHGA_d_2:
+    outflows:
+    - nDHGA_p4
+    - tr_stp2
+    inflows:
+    - nDHGA_p2
+    - tr_stp1
+  tr_nDHGA_o_3:
+    guard: nDHGA_second=2
+    outflows:
+    - nDHGA_p14
+    - tr_stp3
+    inflows:
+    - nDHGA_p12
+    - tr_stp2
+  tr_nGA2A_a_4:
+    outflows:
+    - nGA2A_p1
+    - tr_stp4
+    updates:
+      nGA2A_fourth:
+      - '1'
+      nGA2A_second:
+      - '5'
+      nGA2A_third:
+      - '3'
+      nGA2A_first:
+      - '4'
+    inflows:
+    - nDHGA_end
+    - tr_stp3
+  tr_nGA2A_d_5:
+    outflows:
+    - nGA2A_p4
+    - tr_stp5
+    inflows:
+    - nGA2A_p2
+    - tr_stp4
+  tr_nGA2A_o_6:
+    guard: nGA2A_second=2
+    outflows:
+    - nGA2A_p14
+    - tr_stp6
+    inflows:
+    - nGA2A_p12
+    - tr_stp5
+  tr_nTYIA_a_7:
+    outflows:
+    - nTYIA_p1
+    - tr_stp7
+    updates:
+      nTYIA_fourth:
+      - '1'
+      nTYIA_second:
+      - '5'
+      nTYIA_third:
+      - '3'
+      nTYIA_first:
+      - '4'
+    inflows:
+    - nGA2A_end
+    - tr_stp6
+  tr_nTYIA_d_8:
+    outflows:
+    - nTYIA_p4
+    - tr_stp8
+    inflows:
+    - nTYIA_p2
+    - tr_stp7
+  tr_nTYIA_o_9:
+    guard: nTYIA_second=2
+    outflows:
+    - nTYIA_p14
+    - tr_stp9
+    inflows:
+    - nTYIA_p12
+    - tr_stp8
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nDHGA_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp9
+    - nTYIA_end
+name: M4_dawnet_1_trace5_75

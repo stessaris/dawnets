@@ -1,0 +1,16 @@
+
+Spec: name=ID bench=Benchmark;
+
+Benchmark: Seq | Alt | Par | NetID;
+
+BenchmarkArg: Mult | Benchmark;
+
+Mult: '[' num=INT ']' bench=Benchmark;
+
+Seq: '(' ';' benchs+=BenchmarkArg ')';
+
+Alt: '(' 'x' benchs+=BenchmarkArg ')';
+
+Par: '(' '+' benchs+=BenchmarkArg ')';
+
+NetID: name=ID | name=STRING;

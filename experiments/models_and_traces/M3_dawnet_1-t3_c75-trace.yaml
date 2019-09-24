@@ -1,0 +1,51 @@
+model: M3_dawnet_1
+name: t3_c75
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_NNQQ_a
+  updates: {dawnet_1_NNQQ_first: '3', dawnet_1_NNQQ_fourth: '2', dawnet_1_NNQQ_second: '1',
+    dawnet_1_NNQQ_third: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_NNQQ_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_NNQQ_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_NNQQ_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_NNQQ_e
+- onlyin: [c75]
+  transition: dawnet_1_NNQQ_f
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZCAQ_a
+  updates: {dawnet_1_ZCAQ_first: '3', dawnet_1_ZCAQ_fourth: '2', dawnet_1_ZCAQ_second: '1',
+    dawnet_1_ZCAQ_third: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_NNQQ_g
+  updates: {dawnet_1_NNQQ_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_NNQQ_h
+- onlyin: [c75]
+  transition: dawnet_1_ZCAQ_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_NNQQ_i
+  updates: {dawnet_1_NNQQ_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZCAQ_d
+- onlyin: [c75]
+  transition: dawnet_1_NNQQ_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_ZCAQ_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZCAQ_e
+- onlyin: [c75]
+  transition: dawnet_1_ZCAQ_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_ZCAQ_g
+  updates: {dawnet_1_ZCAQ_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ZCAQ_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZCAQ_i
+  updates: {dawnet_1_ZCAQ_number: '5'}
+- onlyin: [c75]
+  transition: dawnet_1_ZCAQ_m

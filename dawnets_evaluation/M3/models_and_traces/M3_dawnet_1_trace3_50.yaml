@@ -1,0 +1,302 @@
+transitions:
+  nLMNA_b:
+    outflows:
+    - nLMNA_p2
+    inflows:
+    - nLMNA_p1
+  nLMNA_c:
+    outflows:
+    - nLMNA_p3
+    inflows:
+    - nLMNA_p1
+  nLMNA_a:
+    outflows:
+    - nLMNA_p1
+    updates:
+      nLMNA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nLMNA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nLMNA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nLMNA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nLMNA_start
+  nLMNA_f:
+    outflows:
+    - nLMNA_p5
+    - nLMNA_p6
+    - nLMNA_p7
+    inflows:
+    - nLMNA_p4
+  nLMNA_g:
+    outflows:
+    - nLMNA_p8
+    updates:
+      nLMNA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nLMNA_p5
+  nLMNA_d:
+    outflows:
+    - nLMNA_p4
+    inflows:
+    - nLMNA_p2
+  nLMNA_e:
+    outflows:
+    - nLMNA_p4
+    inflows:
+    - nLMNA_p3
+  nLMNA_h:
+    outflows:
+    - nLMNA_p9
+    inflows:
+    - nLMNA_p6
+  nLMNA_i:
+    outflows:
+    - nLMNA_p10
+    updates:
+      nLMNA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nLMNA_p7
+  nLMNA_n:
+    guard: nLMNA_first=1
+    outflows:
+    - nLMNA_p13
+    inflows:
+    - nLMNA_p12
+  nLMNA_o:
+    guard: nLMNA_second=2
+    outflows:
+    - nLMNA_p14
+    inflows:
+    - nLMNA_p12
+  nLMNA_l:
+    guard: nLMNA_number!=5
+    outflows:
+    - nLMNA_p7
+    inflows:
+    - nLMNA_p10
+  nLMNA_m:
+    guard: nLMNA_number=5
+    outflows:
+    - nLMNA_p12
+    inflows:
+    - nLMNA_p10
+    - nLMNA_p8
+    - nLMNA_p9
+  nLMNA_r:
+    outflows:
+    - nLMNA_p16
+    inflows:
+    - nLMNA_p13
+  nLMNA_s:
+    outflows:
+    - nLMNA_p16
+    inflows:
+    - nLMNA_p14
+  nLMNA_p:
+    guard: nLMNA_third=3
+    outflows:
+    - nLMNA_p15
+    inflows:
+    - nLMNA_p12
+  nLMNA_t:
+    outflows:
+    - nLMNA_p16
+    inflows:
+    - nLMNA_p15
+  nLMNA_u:
+    outflows:
+    - nLMNA_end
+    inflows:
+    - nLMNA_p16
+  rt_pj_M3_dawnet_1_trace3_50:
+    outflows:
+    - rp_e_M3_dawnet_1_trace3_50
+    inflows:
+    - nT4JQ_end
+    - nLMNA_end
+  rt_ps_M3_dawnet_1_trace3_50:
+    outflows:
+    - nT4JQ_start
+    - nLMNA_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace3_50
+  nT4JQ_c:
+    outflows:
+    - nT4JQ_p3
+    inflows:
+    - nT4JQ_p1
+  nT4JQ_b:
+    outflows:
+    - nT4JQ_p2
+    inflows:
+    - nT4JQ_p1
+  nT4JQ_a:
+    outflows:
+    - nT4JQ_p1
+    updates:
+      nT4JQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nT4JQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nT4JQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nT4JQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nT4JQ_start
+  nT4JQ_g:
+    outflows:
+    - nT4JQ_p8
+    updates:
+      nT4JQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nT4JQ_p5
+  nT4JQ_f:
+    outflows:
+    - nT4JQ_p5
+    - nT4JQ_p6
+    - nT4JQ_p7
+    inflows:
+    - nT4JQ_p4
+  nT4JQ_e:
+    outflows:
+    - nT4JQ_p4
+    inflows:
+    - nT4JQ_p3
+  nT4JQ_d:
+    outflows:
+    - nT4JQ_p4
+    inflows:
+    - nT4JQ_p2
+  nT4JQ_i:
+    outflows:
+    - nT4JQ_p10
+    updates:
+      nT4JQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nT4JQ_p7
+  nT4JQ_h:
+    outflows:
+    - nT4JQ_p9
+    inflows:
+    - nT4JQ_p6
+  nT4JQ_o:
+    guard: nT4JQ_second=2
+    outflows:
+    - nT4JQ_p14
+    inflows:
+    - nT4JQ_p12
+  nT4JQ_n:
+    guard: nT4JQ_first=1
+    outflows:
+    - nT4JQ_p13
+    inflows:
+    - nT4JQ_p12
+  nT4JQ_m:
+    guard: nT4JQ_number=5
+    outflows:
+    - nT4JQ_p12
+    inflows:
+    - nT4JQ_p10
+    - nT4JQ_p8
+    - nT4JQ_p9
+  nT4JQ_l:
+    guard: nT4JQ_number!=5
+    outflows:
+    - nT4JQ_p7
+    inflows:
+    - nT4JQ_p10
+  nT4JQ_s:
+    outflows:
+    - nT4JQ_p16
+    inflows:
+    - nT4JQ_p14
+  nT4JQ_r:
+    outflows:
+    - nT4JQ_p16
+    inflows:
+    - nT4JQ_p13
+  nT4JQ_p:
+    guard: nT4JQ_third=3
+    outflows:
+    - nT4JQ_p15
+    inflows:
+    - nT4JQ_p12
+  nT4JQ_u:
+    outflows:
+    - nT4JQ_end
+    inflows:
+    - nT4JQ_p16
+  nT4JQ_t:
+    outflows:
+    - nT4JQ_p16
+    inflows:
+    - nT4JQ_p15
+name: M3_dawnet_1_trace3_50

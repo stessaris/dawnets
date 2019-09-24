@@ -1,0 +1,14 @@
+$schema: ../../parser/trace-schema.json
+model: M1_dawnet_1_trace3_75
+trace:
+- transition: M1_dawnet_1_trace3_75_a
+  updates:
+    M1_dawnet_1_trace3_75_fourth: '2'
+    M1_dawnet_1_trace3_75_first: '3'
+    M1_dawnet_1_trace3_75_third: '3'
+    M1_dawnet_1_trace3_75_second: '1'
+- transition: M1_dawnet_1_trace3_75_d
+- transition: M1_dawnet_1_trace3_75_e
+- transition: M1_dawnet_1_trace3_75_i
+  updates:
+    M1_dawnet_1_trace3_75_number: '5'

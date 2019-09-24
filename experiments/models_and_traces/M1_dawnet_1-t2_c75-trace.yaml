@@ -1,0 +1,31 @@
+model: M1_dawnet_1
+name: t2_c75
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UPHA_a
+  updates: {dawnet_1_UPHA_first: '1', dawnet_1_UPHA_fourth: '5', dawnet_1_UPHA_second: '4',
+    dawnet_1_UPHA_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UPHA_c
+- onlyin: [c75]
+  transition: dawnet_1_UPHA_e
+- onlyin: [c75]
+  transition: dawnet_1_UPHA_i
+  updates: {dawnet_1_UPHA_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_UPHA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UPHA_i
+  updates: {dawnet_1_UPHA_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_UPHA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UPHA_i
+  updates: {dawnet_1_UPHA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_UPHA_g
+  updates: {dawnet_1_UPHA_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_UPHA_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_UPHA_u

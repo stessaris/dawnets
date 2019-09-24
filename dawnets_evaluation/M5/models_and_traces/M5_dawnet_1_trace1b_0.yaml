@@ -1,0 +1,454 @@
+transitions:
+  nKWPQ_g:
+    outflows:
+    - nKWPQ_p8
+    updates:
+      nKWPQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nKWPQ_p5
+  nKWPQ_f:
+    outflows:
+    - nKWPQ_p5
+    - nKWPQ_p6
+    - nKWPQ_p7
+    inflows:
+    - nKWPQ_p4
+  nKWPQ_e:
+    outflows:
+    - nKWPQ_p4
+    inflows:
+    - nKWPQ_p3
+  nKWPQ_d:
+    outflows:
+    - nKWPQ_p4
+    inflows:
+    - nKWPQ_p2
+  nKWPQ_c:
+    outflows:
+    - nKWPQ_p3
+    inflows:
+    - nKWPQ_p1
+  nKWPQ_b:
+    outflows:
+    - nKWPQ_p2
+    inflows:
+    - nKWPQ_p1
+  nKWPQ_a:
+    outflows:
+    - nKWPQ_p1
+    updates:
+      nKWPQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nKWPQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nKWPQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nKWPQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nKWPQ_start
+  rt_xs_nKWPQ:
+    outflows:
+    - nKWPQ_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace1b_0
+  nKWPQ_o:
+    guard: nKWPQ_second=2
+    outflows:
+    - nKWPQ_p14
+    inflows:
+    - nKWPQ_p12
+  nKWPQ_n:
+    guard: nKWPQ_first=1
+    outflows:
+    - nKWPQ_p13
+    inflows:
+    - nKWPQ_p12
+  nKWPQ_m:
+    guard: nKWPQ_number=5
+    outflows:
+    - nKWPQ_p12
+    inflows:
+    - nKWPQ_p10
+    - nKWPQ_p8
+    - nKWPQ_p9
+  nKWPQ_l:
+    guard: nKWPQ_number!=5
+    outflows:
+    - nKWPQ_p7
+    inflows:
+    - nKWPQ_p10
+  nKWPQ_i:
+    outflows:
+    - nKWPQ_p10
+    updates:
+      nKWPQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nKWPQ_p7
+  nKWPQ_h:
+    outflows:
+    - nKWPQ_p9
+    inflows:
+    - nKWPQ_p6
+  nC7JA_s:
+    outflows:
+    - nC7JA_p16
+    inflows:
+    - nC7JA_p14
+  nKWPQ_u:
+    outflows:
+    - nKWPQ_end
+    inflows:
+    - nKWPQ_p16
+  nKWPQ_t:
+    outflows:
+    - nKWPQ_p16
+    inflows:
+    - nKWPQ_p15
+  nKWPQ_s:
+    outflows:
+    - nKWPQ_p16
+    inflows:
+    - nKWPQ_p14
+  nKWPQ_r:
+    outflows:
+    - nKWPQ_p16
+    inflows:
+    - nKWPQ_p13
+  nKWPQ_p:
+    guard: nKWPQ_third=3
+    outflows:
+    - nKWPQ_p15
+    inflows:
+    - nKWPQ_p12
+  nC7JA_r:
+    outflows:
+    - nC7JA_p16
+    inflows:
+    - nC7JA_p13
+  nC7JA_m:
+    guard: nC7JA_number=5
+    outflows:
+    - nC7JA_p12
+    inflows:
+    - nC7JA_p10
+    - nC7JA_p8
+    - nC7JA_p9
+  rt_xs_n7B2A:
+    outflows:
+    - nC7JA_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace1b_0
+  nC7JA_l:
+    guard: nC7JA_number!=5
+    outflows:
+    - nC7JA_p7
+    inflows:
+    - nC7JA_p10
+  nC7JA_o:
+    guard: nC7JA_second=2
+    outflows:
+    - nC7JA_p14
+    inflows:
+    - nC7JA_p12
+  nC7JA_n:
+    guard: nC7JA_first=1
+    outflows:
+    - nC7JA_p13
+    inflows:
+    - nC7JA_p12
+  nC7JA_i:
+    outflows:
+    - nC7JA_p10
+    updates:
+      nC7JA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nC7JA_p7
+  nC7JA_h:
+    outflows:
+    - nC7JA_p9
+    inflows:
+    - nC7JA_p6
+  rt_xj_n7B2A:
+    outflows:
+    - rp_e_M5_dawnet_1_trace1b_0
+    inflows:
+    - nMFFA_end
+  nMFFA_f:
+    outflows:
+    - nMFFA_p5
+    - nMFFA_p6
+    - nMFFA_p7
+    inflows:
+    - nMFFA_p4
+  nMFFA_g:
+    outflows:
+    - nMFFA_p8
+    updates:
+      nMFFA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMFFA_p5
+  nMFFA_d:
+    outflows:
+    - nMFFA_p4
+    inflows:
+    - nMFFA_p2
+  nMFFA_e:
+    outflows:
+    - nMFFA_p4
+    inflows:
+    - nMFFA_p3
+  nMFFA_b:
+    outflows:
+    - nMFFA_p2
+    inflows:
+    - nMFFA_p1
+  nMFFA_c:
+    outflows:
+    - nMFFA_p3
+    inflows:
+    - nMFFA_p1
+  nMFFA_a:
+    outflows:
+    - nMFFA_p1
+    updates:
+      nMFFA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMFFA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMFFA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMFFA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nC7JA_end
+  nMFFA_n:
+    guard: nMFFA_first=1
+    outflows:
+    - nMFFA_p13
+    inflows:
+    - nMFFA_p12
+  nC7JA_t:
+    outflows:
+    - nC7JA_p16
+    inflows:
+    - nC7JA_p15
+  nMFFA_l:
+    guard: nMFFA_number!=5
+    outflows:
+    - nMFFA_p7
+    inflows:
+    - nMFFA_p10
+  nMFFA_m:
+    guard: nMFFA_number=5
+    outflows:
+    - nMFFA_p12
+    inflows:
+    - nMFFA_p10
+    - nMFFA_p8
+    - nMFFA_p9
+  nC7JA_p:
+    guard: nC7JA_third=3
+    outflows:
+    - nC7JA_p15
+    inflows:
+    - nC7JA_p12
+  nMFFA_h:
+    outflows:
+    - nMFFA_p9
+    inflows:
+    - nMFFA_p6
+  nMFFA_i:
+    outflows:
+    - nMFFA_p10
+    updates:
+      nMFFA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMFFA_p7
+  rt_xj_nKWPQ:
+    outflows:
+    - rp_e_M5_dawnet_1_trace1b_0
+    inflows:
+    - nKWPQ_end
+  nC7JA_u:
+    outflows:
+    - nC7JA_end
+    inflows:
+    - nC7JA_p16
+  nMFFA_t:
+    outflows:
+    - nMFFA_p16
+    inflows:
+    - nMFFA_p15
+  nMFFA_u:
+    outflows:
+    - nMFFA_end
+    inflows:
+    - nMFFA_p16
+  nMFFA_r:
+    outflows:
+    - nMFFA_p16
+    inflows:
+    - nMFFA_p13
+  nMFFA_s:
+    outflows:
+    - nMFFA_p16
+    inflows:
+    - nMFFA_p14
+  nMFFA_p:
+    guard: nMFFA_third=3
+    outflows:
+    - nMFFA_p15
+    inflows:
+    - nMFFA_p12
+  nMFFA_o:
+    guard: nMFFA_second=2
+    outflows:
+    - nMFFA_p14
+    inflows:
+    - nMFFA_p12
+  nC7JA_e:
+    outflows:
+    - nC7JA_p4
+    inflows:
+    - nC7JA_p3
+  nC7JA_d:
+    outflows:
+    - nC7JA_p4
+    inflows:
+    - nC7JA_p2
+  nC7JA_g:
+    outflows:
+    - nC7JA_p8
+    updates:
+      nC7JA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nC7JA_p5
+  nC7JA_f:
+    outflows:
+    - nC7JA_p5
+    - nC7JA_p6
+    - nC7JA_p7
+    inflows:
+    - nC7JA_p4
+  nC7JA_a:
+    outflows:
+    - nC7JA_p1
+    updates:
+      nC7JA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nC7JA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nC7JA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nC7JA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nC7JA_start
+  nC7JA_c:
+    outflows:
+    - nC7JA_p3
+    inflows:
+    - nC7JA_p1
+  nC7JA_b:
+    outflows:
+    - nC7JA_p2
+    inflows:
+    - nC7JA_p1
+name: M5_dawnet_1_trace1b_0

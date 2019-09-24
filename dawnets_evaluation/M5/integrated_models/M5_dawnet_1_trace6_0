@@ -1,0 +1,600 @@
+transitions:
+  nBISA_e:
+    outflows:
+    - nBISA_p4
+    inflows:
+    - nBISA_p3
+  nBISA_d:
+    outflows:
+    - nBISA_p4
+    inflows:
+    - nBISA_p2
+  rt_xs_n3MEQ:
+    outflows:
+    - nXICQ_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace6_0
+  rt_xj_nXIXA:
+    outflows:
+    - rp_e_M5_dawnet_1_trace6_0
+    inflows:
+    - nXIXA_end
+  nXICQ_r:
+    outflows:
+    - nXICQ_p16
+    inflows:
+    - nXICQ_p13
+  nBISA_i:
+    outflows:
+    - nBISA_p10
+    updates:
+      nBISA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBISA_p7
+  nBISA_h:
+    outflows:
+    - nBISA_p9
+    inflows:
+    - nBISA_p6
+  nXICQ_u:
+    outflows:
+    - nXICQ_end
+    inflows:
+    - nXICQ_p16
+  nBISA_o:
+    guard: nBISA_second=2
+    outflows:
+    - nBISA_p14
+    inflows:
+    - nBISA_p12
+  nXICQ_p:
+    guard: nXICQ_third=3
+    outflows:
+    - nXICQ_p15
+    inflows:
+    - nXICQ_p12
+  nXICQ_s:
+    outflows:
+    - nXICQ_p16
+    inflows:
+    - nXICQ_p14
+  nBISA_n:
+    guard: nBISA_first=1
+    outflows:
+    - nBISA_p13
+    inflows:
+    - nBISA_p12
+  nXICQ_m:
+    guard: nXICQ_number=5
+    outflows:
+    - nXICQ_p12
+    inflows:
+    - nXICQ_p10
+    - nXICQ_p8
+    - nXICQ_p9
+  nXICQ_l:
+    guard: nXICQ_number!=5
+    outflows:
+    - nXICQ_p7
+    inflows:
+    - nXICQ_p10
+  nXICQ_o:
+    guard: nXICQ_second=2
+    outflows:
+    - nXICQ_p14
+    inflows:
+    - nXICQ_p12
+  nXICQ_n:
+    guard: nXICQ_first=1
+    outflows:
+    - nXICQ_p13
+    inflows:
+    - nXICQ_p12
+  nXICQ_i:
+    outflows:
+    - nXICQ_p10
+    updates:
+      nXICQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXICQ_p7
+  nBISA_m:
+    guard: nBISA_number=5
+    outflows:
+    - nBISA_p12
+    inflows:
+    - nBISA_p10
+    - nBISA_p8
+    - nBISA_p9
+  nXICQ_e:
+    outflows:
+    - nXICQ_p4
+    inflows:
+    - nXICQ_p3
+  nXICQ_d:
+    outflows:
+    - nXICQ_p4
+    inflows:
+    - nXICQ_p2
+  nXICQ_g:
+    outflows:
+    - nXICQ_p8
+    updates:
+      nXICQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXICQ_p5
+  nBISA_l:
+    guard: nBISA_number!=5
+    outflows:
+    - nBISA_p7
+    inflows:
+    - nBISA_p10
+  nXICQ_a:
+    outflows:
+    - nXICQ_p1
+    updates:
+      nXICQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXICQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXICQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXICQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXICQ_start
+  rt_xj_n3MEQ:
+    outflows:
+    - rp_e_M5_dawnet_1_trace6_0
+    inflows:
+    - nBISA_end
+  nXICQ_c:
+    outflows:
+    - nXICQ_p3
+    inflows:
+    - nXICQ_p1
+  nXICQ_h:
+    outflows:
+    - nXICQ_p9
+    inflows:
+    - nXICQ_p6
+  nBISA_s:
+    outflows:
+    - nBISA_p16
+    inflows:
+    - nBISA_p14
+  nBISA_r:
+    outflows:
+    - nBISA_p16
+    inflows:
+    - nBISA_p13
+  nBISA_p:
+    guard: nBISA_third=3
+    outflows:
+    - nBISA_p15
+    inflows:
+    - nBISA_p12
+  nBISA_u:
+    outflows:
+    - nBISA_end
+    inflows:
+    - nBISA_p16
+  nBISA_t:
+    outflows:
+    - nBISA_p16
+    inflows:
+    - nBISA_p15
+  nXIXA_p:
+    guard: nXIXA_third=3
+    outflows:
+    - nXIXA_p15
+    inflows:
+    - nXIXA_p12
+  nXIXA_r:
+    outflows:
+    - nXIXA_p16
+    inflows:
+    - nXIXA_p13
+  nXIXA_s:
+    outflows:
+    - nXIXA_p16
+    inflows:
+    - nXIXA_p14
+  nXIXA_t:
+    outflows:
+    - nXIXA_p16
+    inflows:
+    - nXIXA_p15
+  nXIXA_u:
+    outflows:
+    - nXIXA_end
+    inflows:
+    - nXIXA_p16
+  nXIXA_h:
+    outflows:
+    - nXIXA_p9
+    inflows:
+    - nXIXA_p6
+  nXIXA_i:
+    outflows:
+    - nXIXA_p10
+    updates:
+      nXIXA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXIXA_p7
+  nBISA_a:
+    outflows:
+    - nBISA_p1
+    updates:
+      nBISA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBISA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBISA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nBISA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXICQ_end
+  nXIXA_l:
+    guard: nXIXA_number!=5
+    outflows:
+    - nXIXA_p7
+    inflows:
+    - nXIXA_p10
+  nXIXA_m:
+    guard: nXIXA_number=5
+    outflows:
+    - nXIXA_p12
+    inflows:
+    - nXIXA_p10
+    - nXIXA_p8
+    - nXIXA_p9
+  nXIXA_n:
+    guard: nXIXA_first=1
+    outflows:
+    - nXIXA_p13
+    inflows:
+    - nXIXA_p12
+  nXIXA_o:
+    guard: nXIXA_second=2
+    outflows:
+    - nXIXA_p14
+    inflows:
+    - nXIXA_p12
+  nXIXA_a:
+    outflows:
+    - nXIXA_p1
+    updates:
+      nXIXA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXIXA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXIXA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXIXA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXIXA_start
+  nXIXA_b:
+    outflows:
+    - nXIXA_p2
+    inflows:
+    - nXIXA_p1
+  nXIXA_c:
+    outflows:
+    - nXIXA_p3
+    inflows:
+    - nXIXA_p1
+  nXIXA_d:
+    outflows:
+    - nXIXA_p4
+    inflows:
+    - nXIXA_p2
+  nXIXA_e:
+    outflows:
+    - nXIXA_p4
+    inflows:
+    - nXIXA_p3
+  nXIXA_f:
+    outflows:
+    - nXIXA_p5
+    - nXIXA_p6
+    - nXIXA_p7
+    inflows:
+    - nXIXA_p4
+  nXIXA_g:
+    outflows:
+    - nXIXA_p8
+    updates:
+      nXIXA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXIXA_p5
+  nBISA_c:
+    outflows:
+    - nBISA_p3
+    inflows:
+    - nBISA_p1
+  nXICQ_f:
+    outflows:
+    - nXICQ_p5
+    - nXICQ_p6
+    - nXICQ_p7
+    inflows:
+    - nXICQ_p4
+  rt_xs_nXIXA:
+    outflows:
+    - nXIXA_start
+    inflows:
+    - rp_s_M5_dawnet_1_trace6_0
+  nBISA_b:
+    outflows:
+    - nBISA_p2
+    inflows:
+    - nBISA_p1
+  nXICQ_t:
+    outflows:
+    - nXICQ_p16
+    inflows:
+    - nXICQ_p15
+  nBISA_g:
+    outflows:
+    - nBISA_p8
+    updates:
+      nBISA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nBISA_p5
+  nXICQ_b:
+    outflows:
+    - nXICQ_p2
+    inflows:
+    - nXICQ_p1
+  nBISA_f:
+    outflows:
+    - nBISA_p5
+    - nBISA_p6
+    - nBISA_p7
+    inflows:
+    - nBISA_p4
+  tr_nXIXA_a_1:
+    outflows:
+    - nXIXA_p1
+    - tr_stp1
+    updates:
+      nXIXA_second:
+      - '2'
+      nXIXA_first:
+      - '4'
+      nXIXA_third:
+      - '5'
+      nXIXA_fourth:
+      - '1'
+    inflows:
+    - nXIXA_start
+    - tr_stp0
+  tr_nXIXA_c_2:
+    outflows:
+    - nXIXA_p3
+    - tr_stp2
+    inflows:
+    - nXIXA_p1
+    - tr_stp1
+  tr_nXIXA_e_3:
+    outflows:
+    - nXIXA_p4
+    - tr_stp3
+    inflows:
+    - nXIXA_p3
+    - tr_stp2
+  tr_nXIXA_f_4:
+    outflows:
+    - nXIXA_p5
+    - nXIXA_p6
+    - nXIXA_p7
+    - tr_stp4
+    inflows:
+    - nXIXA_p4
+    - tr_stp3
+  tr_nXIXA_h_5:
+    outflows:
+    - nXIXA_p9
+    - tr_stp5
+    inflows:
+    - nXIXA_p6
+    - tr_stp4
+  tr_nXIXA_i_6:
+    outflows:
+    - nXIXA_p10
+    - tr_stp6
+    updates:
+      nXIXA_number:
+      - '5'
+    inflows:
+    - nXIXA_p7
+    - tr_stp5
+  tr_nXIXA_l_7:
+    guard: nXIXA_number!=5
+    outflows:
+    - nXIXA_p7
+    - tr_stp7
+    inflows:
+    - nXIXA_p10
+    - tr_stp6
+  tr_nXIXA_i_8:
+    outflows:
+    - nXIXA_p10
+    - tr_stp8
+    updates:
+      nXIXA_number:
+      - '5'
+    inflows:
+    - nXIXA_p7
+    - tr_stp7
+  tr_nXIXA_l_9:
+    guard: nXIXA_number!=5
+    outflows:
+    - nXIXA_p7
+    - tr_stp9
+    inflows:
+    - nXIXA_p10
+    - tr_stp8
+  tr_nXIXA_i_10:
+    outflows:
+    - nXIXA_p10
+    - tr_stp10
+    updates:
+      nXIXA_number:
+      - '5'
+    inflows:
+    - nXIXA_p7
+    - tr_stp9
+  tr_nXIXA_g_11:
+    outflows:
+    - nXIXA_p8
+    - tr_stp11
+    updates:
+      nXIXA_fifth:
+      - '2'
+    inflows:
+    - nXIXA_p5
+    - tr_stp10
+  tr_nXIXA_m_12:
+    guard: nXIXA_number=5
+    outflows:
+    - nXIXA_p12
+    - tr_stp12
+    inflows:
+    - nXIXA_p10
+    - nXIXA_p8
+    - nXIXA_p9
+    - tr_stp11
+  tr_nXIXA_o_13:
+    guard: nXIXA_second=2
+    outflows:
+    - nXIXA_p14
+    - tr_stp13
+    inflows:
+    - nXIXA_p12
+    - tr_stp12
+  tr_nXIXA_s_14:
+    outflows:
+    - nXIXA_p16
+    - tr_stp14
+    inflows:
+    - nXIXA_p14
+    - tr_stp13
+  tr_nXIXA_u_15:
+    outflows:
+    - nXIXA_end
+    - tr_stp15
+    inflows:
+    - nXIXA_p16
+    - tr_stp14
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - rp_s_M5_dawnet_1_trace6_0
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp15
+    - rp_e_M5_dawnet_1_trace6_0
+name: M5_dawnet_1_trace6_0

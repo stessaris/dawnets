@@ -1,0 +1,418 @@
+transitions:
+  n7JTA_r:
+    outflows:
+    - n7JTA_p16
+    inflows:
+    - n7JTA_p13
+  n7JTA_s:
+    outflows:
+    - n7JTA_p16
+    inflows:
+    - n7JTA_p14
+  n7JTA_p:
+    guard: n7JTA_third=3
+    outflows:
+    - n7JTA_p15
+    inflows:
+    - n7JTA_p12
+  nDOJA_n:
+    guard: nDOJA_first=1
+    outflows:
+    - nDOJA_p13
+    inflows:
+    - nDOJA_p12
+  n7JTA_t:
+    outflows:
+    - n7JTA_p16
+    inflows:
+    - n7JTA_p15
+  n7JTA_u:
+    outflows:
+    - n7JTA_end
+    inflows:
+    - n7JTA_p16
+  nDOJA_p:
+    guard: nDOJA_third=3
+    outflows:
+    - nDOJA_p15
+    inflows:
+    - nDOJA_p12
+  nDOJA_r:
+    outflows:
+    - nDOJA_p16
+    inflows:
+    - nDOJA_p13
+  nDOJA_s:
+    outflows:
+    - nDOJA_p16
+    inflows:
+    - nDOJA_p14
+  nDOJA_t:
+    outflows:
+    - nDOJA_p16
+    inflows:
+    - nDOJA_p15
+  nDOJA_u:
+    outflows:
+    - nDOJA_end
+    inflows:
+    - nDOJA_p16
+  n7JTA_b:
+    outflows:
+    - n7JTA_p2
+    inflows:
+    - n7JTA_p1
+  n7JTA_c:
+    outflows:
+    - n7JTA_p3
+    inflows:
+    - n7JTA_p1
+  n7JTA_a:
+    outflows:
+    - n7JTA_p1
+    updates:
+      n7JTA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n7JTA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n7JTA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n7JTA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n7JTA_start
+  n7JTA_f:
+    outflows:
+    - n7JTA_p5
+    - n7JTA_p6
+    - n7JTA_p7
+    inflows:
+    - n7JTA_p4
+  n7JTA_g:
+    outflows:
+    - n7JTA_p8
+    updates:
+      n7JTA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n7JTA_p5
+  n7JTA_d:
+    outflows:
+    - n7JTA_p4
+    inflows:
+    - n7JTA_p2
+  n7JTA_e:
+    outflows:
+    - n7JTA_p4
+    inflows:
+    - n7JTA_p3
+  nDOJA_a:
+    outflows:
+    - nDOJA_p1
+    updates:
+      nDOJA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOJA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOJA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOJA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n7JTA_end
+  n7JTA_h:
+    outflows:
+    - n7JTA_p9
+    inflows:
+    - n7JTA_p6
+  n7JTA_i:
+    outflows:
+    - n7JTA_p10
+    updates:
+      n7JTA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n7JTA_p7
+  n7JTA_n:
+    guard: n7JTA_first=1
+    outflows:
+    - n7JTA_p13
+    inflows:
+    - n7JTA_p12
+  n7JTA_o:
+    guard: n7JTA_second=2
+    outflows:
+    - n7JTA_p14
+    inflows:
+    - n7JTA_p12
+  n7JTA_l:
+    guard: n7JTA_number!=5
+    outflows:
+    - n7JTA_p7
+    inflows:
+    - n7JTA_p10
+  n7JTA_m:
+    guard: n7JTA_number=5
+    outflows:
+    - n7JTA_p12
+    inflows:
+    - n7JTA_p10
+    - n7JTA_p8
+    - n7JTA_p9
+  nDOJA_h:
+    outflows:
+    - nDOJA_p9
+    inflows:
+    - nDOJA_p6
+  nDOJA_b:
+    outflows:
+    - nDOJA_p2
+    inflows:
+    - nDOJA_p1
+  nDOJA_c:
+    outflows:
+    - nDOJA_p3
+    inflows:
+    - nDOJA_p1
+  nDOJA_i:
+    outflows:
+    - nDOJA_p10
+    updates:
+      nDOJA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDOJA_p7
+  nDOJA_d:
+    outflows:
+    - nDOJA_p4
+    inflows:
+    - nDOJA_p2
+  nDOJA_e:
+    outflows:
+    - nDOJA_p4
+    inflows:
+    - nDOJA_p3
+  nDOJA_f:
+    outflows:
+    - nDOJA_p5
+    - nDOJA_p6
+    - nDOJA_p7
+    inflows:
+    - nDOJA_p4
+  nDOJA_g:
+    outflows:
+    - nDOJA_p8
+    updates:
+      nDOJA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDOJA_p5
+  nDOJA_l:
+    guard: nDOJA_number!=5
+    outflows:
+    - nDOJA_p7
+    inflows:
+    - nDOJA_p10
+  nDOJA_o:
+    guard: nDOJA_second=2
+    outflows:
+    - nDOJA_p14
+    inflows:
+    - nDOJA_p12
+  nDOJA_m:
+    guard: nDOJA_number=5
+    outflows:
+    - nDOJA_p12
+    inflows:
+    - nDOJA_p10
+    - nDOJA_p8
+    - nDOJA_p9
+  tr_n7JTA_a_1:
+    outflows:
+    - n7JTA_p1
+    - tr_stp1
+    updates:
+      n7JTA_first:
+      - '2'
+      n7JTA_third:
+      - '4'
+      n7JTA_second:
+      - '2'
+      n7JTA_fourth:
+      - '2'
+    inflows:
+    - n7JTA_start
+    - tr_stp0
+  tr_n7JTA_d_2:
+    outflows:
+    - n7JTA_p4
+    - tr_stp2
+    inflows:
+    - n7JTA_p2
+    - tr_stp1
+  tr_n7JTA_c_3:
+    outflows:
+    - n7JTA_p3
+    - tr_stp3
+    inflows:
+    - n7JTA_p1
+    - tr_stp2
+  tr_n7JTA_l_4:
+    guard: n7JTA_number!=5
+    outflows:
+    - n7JTA_p7
+    - tr_stp4
+    inflows:
+    - n7JTA_p10
+    - tr_stp3
+  tr_n7JTA_i_5:
+    outflows:
+    - n7JTA_p10
+    - tr_stp5
+    updates:
+      n7JTA_number:
+      - '2'
+    inflows:
+    - n7JTA_p7
+    - tr_stp4
+  tr_n7JTA_i_6:
+    outflows:
+    - n7JTA_p10
+    - tr_stp6
+    updates:
+      n7JTA_number:
+      - '5'
+    inflows:
+    - n7JTA_p7
+    - tr_stp5
+  tr_nDOJA_a_7:
+    outflows:
+    - nDOJA_p1
+    - tr_stp7
+    updates:
+      nDOJA_second:
+      - '2'
+      nDOJA_first:
+      - '2'
+      nDOJA_third:
+      - '4'
+      nDOJA_fourth:
+      - '2'
+    inflows:
+    - n7JTA_end
+    - tr_stp6
+  tr_nDOJA_d_8:
+    outflows:
+    - nDOJA_p4
+    - tr_stp8
+    inflows:
+    - nDOJA_p2
+    - tr_stp7
+  tr_nDOJA_c_9:
+    outflows:
+    - nDOJA_p3
+    - tr_stp9
+    inflows:
+    - nDOJA_p1
+    - tr_stp8
+  tr_nDOJA_l_10:
+    guard: nDOJA_number!=5
+    outflows:
+    - nDOJA_p7
+    - tr_stp10
+    inflows:
+    - nDOJA_p10
+    - tr_stp9
+  tr_nDOJA_i_11:
+    outflows:
+    - nDOJA_p10
+    - tr_stp11
+    updates:
+      nDOJA_number:
+      - '2'
+    inflows:
+    - nDOJA_p7
+    - tr_stp10
+  tr_nDOJA_i_12:
+    outflows:
+    - nDOJA_p10
+    - tr_stp12
+    updates:
+      nDOJA_number:
+      - '5'
+    inflows:
+    - nDOJA_p7
+    - tr_stp11
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - n7JTA_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp12
+    - nDOJA_end
+name: M2_dawnet_1_trace4_75

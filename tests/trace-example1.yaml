@@ -1,0 +1,8 @@
+$schema: ../parser/trace-schema.json
+
+model: example 1
+trace:
+  - transition: t1
+    updates:
+      loanType: s
+  - transition: t8

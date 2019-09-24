@@ -1,0 +1,23 @@
+$schema: ../../parser/trace-schema.json
+
+model: dawnet_1
+trace:
+  - transition: a
+    updates:
+      first: '3'
+      second: '1'
+      third: '3'
+      fourth: '2'
+  - transition: b
+  - transition: d
+  - transition: c
+  - transition: e
+  - transition: f
+  - transition: g
+    updates:
+      fifth: '1'
+  - transition: h
+  - transition: i
+    updates:
+      number: '5'
+  - transition: m

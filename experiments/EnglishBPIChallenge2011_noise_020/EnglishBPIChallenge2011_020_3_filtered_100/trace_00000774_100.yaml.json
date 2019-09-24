@@ -1,0 +1,1 @@
+{"$schema":"../../parser/trace-schema.json","model":"EnglishBPIChallenge2011_020_annotated_3","trace":[{"transition":"outpatient_follow_up_consultation","updates":{"Activity_code":"411100","Producer_code":"SGNA","Section":"Section_2"}},{"transition":"administrative_fee___the_first_pol","updates":{"Activity_code":"419100","Producer_code":"SGNA","Section":"Section_2"}}]}

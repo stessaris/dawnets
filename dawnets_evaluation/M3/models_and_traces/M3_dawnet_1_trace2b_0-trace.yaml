@@ -1,0 +1,58 @@
+model: M3_dawnet_1_trace2b_0
+trace:
+- transition: nEHVA_a
+  updates:
+    nEHVA_fourth: '5'
+    nEHVA_second: '2'
+    nEHVA_first: '1'
+    nEHVA_third: '2'
+- transition: n2RLA_a
+  updates:
+    n2RLA_second: '2'
+    n2RLA_fourth: '5'
+    n2RLA_third: '2'
+    n2RLA_first: '1'
+- transition: n2RLA_c
+- transition: n2RLA_e
+- transition: n2RLA_f
+- transition: nEHVA_c
+- transition: n2RLA_h
+- transition: nEHVA_e
+- transition: nEHVA_f
+- transition: nEHVA_h
+- transition: nEHVA_i
+  updates:
+    nEHVA_number: '3'
+- transition: n2RLA_i
+  updates:
+    n2RLA_number: '3'
+- transition: n2RLA_l
+- transition: n2RLA_i
+  updates:
+    n2RLA_number: 2
+- transition: n2RLA_l
+- transition: n2RLA_i
+  updates:
+    n2RLA_number: '5'
+- transition: n2RLA_g
+  updates:
+    n2RLA_fifth: '3'
+- transition: nEHVA_l
+- transition: nEHVA_i
+  updates:
+    nEHVA_number: 2
+- transition: nEHVA_l
+- transition: n2RLA_m
+- transition: n2RLA_n
+- transition: n2RLA_r
+- transition: n2RLA_u
+- transition: nEHVA_i
+  updates:
+    nEHVA_number: '5'
+- transition: nEHVA_g
+  updates:
+    nEHVA_fifth: '3'
+- transition: nEHVA_m
+- transition: nEHVA_n
+- transition: nEHVA_r
+- transition: nEHVA_u

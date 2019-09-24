@@ -1,0 +1,22 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+coala = {git = "https://github.com/potassco/coala.git", editable=true}
+"e1839a8" = {path = ".", editable = true}
+
+
+[dev-packages]
+
+"flake8" = "*"
+rope = "*"
+cprofilev = "*"
+
+[requires]
+# Coala is not supported on py3
+python_version = '2.7'

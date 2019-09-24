@@ -1,0 +1,65 @@
+name: t6
+model: dawnet_1
+trace:
+- transition: a
+  updates:
+    first: '4'
+    second: '2'
+    third: '5'
+    fourth: '1'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: c
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: e
+  onlyin:
+  - c75
+- transition: f
+- transition: h
+- transition: i
+  updates:
+    number: '5'
+  onlyin:
+  - c75
+- transition: l
+  onlyin:
+  - c75
+  - c50
+- transition: i
+  updates:
+    number: '5'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: l
+  onlyin:
+  - c75
+- transition: i
+  updates:
+    number: '5'
+  onlyin:
+  - c75
+  - c50
+  - c25
+- transition: g
+  updates:
+    fifth: '2'
+  onlyin:
+  - c75
+  - c50
+- transition: m
+  onlyin:
+  - c75
+  - c50
+- transition: o
+- transition: s
+- transition: u
+  onlyin:
+  - c75
+  - c50

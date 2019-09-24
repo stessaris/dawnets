@@ -1,0 +1,30 @@
+model: M5_dawnet_1_trace6_0
+trace:
+- transition: nXIXA_a
+  updates:
+    nXIXA_second: '2'
+    nXIXA_first: '4'
+    nXIXA_third: '5'
+    nXIXA_fourth: '1'
+- transition: nXIXA_c
+- transition: nXIXA_e
+- transition: nXIXA_f
+- transition: nXIXA_h
+- transition: nXIXA_i
+  updates:
+    nXIXA_number: '5'
+- transition: nXIXA_l
+- transition: nXIXA_i
+  updates:
+    nXIXA_number: '5'
+- transition: nXIXA_l
+- transition: nXIXA_i
+  updates:
+    nXIXA_number: '5'
+- transition: nXIXA_g
+  updates:
+    nXIXA_fifth: '2'
+- transition: nXIXA_m
+- transition: nXIXA_o
+- transition: nXIXA_s
+- transition: nXIXA_u

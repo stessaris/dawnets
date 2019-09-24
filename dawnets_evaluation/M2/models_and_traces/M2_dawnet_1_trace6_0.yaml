@@ -1,0 +1,290 @@
+transitions:
+  nAJFQ_t:
+    outflows:
+    - nAJFQ_p16
+    inflows:
+    - nAJFQ_p15
+  nAJFQ_u:
+    outflows:
+    - nAJFQ_end
+    inflows:
+    - nAJFQ_p16
+  nAJFQ_r:
+    outflows:
+    - nAJFQ_p16
+    inflows:
+    - nAJFQ_p13
+  nAJFQ_s:
+    outflows:
+    - nAJFQ_p16
+    inflows:
+    - nAJFQ_p14
+  nAJFQ_p:
+    guard: nAJFQ_third=3
+    outflows:
+    - nAJFQ_p15
+    inflows:
+    - nAJFQ_p12
+  nAJFQ_n:
+    guard: nAJFQ_first=1
+    outflows:
+    - nAJFQ_p13
+    inflows:
+    - nAJFQ_p12
+  nAJFQ_o:
+    guard: nAJFQ_second=2
+    outflows:
+    - nAJFQ_p14
+    inflows:
+    - nAJFQ_p12
+  nAJFQ_l:
+    guard: nAJFQ_number!=5
+    outflows:
+    - nAJFQ_p7
+    inflows:
+    - nAJFQ_p10
+  nAJFQ_m:
+    guard: nAJFQ_number=5
+    outflows:
+    - nAJFQ_p12
+    inflows:
+    - nAJFQ_p10
+    - nAJFQ_p8
+    - nAJFQ_p9
+  nAJFQ_h:
+    outflows:
+    - nAJFQ_p9
+    inflows:
+    - nAJFQ_p6
+  nAJFQ_i:
+    outflows:
+    - nAJFQ_p10
+    updates:
+      nAJFQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nAJFQ_p7
+  nAJFQ_f:
+    outflows:
+    - nAJFQ_p5
+    - nAJFQ_p6
+    - nAJFQ_p7
+    inflows:
+    - nAJFQ_p4
+  nAJFQ_g:
+    outflows:
+    - nAJFQ_p8
+    updates:
+      nAJFQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nAJFQ_p5
+  nAJFQ_d:
+    outflows:
+    - nAJFQ_p4
+    inflows:
+    - nAJFQ_p2
+  nAJFQ_e:
+    outflows:
+    - nAJFQ_p4
+    inflows:
+    - nAJFQ_p3
+  nAJFQ_b:
+    outflows:
+    - nAJFQ_p2
+    inflows:
+    - nAJFQ_p1
+  nAJFQ_c:
+    outflows:
+    - nAJFQ_p3
+    inflows:
+    - nAJFQ_p1
+  nAJFQ_a:
+    outflows:
+    - nAJFQ_p1
+    updates:
+      nAJFQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAJFQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAJFQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAJFQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXZ6A_end
+  nXZ6A_i:
+    outflows:
+    - nXZ6A_p10
+    updates:
+      nXZ6A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXZ6A_p7
+  nXZ6A_h:
+    outflows:
+    - nXZ6A_p9
+    inflows:
+    - nXZ6A_p6
+  nXZ6A_m:
+    guard: nXZ6A_number=5
+    outflows:
+    - nXZ6A_p12
+    inflows:
+    - nXZ6A_p10
+    - nXZ6A_p8
+    - nXZ6A_p9
+  nXZ6A_l:
+    guard: nXZ6A_number!=5
+    outflows:
+    - nXZ6A_p7
+    inflows:
+    - nXZ6A_p10
+  nXZ6A_o:
+    guard: nXZ6A_second=2
+    outflows:
+    - nXZ6A_p14
+    inflows:
+    - nXZ6A_p12
+  nXZ6A_n:
+    guard: nXZ6A_first=1
+    outflows:
+    - nXZ6A_p13
+    inflows:
+    - nXZ6A_p12
+  nXZ6A_a:
+    outflows:
+    - nXZ6A_p1
+    updates:
+      nXZ6A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXZ6A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXZ6A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nXZ6A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXZ6A_start
+  nXZ6A_c:
+    outflows:
+    - nXZ6A_p3
+    inflows:
+    - nXZ6A_p1
+  nXZ6A_b:
+    outflows:
+    - nXZ6A_p2
+    inflows:
+    - nXZ6A_p1
+  nXZ6A_e:
+    outflows:
+    - nXZ6A_p4
+    inflows:
+    - nXZ6A_p3
+  nXZ6A_d:
+    outflows:
+    - nXZ6A_p4
+    inflows:
+    - nXZ6A_p2
+  nXZ6A_g:
+    outflows:
+    - nXZ6A_p8
+    updates:
+      nXZ6A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nXZ6A_p5
+  nXZ6A_f:
+    outflows:
+    - nXZ6A_p5
+    - nXZ6A_p6
+    - nXZ6A_p7
+    inflows:
+    - nXZ6A_p4
+  nXZ6A_p:
+    guard: nXZ6A_third=3
+    outflows:
+    - nXZ6A_p15
+    inflows:
+    - nXZ6A_p12
+  nXZ6A_s:
+    outflows:
+    - nXZ6A_p16
+    inflows:
+    - nXZ6A_p14
+  nXZ6A_r:
+    outflows:
+    - nXZ6A_p16
+    inflows:
+    - nXZ6A_p13
+  nXZ6A_u:
+    outflows:
+    - nXZ6A_end
+    inflows:
+    - nXZ6A_p16
+  nXZ6A_t:
+    outflows:
+    - nXZ6A_p16
+    inflows:
+    - nXZ6A_p15
+name: M2_dawnet_1_trace6_0

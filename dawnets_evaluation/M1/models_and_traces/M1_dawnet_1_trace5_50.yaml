@@ -1,0 +1,146 @@
+transitions:
+  M1_dawnet_1_trace5_50_s:
+    outflows:
+    - M1_dawnet_1_trace5_50_p16
+    inflows:
+    - M1_dawnet_1_trace5_50_p14
+  M1_dawnet_1_trace5_50_r:
+    outflows:
+    - M1_dawnet_1_trace5_50_p16
+    inflows:
+    - M1_dawnet_1_trace5_50_p13
+  M1_dawnet_1_trace5_50_p:
+    guard: M1_dawnet_1_trace5_50_third=3
+    outflows:
+    - M1_dawnet_1_trace5_50_p15
+    inflows:
+    - M1_dawnet_1_trace5_50_p12
+  M1_dawnet_1_trace5_50_u:
+    outflows:
+    - M1_dawnet_1_trace5_50_end
+    inflows:
+    - M1_dawnet_1_trace5_50_p16
+  M1_dawnet_1_trace5_50_t:
+    outflows:
+    - M1_dawnet_1_trace5_50_p16
+    inflows:
+    - M1_dawnet_1_trace5_50_p15
+  M1_dawnet_1_trace5_50_c:
+    outflows:
+    - M1_dawnet_1_trace5_50_p3
+    inflows:
+    - M1_dawnet_1_trace5_50_p1
+  M1_dawnet_1_trace5_50_b:
+    outflows:
+    - M1_dawnet_1_trace5_50_p2
+    inflows:
+    - M1_dawnet_1_trace5_50_p1
+  M1_dawnet_1_trace5_50_a:
+    outflows:
+    - M1_dawnet_1_trace5_50_p1
+    updates:
+      M1_dawnet_1_trace5_50_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace5_50_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace5_50_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace5_50_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace5_50_start
+  M1_dawnet_1_trace5_50_g:
+    outflows:
+    - M1_dawnet_1_trace5_50_p8
+    updates:
+      M1_dawnet_1_trace5_50_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace5_50_p5
+  M1_dawnet_1_trace5_50_f:
+    outflows:
+    - M1_dawnet_1_trace5_50_p5
+    - M1_dawnet_1_trace5_50_p6
+    - M1_dawnet_1_trace5_50_p7
+    inflows:
+    - M1_dawnet_1_trace5_50_p4
+  M1_dawnet_1_trace5_50_e:
+    outflows:
+    - M1_dawnet_1_trace5_50_p4
+    inflows:
+    - M1_dawnet_1_trace5_50_p3
+  M1_dawnet_1_trace5_50_d:
+    outflows:
+    - M1_dawnet_1_trace5_50_p4
+    inflows:
+    - M1_dawnet_1_trace5_50_p2
+  M1_dawnet_1_trace5_50_i:
+    outflows:
+    - M1_dawnet_1_trace5_50_p10
+    updates:
+      M1_dawnet_1_trace5_50_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace5_50_p7
+  M1_dawnet_1_trace5_50_h:
+    outflows:
+    - M1_dawnet_1_trace5_50_p9
+    inflows:
+    - M1_dawnet_1_trace5_50_p6
+  M1_dawnet_1_trace5_50_o:
+    guard: M1_dawnet_1_trace5_50_second=2
+    outflows:
+    - M1_dawnet_1_trace5_50_p14
+    inflows:
+    - M1_dawnet_1_trace5_50_p12
+  M1_dawnet_1_trace5_50_n:
+    guard: M1_dawnet_1_trace5_50_first=1
+    outflows:
+    - M1_dawnet_1_trace5_50_p13
+    inflows:
+    - M1_dawnet_1_trace5_50_p12
+  M1_dawnet_1_trace5_50_m:
+    guard: M1_dawnet_1_trace5_50_number=5
+    outflows:
+    - M1_dawnet_1_trace5_50_p12
+    inflows:
+    - M1_dawnet_1_trace5_50_p10
+    - M1_dawnet_1_trace5_50_p8
+    - M1_dawnet_1_trace5_50_p9
+  M1_dawnet_1_trace5_50_l:
+    guard: M1_dawnet_1_trace5_50_number!=5
+    outflows:
+    - M1_dawnet_1_trace5_50_p7
+    inflows:
+    - M1_dawnet_1_trace5_50_p10
+name: M1_dawnet_1_trace5_50

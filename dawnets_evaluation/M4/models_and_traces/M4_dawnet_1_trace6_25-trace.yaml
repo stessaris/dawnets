@@ -1,0 +1,74 @@
+model: M4_dawnet_1_trace6_25
+trace:
+- transition: nTWCA_a
+  updates:
+    nTWCA_second: '2'
+    nTWCA_first: '4'
+    nTWCA_fourth: '1'
+    nTWCA_third: '5'
+- transition: nTWCA_c
+- transition: nTWCA_e
+- transition: nTWCA_i
+  updates:
+    nTWCA_number: '5'
+- transition: nTWCA_l
+- transition: nTWCA_i
+  updates:
+    nTWCA_number: '5'
+- transition: nTWCA_l
+- transition: nTWCA_i
+  updates:
+    nTWCA_number: '5'
+- transition: nTWCA_g
+  updates:
+    nTWCA_fifth: '2'
+- transition: nTWCA_m
+- transition: nTWCA_u
+- transition: nEDVA_a
+  updates:
+    nEDVA_second: '2'
+    nEDVA_first: '4'
+    nEDVA_third: '5'
+    nEDVA_fourth: '1'
+- transition: nEDVA_c
+- transition: nEDVA_e
+- transition: nEDVA_i
+  updates:
+    nEDVA_number: '5'
+- transition: nEDVA_l
+- transition: nEDVA_i
+  updates:
+    nEDVA_number: '5'
+- transition: nEDVA_l
+- transition: nEDVA_i
+  updates:
+    nEDVA_number: '5'
+- transition: nEDVA_g
+  updates:
+    nEDVA_fifth: '2'
+- transition: nEDVA_m
+- transition: nEDVA_u
+- transition: nTNYQ_a
+  updates:
+    nTNYQ_second: '2'
+    nTNYQ_first: '4'
+    nTNYQ_third: '5'
+    nTNYQ_fourth: '1'
+- transition: nTNYQ_c
+- transition: nTNYQ_e
+- transition: nTNYQ_i
+  updates:
+    nTNYQ_number: '5'
+- transition: nTNYQ_l
+- transition: nTNYQ_i
+  updates:
+    nTNYQ_number: '5'
+- transition: nTNYQ_l
+- transition: nTNYQ_i
+  updates:
+    nTNYQ_number: '5'
+- transition: nTNYQ_g
+  updates:
+    nTNYQ_fifth: '2'
+- transition: nTNYQ_m
+- transition: nTNYQ_u

@@ -1,0 +1,53 @@
+model: M4_dawnet_1_trace1_25
+trace:
+- transition: nLQRA_a
+  updates:
+    nLQRA_first: '4'
+    nLQRA_third: '4'
+    nLQRA_second: '2'
+    nLQRA_fourth: '3'
+- transition: nLQRA_b
+- transition: nLQRA_d
+- transition: nLQRA_f
+- transition: nLQRA_g
+  updates:
+    nLQRA_fifth: '2'
+- transition: nLQRA_h
+- transition: nLQRA_i
+  updates:
+    nLQRA_number: '5'
+- transition: nLQRA_m
+- transition: nR2JA_a
+  updates:
+    nR2JA_second: '2'
+    nR2JA_first: '4'
+    nR2JA_fourth: '3'
+    nR2JA_third: '4'
+- transition: nR2JA_b
+- transition: nR2JA_d
+- transition: nR2JA_f
+- transition: nR2JA_g
+  updates:
+    nR2JA_fifth: '2'
+- transition: nR2JA_h
+- transition: nR2JA_i
+  updates:
+    nR2JA_number: '5'
+- transition: nR2JA_m
+- transition: nJWRA_a
+  updates:
+    nJWRA_fourth: '3'
+    nJWRA_first: '4'
+    nJWRA_third: '4'
+    nJWRA_second: '2'
+- transition: nJWRA_b
+- transition: nJWRA_d
+- transition: nJWRA_f
+- transition: nJWRA_g
+  updates:
+    nJWRA_fifth: '2'
+- transition: nJWRA_h
+- transition: nJWRA_i
+  updates:
+    nJWRA_number: '5'
+- transition: nJWRA_m

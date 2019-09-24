@@ -1,0 +1,25 @@
+model: M2_dawnet_1
+name: t3_c25
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OLBA_a
+  updates: {dawnet_1_OLBA_first: '3', dawnet_1_OLBA_fourth: '2', dawnet_1_OLBA_second: '1',
+    dawnet_1_OLBA_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OLBA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OLBA_e
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_OLBA_i
+  updates: {dawnet_1_OLBA_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_63AA_a
+  updates: {dawnet_1_63AA_first: '3', dawnet_1_63AA_fourth: '2', dawnet_1_63AA_second: '1',
+    dawnet_1_63AA_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_63AA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_63AA_e
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_63AA_i
+  updates: {dawnet_1_63AA_number: '5'}

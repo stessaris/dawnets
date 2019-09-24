@@ -1,0 +1,70 @@
+name: M1_dawnet_1
+transitions:
+  dawnet_1_SA4A_a:
+    inflows: [dawnet_1_SA4A_start]
+    outflows: [dawnet_1_SA4A_p1]
+    updates:
+      dawnet_1_SA4A_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_SA4A_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_SA4A_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_SA4A_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_SA4A_b:
+    inflows: [dawnet_1_SA4A_p1]
+    outflows: [dawnet_1_SA4A_p2]
+  dawnet_1_SA4A_c:
+    inflows: [dawnet_1_SA4A_p1]
+    outflows: [dawnet_1_SA4A_p3]
+  dawnet_1_SA4A_d:
+    inflows: [dawnet_1_SA4A_p2]
+    outflows: [dawnet_1_SA4A_p4]
+  dawnet_1_SA4A_e:
+    inflows: [dawnet_1_SA4A_p3]
+    outflows: [dawnet_1_SA4A_p4]
+  dawnet_1_SA4A_f:
+    inflows: [dawnet_1_SA4A_p4]
+    outflows: [dawnet_1_SA4A_p5, dawnet_1_SA4A_p6, dawnet_1_SA4A_p7]
+  dawnet_1_SA4A_g:
+    inflows: [dawnet_1_SA4A_p5]
+    outflows: [dawnet_1_SA4A_p8]
+    updates:
+      dawnet_1_SA4A_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_SA4A_h:
+    inflows: [dawnet_1_SA4A_p6]
+    outflows: [dawnet_1_SA4A_p9]
+  dawnet_1_SA4A_i:
+    inflows: [dawnet_1_SA4A_p7]
+    outflows: [dawnet_1_SA4A_p10]
+    updates:
+      dawnet_1_SA4A_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_SA4A_l:
+    guard: dawnet_1_SA4A_number!=5
+    inflows: [dawnet_1_SA4A_p10]
+    outflows: [dawnet_1_SA4A_p7]
+  dawnet_1_SA4A_m:
+    guard: dawnet_1_SA4A_number=5
+    inflows: [dawnet_1_SA4A_p10, dawnet_1_SA4A_p8, dawnet_1_SA4A_p9]
+    outflows: [dawnet_1_SA4A_p12]
+  dawnet_1_SA4A_n:
+    guard: dawnet_1_SA4A_first=1
+    inflows: [dawnet_1_SA4A_p12]
+    outflows: [dawnet_1_SA4A_p13]
+  dawnet_1_SA4A_o:
+    guard: dawnet_1_SA4A_second=2
+    inflows: [dawnet_1_SA4A_p12]
+    outflows: [dawnet_1_SA4A_p14]
+  dawnet_1_SA4A_p:
+    guard: dawnet_1_SA4A_third=3
+    inflows: [dawnet_1_SA4A_p12]
+    outflows: [dawnet_1_SA4A_p15]
+  dawnet_1_SA4A_r:
+    inflows: [dawnet_1_SA4A_p13]
+    outflows: [dawnet_1_SA4A_p16]
+  dawnet_1_SA4A_s:
+    inflows: [dawnet_1_SA4A_p14]
+    outflows: [dawnet_1_SA4A_p16]
+  dawnet_1_SA4A_t:
+    inflows: [dawnet_1_SA4A_p15]
+    outflows: [dawnet_1_SA4A_p16]
+  dawnet_1_SA4A_u:
+    inflows: [dawnet_1_SA4A_p16]
+    outflows: [dawnet_1_SA4A_end]

@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%
+%%%% Workflow Encoding
+%%%%%%%%%%%%%%%%%
+
+<asp>
+
+%%%% Static predicates
+% place(P)
+% transition(T)
+% arc(N1,N2)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Places
+
+{% for pid in places -%}
+place({{ coalaConst(pid) }}).
+{% endfor %}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Transitions
+
+{% for (tid, tdata) in transitions.items() %}
+transition({{ coalaConst(tid) }}).
+{% for pid in tdata['inflows'] -%}
+arc({{ coalaConst(pid) }},{{ coalaConst(tid) }}).
+{% endfor -%}
+{% for pid in tdata['outflows'] -%}
+arc({{ coalaConst(tid) }},{{ coalaConst(pid) }}).
+{% endfor -%}
+{% endfor %}
+
+inp(T,P) :- transition(T), arc(P,T).
+outp(T,P) :- transition(T), arc(T,P).
+
+</asp>
+
+% Fluents
+
+<fluent> enabled(P) <where> place(P).
+<inertial> enabled(P) <where> place(P).
+
+% Actions
+
+<action> exec(T) <where> transition(T).
+
+
+%% DAW-net behaviour
+
+% No parallel actions
+<nonexecutable> exec(X), exec(Y) <where> transition(X), transition(Y), X!=Y.
+
+% Transitions are executable only if there are tokens in input places
+
+<nonexecutable> exec(T) <if> not enabled(P) <where> inp(T,P).
+
+% Effects of transitions
+
+enabled(P) <after> exec(T) <where> outp(T,P).
+-enabled(P) <after> exec(T) <where> inp(T,P), not outp(T,P).
+
+%% Include fake initial state to avoid the problem of arbitrary values
+%% of fluents
+
+% True after the first step
+<fluent> lts_running.
+<inertial> lts_running.
+
+<action> start_lts.
+<nonexecutable> start_lts <if> lts_running.
+lts_running <after> start_lts.
+
+% Put a token in the start place
+enabled({{ coalaConst(start_place) }}) <after> start_lts.

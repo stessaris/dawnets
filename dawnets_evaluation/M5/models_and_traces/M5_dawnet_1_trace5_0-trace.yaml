@@ -1,0 +1,42 @@
+model: M5_dawnet_1_trace5_0
+trace:
+- transition: nHUSA_a
+  updates:
+    nHUSA_second: '5'
+    nHUSA_fourth: '1'
+    nHUSA_third: '3'
+    nHUSA_first: '4'
+- transition: nHUSA_b
+- transition: nHUSA_d
+- transition: nHUSA_f
+- transition: nHUSA_g
+  updates:
+    nHUSA_fifth: '3'
+- transition: nHUSA_h
+- transition: nHUSA_i
+  updates:
+    nHUSA_number: '5'
+- transition: nHUSA_m
+- transition: nHUSA_o
+- transition: nHUSA_s
+- transition: nHUSA_u
+- transition: nGGHQ_a
+  updates:
+    nGGHQ_fourth: '1'
+    nGGHQ_third: '3'
+    nGGHQ_second: '5'
+    nGGHQ_first: '4'
+- transition: nGGHQ_b
+- transition: nGGHQ_d
+- transition: nGGHQ_f
+- transition: nGGHQ_g
+  updates:
+    nGGHQ_fifth: '3'
+- transition: nGGHQ_h
+- transition: nGGHQ_i
+  updates:
+    nGGHQ_number: '5'
+- transition: nGGHQ_m
+- transition: nGGHQ_o
+- transition: nGGHQ_s
+- transition: nGGHQ_u

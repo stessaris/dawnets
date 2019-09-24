@@ -1,0 +1,290 @@
+transitions:
+  n5SMA_n:
+    guard: n5SMA_first=1
+    outflows:
+    - n5SMA_p13
+    inflows:
+    - n5SMA_p12
+  n5SMA_o:
+    guard: n5SMA_second=2
+    outflows:
+    - n5SMA_p14
+    inflows:
+    - n5SMA_p12
+  n5SMA_l:
+    guard: n5SMA_number!=5
+    outflows:
+    - n5SMA_p7
+    inflows:
+    - n5SMA_p10
+  n5SMA_m:
+    guard: n5SMA_number=5
+    outflows:
+    - n5SMA_p12
+    inflows:
+    - n5SMA_p10
+    - n5SMA_p8
+    - n5SMA_p9
+  n5SMA_h:
+    outflows:
+    - n5SMA_p9
+    inflows:
+    - n5SMA_p6
+  n5SMA_i:
+    outflows:
+    - n5SMA_p10
+    updates:
+      n5SMA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5SMA_p7
+  n5SMA_f:
+    outflows:
+    - n5SMA_p5
+    - n5SMA_p6
+    - n5SMA_p7
+    inflows:
+    - n5SMA_p4
+  n5SMA_g:
+    outflows:
+    - n5SMA_p8
+    updates:
+      n5SMA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5SMA_p5
+  n5SMA_d:
+    outflows:
+    - n5SMA_p4
+    inflows:
+    - n5SMA_p2
+  n5SMA_e:
+    outflows:
+    - n5SMA_p4
+    inflows:
+    - n5SMA_p3
+  n5SMA_b:
+    outflows:
+    - n5SMA_p2
+    inflows:
+    - n5SMA_p1
+  n5SMA_c:
+    outflows:
+    - n5SMA_p3
+    inflows:
+    - n5SMA_p1
+  n5SMA_a:
+    outflows:
+    - n5SMA_p1
+    updates:
+      n5SMA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5SMA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5SMA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n5SMA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5SMA_start
+  n5SMA_t:
+    outflows:
+    - n5SMA_p16
+    inflows:
+    - n5SMA_p15
+  n5SMA_u:
+    outflows:
+    - n5SMA_end
+    inflows:
+    - n5SMA_p16
+  n5SMA_r:
+    outflows:
+    - n5SMA_p16
+    inflows:
+    - n5SMA_p13
+  n5SMA_s:
+    outflows:
+    - n5SMA_p16
+    inflows:
+    - n5SMA_p14
+  n5SMA_p:
+    guard: n5SMA_third=3
+    outflows:
+    - n5SMA_p15
+    inflows:
+    - n5SMA_p12
+  nAXUA_m:
+    guard: nAXUA_number=5
+    outflows:
+    - nAXUA_p12
+    inflows:
+    - nAXUA_p10
+    - nAXUA_p8
+    - nAXUA_p9
+  nAXUA_l:
+    guard: nAXUA_number!=5
+    outflows:
+    - nAXUA_p7
+    inflows:
+    - nAXUA_p10
+  nAXUA_o:
+    guard: nAXUA_second=2
+    outflows:
+    - nAXUA_p14
+    inflows:
+    - nAXUA_p12
+  nAXUA_n:
+    guard: nAXUA_first=1
+    outflows:
+    - nAXUA_p13
+    inflows:
+    - nAXUA_p12
+  nAXUA_i:
+    outflows:
+    - nAXUA_p10
+    updates:
+      nAXUA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nAXUA_p7
+  nAXUA_h:
+    outflows:
+    - nAXUA_p9
+    inflows:
+    - nAXUA_p6
+  nAXUA_e:
+    outflows:
+    - nAXUA_p4
+    inflows:
+    - nAXUA_p3
+  nAXUA_d:
+    outflows:
+    - nAXUA_p4
+    inflows:
+    - nAXUA_p2
+  nAXUA_g:
+    outflows:
+    - nAXUA_p8
+    updates:
+      nAXUA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nAXUA_p5
+  nAXUA_f:
+    outflows:
+    - nAXUA_p5
+    - nAXUA_p6
+    - nAXUA_p7
+    inflows:
+    - nAXUA_p4
+  nAXUA_a:
+    outflows:
+    - nAXUA_p1
+    updates:
+      nAXUA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAXUA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAXUA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nAXUA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n5SMA_end
+  nAXUA_c:
+    outflows:
+    - nAXUA_p3
+    inflows:
+    - nAXUA_p1
+  nAXUA_b:
+    outflows:
+    - nAXUA_p2
+    inflows:
+    - nAXUA_p1
+  nAXUA_u:
+    outflows:
+    - nAXUA_end
+    inflows:
+    - nAXUA_p16
+  nAXUA_t:
+    outflows:
+    - nAXUA_p16
+    inflows:
+    - nAXUA_p15
+  nAXUA_p:
+    guard: nAXUA_third=3
+    outflows:
+    - nAXUA_p15
+    inflows:
+    - nAXUA_p12
+  nAXUA_s:
+    outflows:
+    - nAXUA_p16
+    inflows:
+    - nAXUA_p14
+  nAXUA_r:
+    outflows:
+    - nAXUA_p16
+    inflows:
+    - nAXUA_p13
+name: M2_dawnet_1_trace5_75

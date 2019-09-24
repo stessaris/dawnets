@@ -1,0 +1,400 @@
+transitions:
+  nNQIQ_u:
+    outflows:
+    - nNQIQ_end
+    inflows:
+    - nNQIQ_p16
+  nNQIQ_t:
+    outflows:
+    - nNQIQ_p16
+    inflows:
+    - nNQIQ_p15
+  nNQIQ_p:
+    guard: nNQIQ_third=3
+    outflows:
+    - nNQIQ_p15
+    inflows:
+    - nNQIQ_p12
+  nNQIQ_s:
+    outflows:
+    - nNQIQ_p16
+    inflows:
+    - nNQIQ_p14
+  nNQIQ_r:
+    outflows:
+    - nNQIQ_p16
+    inflows:
+    - nNQIQ_p13
+  nNQIQ_m:
+    guard: nNQIQ_number=5
+    outflows:
+    - nNQIQ_p12
+    inflows:
+    - nNQIQ_p10
+    - nNQIQ_p8
+    - nNQIQ_p9
+  nNQIQ_l:
+    guard: nNQIQ_number!=5
+    outflows:
+    - nNQIQ_p7
+    inflows:
+    - nNQIQ_p10
+  nNQIQ_o:
+    guard: nNQIQ_second=2
+    outflows:
+    - nNQIQ_p14
+    inflows:
+    - nNQIQ_p12
+  nNQIQ_n:
+    guard: nNQIQ_first=1
+    outflows:
+    - nNQIQ_p13
+    inflows:
+    - nNQIQ_p12
+  nNQIQ_i:
+    outflows:
+    - nNQIQ_p10
+    updates:
+      nNQIQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNQIQ_p7
+  nNQIQ_h:
+    outflows:
+    - nNQIQ_p9
+    inflows:
+    - nNQIQ_p6
+  nNQIQ_e:
+    outflows:
+    - nNQIQ_p4
+    inflows:
+    - nNQIQ_p3
+  nNQIQ_d:
+    outflows:
+    - nNQIQ_p4
+    inflows:
+    - nNQIQ_p2
+  nNQIQ_g:
+    outflows:
+    - nNQIQ_p8
+    updates:
+      nNQIQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNQIQ_p5
+  nNQIQ_f:
+    outflows:
+    - nNQIQ_p5
+    - nNQIQ_p6
+    - nNQIQ_p7
+    inflows:
+    - nNQIQ_p4
+  nNQIQ_a:
+    outflows:
+    - nNQIQ_p1
+    updates:
+      nNQIQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNQIQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNQIQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNQIQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNQIQ_start
+  rt_ps_M3_dawnet_1_trace2b_75:
+    outflows:
+    - nNQIQ_start
+    - nEPGA_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace2b_75
+  nNQIQ_c:
+    outflows:
+    - nNQIQ_p3
+    inflows:
+    - nNQIQ_p1
+  nNQIQ_b:
+    outflows:
+    - nNQIQ_p2
+    inflows:
+    - nNQIQ_p1
+  nEPGA_c:
+    outflows:
+    - nEPGA_p3
+    inflows:
+    - nEPGA_p1
+  nEPGA_b:
+    outflows:
+    - nEPGA_p2
+    inflows:
+    - nEPGA_p1
+  nEPGA_a:
+    outflows:
+    - nEPGA_p1
+    updates:
+      nEPGA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPGA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPGA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPGA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPGA_start
+  nEPGA_g:
+    outflows:
+    - nEPGA_p8
+    updates:
+      nEPGA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPGA_p5
+  nEPGA_f:
+    outflows:
+    - nEPGA_p5
+    - nEPGA_p6
+    - nEPGA_p7
+    inflows:
+    - nEPGA_p4
+  nEPGA_e:
+    outflows:
+    - nEPGA_p4
+    inflows:
+    - nEPGA_p3
+  nEPGA_d:
+    outflows:
+    - nEPGA_p4
+    inflows:
+    - nEPGA_p2
+  rt_pj_M3_dawnet_1_trace2b_75:
+    outflows:
+    - rp_e_M3_dawnet_1_trace2b_75
+    inflows:
+    - nNQIQ_end
+    - nEPGA_end
+  nEPGA_i:
+    outflows:
+    - nEPGA_p10
+    updates:
+      nEPGA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPGA_p7
+  nEPGA_h:
+    outflows:
+    - nEPGA_p9
+    inflows:
+    - nEPGA_p6
+  nEPGA_o:
+    guard: nEPGA_second=2
+    outflows:
+    - nEPGA_p14
+    inflows:
+    - nEPGA_p12
+  nEPGA_n:
+    guard: nEPGA_first=1
+    outflows:
+    - nEPGA_p13
+    inflows:
+    - nEPGA_p12
+  nEPGA_m:
+    guard: nEPGA_number=5
+    outflows:
+    - nEPGA_p12
+    inflows:
+    - nEPGA_p10
+    - nEPGA_p8
+    - nEPGA_p9
+  nEPGA_l:
+    guard: nEPGA_number!=5
+    outflows:
+    - nEPGA_p7
+    inflows:
+    - nEPGA_p10
+  nEPGA_s:
+    outflows:
+    - nEPGA_p16
+    inflows:
+    - nEPGA_p14
+  nEPGA_r:
+    outflows:
+    - nEPGA_p16
+    inflows:
+    - nEPGA_p13
+  nEPGA_p:
+    guard: nEPGA_third=3
+    outflows:
+    - nEPGA_p15
+    inflows:
+    - nEPGA_p12
+  nEPGA_u:
+    outflows:
+    - nEPGA_end
+    inflows:
+    - nEPGA_p16
+  nEPGA_t:
+    outflows:
+    - nEPGA_p16
+    inflows:
+    - nEPGA_p15
+  tr_nEPGA_a_1:
+    outflows:
+    - nEPGA_p1
+    - tr_stp1
+    updates:
+      nEPGA_fourth:
+      - '5'
+      nEPGA_second:
+      - '2'
+      nEPGA_third:
+      - '2'
+      nEPGA_first:
+      - '1'
+    inflows:
+    - nEPGA_start
+    - tr_stp0
+  tr_nEPGA_c_2:
+    outflows:
+    - nEPGA_p3
+    - tr_stp2
+    inflows:
+    - nEPGA_p1
+    - tr_stp1
+  tr_nNQIQ_a_3:
+    outflows:
+    - nNQIQ_p1
+    - tr_stp3
+    updates:
+      nNQIQ_third:
+      - '2'
+      nNQIQ_first:
+      - '1'
+      nNQIQ_second:
+      - '2'
+      nNQIQ_fourth:
+      - '5'
+    inflows:
+    - nNQIQ_start
+    - tr_stp2
+  tr_nNQIQ_c_4:
+    outflows:
+    - nNQIQ_p3
+    - tr_stp4
+    inflows:
+    - nNQIQ_p1
+    - tr_stp3
+  tr_nEPGA_i_5:
+    outflows:
+    - nEPGA_p10
+    - tr_stp5
+    updates:
+      nEPGA_number:
+      - '2'
+    inflows:
+    - nEPGA_p7
+    - tr_stp4
+  tr_nNQIQ_i_6:
+    outflows:
+    - nNQIQ_p10
+    - tr_stp6
+    updates:
+      nNQIQ_number:
+      - '2'
+    inflows:
+    - nNQIQ_p7
+    - tr_stp5
+  tr_nEPGA_i_7:
+    outflows:
+    - nEPGA_p10
+    - tr_stp7
+    updates:
+      nEPGA_number:
+      - '5'
+    inflows:
+    - nEPGA_p7
+    - tr_stp6
+  tr_nNQIQ_i_8:
+    outflows:
+    - nNQIQ_p10
+    - tr_stp8
+    updates:
+      nNQIQ_number:
+      - '5'
+    inflows:
+    - nNQIQ_p7
+    - tr_stp7
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - rp_s_M3_dawnet_1_trace2b_75
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp8
+    - rp_e_M3_dawnet_1_trace2b_75
+name: M3_dawnet_1_trace2b_75

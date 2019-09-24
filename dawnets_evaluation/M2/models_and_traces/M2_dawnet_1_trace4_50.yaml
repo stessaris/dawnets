@@ -1,0 +1,290 @@
+transitions:
+  nIKTA_i:
+    outflows:
+    - nIKTA_p10
+    updates:
+      nIKTA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKTA_p7
+  nIKTA_h:
+    outflows:
+    - nIKTA_p9
+    inflows:
+    - nIKTA_p6
+  nDOVA_f:
+    outflows:
+    - nDOVA_p5
+    - nDOVA_p6
+    - nDOVA_p7
+    inflows:
+    - nDOVA_p4
+  nDOVA_g:
+    outflows:
+    - nDOVA_p8
+    updates:
+      nDOVA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDOVA_p5
+  nIKTA_m:
+    guard: nIKTA_number=5
+    outflows:
+    - nIKTA_p12
+    inflows:
+    - nIKTA_p10
+    - nIKTA_p8
+    - nIKTA_p9
+  nIKTA_l:
+    guard: nIKTA_number!=5
+    outflows:
+    - nIKTA_p7
+    inflows:
+    - nIKTA_p10
+  nIKTA_o:
+    guard: nIKTA_second=2
+    outflows:
+    - nIKTA_p14
+    inflows:
+    - nIKTA_p12
+  nIKTA_n:
+    guard: nIKTA_first=1
+    outflows:
+    - nIKTA_p13
+    inflows:
+    - nIKTA_p12
+  nIKTA_a:
+    outflows:
+    - nIKTA_p1
+    updates:
+      nIKTA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKTA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKTA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKTA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKTA_start
+  nDOVA_m:
+    guard: nDOVA_number=5
+    outflows:
+    - nDOVA_p12
+    inflows:
+    - nDOVA_p10
+    - nDOVA_p8
+    - nDOVA_p9
+  nIKTA_c:
+    outflows:
+    - nIKTA_p3
+    inflows:
+    - nIKTA_p1
+  nIKTA_b:
+    outflows:
+    - nIKTA_p2
+    inflows:
+    - nIKTA_p1
+  nIKTA_e:
+    outflows:
+    - nIKTA_p4
+    inflows:
+    - nIKTA_p3
+  nIKTA_d:
+    outflows:
+    - nIKTA_p4
+    inflows:
+    - nIKTA_p2
+  nIKTA_g:
+    outflows:
+    - nIKTA_p8
+    updates:
+      nIKTA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKTA_p5
+  nIKTA_f:
+    outflows:
+    - nIKTA_p5
+    - nIKTA_p6
+    - nIKTA_p7
+    inflows:
+    - nIKTA_p4
+  nDOVA_t:
+    outflows:
+    - nDOVA_p16
+    inflows:
+    - nDOVA_p15
+  nDOVA_u:
+    outflows:
+    - nDOVA_end
+    inflows:
+    - nDOVA_p16
+  nDOVA_h:
+    outflows:
+    - nDOVA_p9
+    inflows:
+    - nDOVA_p6
+  nDOVA_r:
+    outflows:
+    - nDOVA_p16
+    inflows:
+    - nDOVA_p13
+  nDOVA_s:
+    outflows:
+    - nDOVA_p16
+    inflows:
+    - nDOVA_p14
+  nIKTA_p:
+    guard: nIKTA_third=3
+    outflows:
+    - nIKTA_p15
+    inflows:
+    - nIKTA_p12
+  nIKTA_s:
+    outflows:
+    - nIKTA_p16
+    inflows:
+    - nIKTA_p14
+  nIKTA_r:
+    outflows:
+    - nIKTA_p16
+    inflows:
+    - nIKTA_p13
+  nIKTA_u:
+    outflows:
+    - nIKTA_end
+    inflows:
+    - nIKTA_p16
+  nIKTA_t:
+    outflows:
+    - nIKTA_p16
+    inflows:
+    - nIKTA_p15
+  nDOVA_a:
+    outflows:
+    - nDOVA_p1
+    updates:
+      nDOVA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOVA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOVA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDOVA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKTA_end
+  nDOVA_b:
+    outflows:
+    - nDOVA_p2
+    inflows:
+    - nDOVA_p1
+  nDOVA_c:
+    outflows:
+    - nDOVA_p3
+    inflows:
+    - nDOVA_p1
+  nDOVA_d:
+    outflows:
+    - nDOVA_p4
+    inflows:
+    - nDOVA_p2
+  nDOVA_l:
+    guard: nDOVA_number!=5
+    outflows:
+    - nDOVA_p7
+    inflows:
+    - nDOVA_p10
+  nDOVA_i:
+    outflows:
+    - nDOVA_p10
+    updates:
+      nDOVA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDOVA_p7
+  nDOVA_o:
+    guard: nDOVA_second=2
+    outflows:
+    - nDOVA_p14
+    inflows:
+    - nDOVA_p12
+  nDOVA_p:
+    guard: nDOVA_third=3
+    outflows:
+    - nDOVA_p15
+    inflows:
+    - nDOVA_p12
+  nDOVA_n:
+    guard: nDOVA_first=1
+    outflows:
+    - nDOVA_p13
+    inflows:
+    - nDOVA_p12
+  nDOVA_e:
+    outflows:
+    - nDOVA_p4
+    inflows:
+    - nDOVA_p3
+name: M2_dawnet_1_trace4_50

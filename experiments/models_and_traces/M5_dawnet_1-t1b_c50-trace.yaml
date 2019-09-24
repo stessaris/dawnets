@@ -1,0 +1,17 @@
+model: M5_dawnet_1
+name: t1b_c50
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ITZQ_a
+  updates: {dawnet_1_ITZQ_first: '4', dawnet_1_ITZQ_fourth: '3', dawnet_1_ITZQ_second: '2',
+    dawnet_1_ITZQ_third: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ITZQ_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_ITZQ_g
+  updates: {dawnet_1_ITZQ_fifth: '2'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_ITZQ_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ITZQ_i
+  updates: {dawnet_1_ITZQ_number: '5'}

@@ -1,0 +1,290 @@
+transitions:
+  nV5BA_l:
+    guard: nV5BA_number!=5
+    outflows:
+    - nV5BA_p7
+    inflows:
+    - nV5BA_p10
+  nV5BA_m:
+    guard: nV5BA_number=5
+    outflows:
+    - nV5BA_p12
+    inflows:
+    - nV5BA_p10
+    - nV5BA_p8
+    - nV5BA_p9
+  nV5BA_n:
+    guard: nV5BA_first=1
+    outflows:
+    - nV5BA_p13
+    inflows:
+    - nV5BA_p12
+  nV5BA_o:
+    guard: nV5BA_second=2
+    outflows:
+    - nV5BA_p14
+    inflows:
+    - nV5BA_p12
+  nV5BA_h:
+    outflows:
+    - nV5BA_p9
+    inflows:
+    - nV5BA_p6
+  nV5BA_i:
+    outflows:
+    - nV5BA_p10
+    updates:
+      nV5BA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nV5BA_p7
+  nV5BA_d:
+    outflows:
+    - nV5BA_p4
+    inflows:
+    - nV5BA_p2
+  nV5BA_e:
+    outflows:
+    - nV5BA_p4
+    inflows:
+    - nV5BA_p3
+  nV5BA_f:
+    outflows:
+    - nV5BA_p5
+    - nV5BA_p6
+    - nV5BA_p7
+    inflows:
+    - nV5BA_p4
+  nV5BA_g:
+    outflows:
+    - nV5BA_p8
+    updates:
+      nV5BA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nV5BA_p5
+  nV5BA_a:
+    outflows:
+    - nV5BA_p1
+    updates:
+      nV5BA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nV5BA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nV5BA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nV5BA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nV5BA_start
+  nV5BA_b:
+    outflows:
+    - nV5BA_p2
+    inflows:
+    - nV5BA_p1
+  nV5BA_c:
+    outflows:
+    - nV5BA_p3
+    inflows:
+    - nV5BA_p1
+  nV5BA_t:
+    outflows:
+    - nV5BA_p16
+    inflows:
+    - nV5BA_p15
+  nV5BA_u:
+    outflows:
+    - nV5BA_end
+    inflows:
+    - nV5BA_p16
+  nV5BA_p:
+    guard: nV5BA_third=3
+    outflows:
+    - nV5BA_p15
+    inflows:
+    - nV5BA_p12
+  nV5BA_r:
+    outflows:
+    - nV5BA_p16
+    inflows:
+    - nV5BA_p13
+  nV5BA_s:
+    outflows:
+    - nV5BA_p16
+    inflows:
+    - nV5BA_p14
+  nFXSQ_t:
+    outflows:
+    - nFXSQ_p16
+    inflows:
+    - nFXSQ_p15
+  nFXSQ_u:
+    outflows:
+    - nFXSQ_end
+    inflows:
+    - nFXSQ_p16
+  nFXSQ_r:
+    outflows:
+    - nFXSQ_p16
+    inflows:
+    - nFXSQ_p13
+  nFXSQ_s:
+    outflows:
+    - nFXSQ_p16
+    inflows:
+    - nFXSQ_p14
+  nFXSQ_p:
+    guard: nFXSQ_third=3
+    outflows:
+    - nFXSQ_p15
+    inflows:
+    - nFXSQ_p12
+  nFXSQ_n:
+    guard: nFXSQ_first=1
+    outflows:
+    - nFXSQ_p13
+    inflows:
+    - nFXSQ_p12
+  nFXSQ_o:
+    guard: nFXSQ_second=2
+    outflows:
+    - nFXSQ_p14
+    inflows:
+    - nFXSQ_p12
+  nFXSQ_l:
+    guard: nFXSQ_number!=5
+    outflows:
+    - nFXSQ_p7
+    inflows:
+    - nFXSQ_p10
+  nFXSQ_m:
+    guard: nFXSQ_number=5
+    outflows:
+    - nFXSQ_p12
+    inflows:
+    - nFXSQ_p10
+    - nFXSQ_p8
+    - nFXSQ_p9
+  nFXSQ_h:
+    outflows:
+    - nFXSQ_p9
+    inflows:
+    - nFXSQ_p6
+  nFXSQ_i:
+    outflows:
+    - nFXSQ_p10
+    updates:
+      nFXSQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nFXSQ_p7
+  nFXSQ_f:
+    outflows:
+    - nFXSQ_p5
+    - nFXSQ_p6
+    - nFXSQ_p7
+    inflows:
+    - nFXSQ_p4
+  nFXSQ_g:
+    outflows:
+    - nFXSQ_p8
+    updates:
+      nFXSQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nFXSQ_p5
+  nFXSQ_d:
+    outflows:
+    - nFXSQ_p4
+    inflows:
+    - nFXSQ_p2
+  nFXSQ_e:
+    outflows:
+    - nFXSQ_p4
+    inflows:
+    - nFXSQ_p3
+  nFXSQ_b:
+    outflows:
+    - nFXSQ_p2
+    inflows:
+    - nFXSQ_p1
+  nFXSQ_c:
+    outflows:
+    - nFXSQ_p3
+    inflows:
+    - nFXSQ_p1
+  nFXSQ_a:
+    outflows:
+    - nFXSQ_p1
+    updates:
+      nFXSQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nFXSQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nFXSQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nFXSQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nV5BA_end
+name: M2_dawnet_1_trace3_0

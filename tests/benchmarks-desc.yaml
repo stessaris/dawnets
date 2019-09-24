@@ -1,0 +1,32 @@
+id: benchmark_test
+docker: []
+exec: [dawnets]
+models_path: dawnet_1
+outdir: 'results/{datetime}'
+workdir: '{outdir}/{name}'
+stderr: '{name}/{cmd}_err.txt'
+stdout: '{name}/{cmd}_out.txt'
+stats: stats/{name}_{cmd}.json
+tmpdir: '{name}'
+timeout: 180
+memory: 3221225472
+runs:
+  coala:
+    args: [-z, "20"]
+  pddl:
+    args: []
+  nusmv: {}
+config:
+  pddl:
+    command: 'fast-downward --log-level info  --alias seq-sat-lama-2011 --plan-file {outdir}{name}/{cmd}_plan.txt'
+benchmarks:
+  d1_notrace:
+    files: ['{models}dawnet_1.yaml']
+    runs:
+      pddl: {}
+      coala:
+        args: [-z, "20"]
+      dot:
+        args: [-o, '{outdir}{name}.svg']
+  d1_complete:
+    files: ['{models}dawnet_1.yaml', '{models}trace1_complete.yaml']

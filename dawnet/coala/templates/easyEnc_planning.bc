@@ -1,0 +1,22 @@
+{% include 'easyEnc_behaviour.bc' %}
+
+{% if not nodata %}
+{% include 'easyEnc_data.bc' %}
+{% endif %}
+
+%%%%%%%%%%%%%%%%%
+%%%% Planning problem
+%%%%%%%%%%%%%%%%%
+
+<fluent> dirty_end.
+<default> -dirty_end.
+dirty_end <if> enabled({{ coalaConst(end_place) }}), enabled(P) <where> place(P), P!={{ coalaConst(end_place) }}.
+
+<initially> -enabled(P) <where> place(P).
+<initially> -dirty_end.
+{% if not nodata %}
+<initially> V=null <where> variable(V).
+{% endif %}
+
+<finally> enabled({{ coalaConst(end_place) }}), not dirty_end.
+

@@ -1,0 +1,24 @@
+model: M5_dawnet_1_trace3_0
+trace:
+- transition: nKJCA_a
+  updates:
+    nKJCA_fourth: '2'
+    nKJCA_third: '3'
+    nKJCA_second: '1'
+    nKJCA_first: '3'
+- transition: nKJCA_b
+- transition: nKJCA_d
+- transition: nKJCA_c
+- transition: nKJCA_e
+- transition: nKJCA_f
+- transition: nKJCA_g
+  updates:
+    nKJCA_fifth: '1'
+- transition: nKJCA_h
+- transition: nKJCA_i
+  updates:
+    nKJCA_number: '5'
+- transition: nKJCA_m
+- transition: nKJCA_p
+- transition: nKJCA_t
+- transition: nKJCA_u

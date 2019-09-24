@@ -1,0 +1,75 @@
+model: M3_dawnet_1
+name: t4
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_HENQ_a
+  updates: {dawnet_1_HENQ_first: '2', dawnet_1_HENQ_fourth: '2', dawnet_1_HENQ_second: '2',
+    dawnet_1_HENQ_third: '4'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_HENQ_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6FQA_a
+  updates: {dawnet_1_6FQA_first: '2', dawnet_1_6FQA_fourth: '2', dawnet_1_6FQA_second: '2',
+    dawnet_1_6FQA_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_HENQ_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_6FQA_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_HENQ_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6FQA_d
+- onlyin: [c75]
+  transition: dawnet_1_HENQ_e
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6FQA_c
+- {transition: dawnet_1_HENQ_f}
+- onlyin: [c75]
+  transition: dawnet_1_6FQA_e
+- {transition: dawnet_1_HENQ_h}
+- {transition: dawnet_1_6FQA_f}
+- {transition: dawnet_1_6FQA_h}
+- onlyin: [c75]
+  transition: dawnet_1_6FQA_i
+  updates: {dawnet_1_6FQA_number: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_6FQA_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6FQA_i
+  updates: {dawnet_1_6FQA_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_6FQA_l
+- onlyin: [c75]
+  transition: dawnet_1_HENQ_i
+  updates: {dawnet_1_HENQ_number: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_HENQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_6FQA_i
+  updates: {dawnet_1_6FQA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_6FQA_g
+  updates: {dawnet_1_6FQA_fifth: '3'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_HENQ_i
+  updates: {dawnet_1_HENQ_number: '2'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_6FQA_m
+- onlyin: [c75]
+  transition: dawnet_1_HENQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_HENQ_i
+  updates: {dawnet_1_HENQ_number: '5'}
+- {transition: dawnet_1_6FQA_o}
+- {transition: dawnet_1_6FQA_s}
+- onlyin: [c75, c50]
+  transition: dawnet_1_6FQA_u
+- onlyin: [c75, c50]
+  transition: dawnet_1_HENQ_g
+  updates: {dawnet_1_HENQ_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_HENQ_m
+- {transition: dawnet_1_HENQ_o}
+- {transition: dawnet_1_HENQ_s}
+- onlyin: [c75, c50]
+  transition: dawnet_1_HENQ_u

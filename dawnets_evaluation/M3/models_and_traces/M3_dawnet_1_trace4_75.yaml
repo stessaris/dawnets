@@ -1,0 +1,302 @@
+transitions:
+  nMOEQ_h:
+    outflows:
+    - nMOEQ_p9
+    inflows:
+    - nMOEQ_p6
+  nMOEQ_i:
+    outflows:
+    - nMOEQ_p10
+    updates:
+      nMOEQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMOEQ_p7
+  nMOEQ_n:
+    guard: nMOEQ_first=1
+    outflows:
+    - nMOEQ_p13
+    inflows:
+    - nMOEQ_p12
+  nMOEQ_o:
+    guard: nMOEQ_second=2
+    outflows:
+    - nMOEQ_p14
+    inflows:
+    - nMOEQ_p12
+  nMOEQ_l:
+    guard: nMOEQ_number!=5
+    outflows:
+    - nMOEQ_p7
+    inflows:
+    - nMOEQ_p10
+  nMOEQ_m:
+    guard: nMOEQ_number=5
+    outflows:
+    - nMOEQ_p12
+    inflows:
+    - nMOEQ_p10
+    - nMOEQ_p8
+    - nMOEQ_p9
+  nMOEQ_b:
+    outflows:
+    - nMOEQ_p2
+    inflows:
+    - nMOEQ_p1
+  nMOEQ_c:
+    outflows:
+    - nMOEQ_p3
+    inflows:
+    - nMOEQ_p1
+  nMOEQ_a:
+    outflows:
+    - nMOEQ_p1
+    updates:
+      nMOEQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMOEQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMOEQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nMOEQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMOEQ_start
+  nMOEQ_f:
+    outflows:
+    - nMOEQ_p5
+    - nMOEQ_p6
+    - nMOEQ_p7
+    inflows:
+    - nMOEQ_p4
+  nMOEQ_g:
+    outflows:
+    - nMOEQ_p8
+    updates:
+      nMOEQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nMOEQ_p5
+  nMOEQ_d:
+    outflows:
+    - nMOEQ_p4
+    inflows:
+    - nMOEQ_p2
+  nMOEQ_e:
+    outflows:
+    - nMOEQ_p4
+    inflows:
+    - nMOEQ_p3
+  rt_pj_M3_dawnet_1_trace4_75:
+    outflows:
+    - rp_e_M3_dawnet_1_trace4_75
+    inflows:
+    - nY5SA_end
+    - nMOEQ_end
+  nMOEQ_r:
+    outflows:
+    - nMOEQ_p16
+    inflows:
+    - nMOEQ_p13
+  nMOEQ_s:
+    outflows:
+    - nMOEQ_p16
+    inflows:
+    - nMOEQ_p14
+  nMOEQ_p:
+    guard: nMOEQ_third=3
+    outflows:
+    - nMOEQ_p15
+    inflows:
+    - nMOEQ_p12
+  rt_ps_M3_dawnet_1_trace4_75:
+    outflows:
+    - nY5SA_start
+    - nMOEQ_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace4_75
+  nMOEQ_t:
+    outflows:
+    - nMOEQ_p16
+    inflows:
+    - nMOEQ_p15
+  nMOEQ_u:
+    outflows:
+    - nMOEQ_end
+    inflows:
+    - nMOEQ_p16
+  nY5SA_t:
+    outflows:
+    - nY5SA_p16
+    inflows:
+    - nY5SA_p15
+  nY5SA_u:
+    outflows:
+    - nY5SA_end
+    inflows:
+    - nY5SA_p16
+  nY5SA_r:
+    outflows:
+    - nY5SA_p16
+    inflows:
+    - nY5SA_p13
+  nY5SA_s:
+    outflows:
+    - nY5SA_p16
+    inflows:
+    - nY5SA_p14
+  nY5SA_p:
+    guard: nY5SA_third=3
+    outflows:
+    - nY5SA_p15
+    inflows:
+    - nY5SA_p12
+  nY5SA_n:
+    guard: nY5SA_first=1
+    outflows:
+    - nY5SA_p13
+    inflows:
+    - nY5SA_p12
+  nY5SA_o:
+    guard: nY5SA_second=2
+    outflows:
+    - nY5SA_p14
+    inflows:
+    - nY5SA_p12
+  nY5SA_l:
+    guard: nY5SA_number!=5
+    outflows:
+    - nY5SA_p7
+    inflows:
+    - nY5SA_p10
+  nY5SA_m:
+    guard: nY5SA_number=5
+    outflows:
+    - nY5SA_p12
+    inflows:
+    - nY5SA_p10
+    - nY5SA_p8
+    - nY5SA_p9
+  nY5SA_h:
+    outflows:
+    - nY5SA_p9
+    inflows:
+    - nY5SA_p6
+  nY5SA_i:
+    outflows:
+    - nY5SA_p10
+    updates:
+      nY5SA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY5SA_p7
+  nY5SA_f:
+    outflows:
+    - nY5SA_p5
+    - nY5SA_p6
+    - nY5SA_p7
+    inflows:
+    - nY5SA_p4
+  nY5SA_g:
+    outflows:
+    - nY5SA_p8
+    updates:
+      nY5SA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY5SA_p5
+  nY5SA_d:
+    outflows:
+    - nY5SA_p4
+    inflows:
+    - nY5SA_p2
+  nY5SA_e:
+    outflows:
+    - nY5SA_p4
+    inflows:
+    - nY5SA_p3
+  nY5SA_b:
+    outflows:
+    - nY5SA_p2
+    inflows:
+    - nY5SA_p1
+  nY5SA_c:
+    outflows:
+    - nY5SA_p3
+    inflows:
+    - nY5SA_p1
+  nY5SA_a:
+    outflows:
+    - nY5SA_p1
+    updates:
+      nY5SA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY5SA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY5SA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY5SA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY5SA_start
+name: M3_dawnet_1_trace4_75

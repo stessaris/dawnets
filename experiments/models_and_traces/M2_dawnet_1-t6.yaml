@@ -1,0 +1,138 @@
+name: M2_dawnet_1
+transitions:
+  dawnet_1_W7FQ_a:
+    inflows: [dawnet_1_W7FQ_start]
+    outflows: [dawnet_1_W7FQ_p1]
+    updates:
+      dawnet_1_W7FQ_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_W7FQ_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_W7FQ_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_W7FQ_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_W7FQ_b:
+    inflows: [dawnet_1_W7FQ_p1]
+    outflows: [dawnet_1_W7FQ_p2]
+  dawnet_1_W7FQ_c:
+    inflows: [dawnet_1_W7FQ_p1]
+    outflows: [dawnet_1_W7FQ_p3]
+  dawnet_1_W7FQ_d:
+    inflows: [dawnet_1_W7FQ_p2]
+    outflows: [dawnet_1_W7FQ_p4]
+  dawnet_1_W7FQ_e:
+    inflows: [dawnet_1_W7FQ_p3]
+    outflows: [dawnet_1_W7FQ_p4]
+  dawnet_1_W7FQ_f:
+    inflows: [dawnet_1_W7FQ_p4]
+    outflows: [dawnet_1_W7FQ_p5, dawnet_1_W7FQ_p6, dawnet_1_W7FQ_p7]
+  dawnet_1_W7FQ_g:
+    inflows: [dawnet_1_W7FQ_p5]
+    outflows: [dawnet_1_W7FQ_p8]
+    updates:
+      dawnet_1_W7FQ_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_W7FQ_h:
+    inflows: [dawnet_1_W7FQ_p6]
+    outflows: [dawnet_1_W7FQ_p9]
+  dawnet_1_W7FQ_i:
+    inflows: [dawnet_1_W7FQ_p7]
+    outflows: [dawnet_1_W7FQ_p10]
+    updates:
+      dawnet_1_W7FQ_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_W7FQ_l:
+    guard: dawnet_1_W7FQ_number!=5
+    inflows: [dawnet_1_W7FQ_p10]
+    outflows: [dawnet_1_W7FQ_p7]
+  dawnet_1_W7FQ_m:
+    guard: dawnet_1_W7FQ_number=5
+    inflows: [dawnet_1_W7FQ_p10, dawnet_1_W7FQ_p8, dawnet_1_W7FQ_p9]
+    outflows: [dawnet_1_W7FQ_p12]
+  dawnet_1_W7FQ_n:
+    guard: dawnet_1_W7FQ_first=1
+    inflows: [dawnet_1_W7FQ_p12]
+    outflows: [dawnet_1_W7FQ_p13]
+  dawnet_1_W7FQ_o:
+    guard: dawnet_1_W7FQ_second=2
+    inflows: [dawnet_1_W7FQ_p12]
+    outflows: [dawnet_1_W7FQ_p14]
+  dawnet_1_W7FQ_p:
+    guard: dawnet_1_W7FQ_third=3
+    inflows: [dawnet_1_W7FQ_p12]
+    outflows: [dawnet_1_W7FQ_p15]
+  dawnet_1_W7FQ_r:
+    inflows: [dawnet_1_W7FQ_p13]
+    outflows: [dawnet_1_W7FQ_p16]
+  dawnet_1_W7FQ_s:
+    inflows: [dawnet_1_W7FQ_p14]
+    outflows: [dawnet_1_W7FQ_p16]
+  dawnet_1_W7FQ_t:
+    inflows: [dawnet_1_W7FQ_p15]
+    outflows: [dawnet_1_W7FQ_p16]
+  dawnet_1_W7FQ_u:
+    inflows: [dawnet_1_W7FQ_p16]
+    outflows: [dawnet_1_W7FQ_end]
+  dawnet_1_YB3Q_a:
+    inflows: [dawnet_1_W7FQ_end]
+    outflows: [dawnet_1_YB3Q_p1]
+    updates:
+      dawnet_1_YB3Q_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_YB3Q_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_YB3Q_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_YB3Q_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_YB3Q_b:
+    inflows: [dawnet_1_YB3Q_p1]
+    outflows: [dawnet_1_YB3Q_p2]
+  dawnet_1_YB3Q_c:
+    inflows: [dawnet_1_YB3Q_p1]
+    outflows: [dawnet_1_YB3Q_p3]
+  dawnet_1_YB3Q_d:
+    inflows: [dawnet_1_YB3Q_p2]
+    outflows: [dawnet_1_YB3Q_p4]
+  dawnet_1_YB3Q_e:
+    inflows: [dawnet_1_YB3Q_p3]
+    outflows: [dawnet_1_YB3Q_p4]
+  dawnet_1_YB3Q_f:
+    inflows: [dawnet_1_YB3Q_p4]
+    outflows: [dawnet_1_YB3Q_p5, dawnet_1_YB3Q_p6, dawnet_1_YB3Q_p7]
+  dawnet_1_YB3Q_g:
+    inflows: [dawnet_1_YB3Q_p5]
+    outflows: [dawnet_1_YB3Q_p8]
+    updates:
+      dawnet_1_YB3Q_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_YB3Q_h:
+    inflows: [dawnet_1_YB3Q_p6]
+    outflows: [dawnet_1_YB3Q_p9]
+  dawnet_1_YB3Q_i:
+    inflows: [dawnet_1_YB3Q_p7]
+    outflows: [dawnet_1_YB3Q_p10]
+    updates:
+      dawnet_1_YB3Q_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_YB3Q_l:
+    guard: dawnet_1_YB3Q_number!=5
+    inflows: [dawnet_1_YB3Q_p10]
+    outflows: [dawnet_1_YB3Q_p7]
+  dawnet_1_YB3Q_m:
+    guard: dawnet_1_YB3Q_number=5
+    inflows: [dawnet_1_YB3Q_p10, dawnet_1_YB3Q_p8, dawnet_1_YB3Q_p9]
+    outflows: [dawnet_1_YB3Q_p12]
+  dawnet_1_YB3Q_n:
+    guard: dawnet_1_YB3Q_first=1
+    inflows: [dawnet_1_YB3Q_p12]
+    outflows: [dawnet_1_YB3Q_p13]
+  dawnet_1_YB3Q_o:
+    guard: dawnet_1_YB3Q_second=2
+    inflows: [dawnet_1_YB3Q_p12]
+    outflows: [dawnet_1_YB3Q_p14]
+  dawnet_1_YB3Q_p:
+    guard: dawnet_1_YB3Q_third=3
+    inflows: [dawnet_1_YB3Q_p12]
+    outflows: [dawnet_1_YB3Q_p15]
+  dawnet_1_YB3Q_r:
+    inflows: [dawnet_1_YB3Q_p13]
+    outflows: [dawnet_1_YB3Q_p16]
+  dawnet_1_YB3Q_s:
+    inflows: [dawnet_1_YB3Q_p14]
+    outflows: [dawnet_1_YB3Q_p16]
+  dawnet_1_YB3Q_t:
+    inflows: [dawnet_1_YB3Q_p15]
+    outflows: [dawnet_1_YB3Q_p16]
+  dawnet_1_YB3Q_u:
+    inflows: [dawnet_1_YB3Q_p16]
+    outflows: [dawnet_1_YB3Q_end]

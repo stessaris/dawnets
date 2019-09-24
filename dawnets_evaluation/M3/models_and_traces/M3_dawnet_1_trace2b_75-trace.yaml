@@ -1,0 +1,28 @@
+model: M3_dawnet_1_trace2b_75
+trace:
+- transition: nEPGA_a
+  updates:
+    nEPGA_fourth: '5'
+    nEPGA_third: '2'
+    nEPGA_second: '2'
+    nEPGA_first: '1'
+- transition: nEPGA_c
+- transition: nNQIQ_a
+  updates:
+    nNQIQ_third: '2'
+    nNQIQ_first: '1'
+    nNQIQ_fourth: '5'
+    nNQIQ_second: '2'
+- transition: nNQIQ_c
+- transition: nEPGA_i
+  updates:
+    nEPGA_number: '2'
+- transition: nNQIQ_i
+  updates:
+    nNQIQ_number: '2'
+- transition: nEPGA_i
+  updates:
+    nEPGA_number: '5'
+- transition: nNQIQ_i
+  updates:
+    nNQIQ_number: '5'

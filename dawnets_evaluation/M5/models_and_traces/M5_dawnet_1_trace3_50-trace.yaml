@@ -1,0 +1,18 @@
+model: M5_dawnet_1_trace3_50
+trace:
+- transition: n252Q_a
+  updates:
+    n252Q_second: '1'
+    n252Q_first: '3'
+    n252Q_third: '3'
+    n252Q_fourth: '2'
+- transition: n252Q_d
+- transition: n252Q_c
+- transition: n252Q_e
+- transition: n252Q_g
+  updates:
+    n252Q_fifth: '1'
+- transition: n252Q_h
+- transition: n252Q_i
+  updates:
+    n252Q_number: '5'

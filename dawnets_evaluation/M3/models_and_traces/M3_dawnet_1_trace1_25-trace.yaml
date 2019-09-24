@@ -1,0 +1,36 @@
+model: M3_dawnet_1_trace1_25
+trace:
+- transition: nRZDA_a
+  updates:
+    nRZDA_second: '2'
+    nRZDA_fourth: '3'
+    nRZDA_third: '4'
+    nRZDA_first: '4'
+- transition: nRZDA_b
+- transition: nQU2A_a
+  updates:
+    nQU2A_third: '4'
+    nQU2A_first: '4'
+    nQU2A_fourth: '3'
+    nQU2A_second: '2'
+- transition: nRZDA_d
+- transition: nRZDA_f
+- transition: nQU2A_b
+- transition: nRZDA_g
+  updates:
+    nRZDA_fifth: '2'
+- transition: nRZDA_h
+- transition: nQU2A_d
+- transition: nRZDA_i
+  updates:
+    nRZDA_number: '5'
+- transition: nQU2A_f
+- transition: nRZDA_m
+- transition: nQU2A_g
+  updates:
+    nQU2A_fifth: '2'
+- transition: nQU2A_h
+- transition: nQU2A_i
+  updates:
+    nQU2A_number: '5'
+- transition: nQU2A_m

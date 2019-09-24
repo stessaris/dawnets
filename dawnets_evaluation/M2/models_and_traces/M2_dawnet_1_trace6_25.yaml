@@ -1,0 +1,290 @@
+transitions:
+  nASAA_t:
+    outflows:
+    - nASAA_p16
+    inflows:
+    - nASAA_p15
+  nASAA_u:
+    outflows:
+    - nASAA_end
+    inflows:
+    - nASAA_p16
+  nASAA_r:
+    outflows:
+    - nASAA_p16
+    inflows:
+    - nASAA_p13
+  nASAA_s:
+    outflows:
+    - nASAA_p16
+    inflows:
+    - nASAA_p14
+  nASAA_p:
+    guard: nASAA_third=3
+    outflows:
+    - nASAA_p15
+    inflows:
+    - nASAA_p12
+  nASAA_n:
+    guard: nASAA_first=1
+    outflows:
+    - nASAA_p13
+    inflows:
+    - nASAA_p12
+  nASAA_o:
+    guard: nASAA_second=2
+    outflows:
+    - nASAA_p14
+    inflows:
+    - nASAA_p12
+  nASAA_l:
+    guard: nASAA_number!=5
+    outflows:
+    - nASAA_p7
+    inflows:
+    - nASAA_p10
+  nASAA_m:
+    guard: nASAA_number=5
+    outflows:
+    - nASAA_p12
+    inflows:
+    - nASAA_p10
+    - nASAA_p8
+    - nASAA_p9
+  nASAA_h:
+    outflows:
+    - nASAA_p9
+    inflows:
+    - nASAA_p6
+  nASAA_i:
+    outflows:
+    - nASAA_p10
+    updates:
+      nASAA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nASAA_p7
+  nASAA_f:
+    outflows:
+    - nASAA_p5
+    - nASAA_p6
+    - nASAA_p7
+    inflows:
+    - nASAA_p4
+  nASAA_g:
+    outflows:
+    - nASAA_p8
+    updates:
+      nASAA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nASAA_p5
+  nASAA_d:
+    outflows:
+    - nASAA_p4
+    inflows:
+    - nASAA_p2
+  nASAA_e:
+    outflows:
+    - nASAA_p4
+    inflows:
+    - nASAA_p3
+  nASAA_b:
+    outflows:
+    - nASAA_p2
+    inflows:
+    - nASAA_p1
+  nASAA_c:
+    outflows:
+    - nASAA_p3
+    inflows:
+    - nASAA_p1
+  nASAA_a:
+    outflows:
+    - nASAA_p1
+    updates:
+      nASAA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nASAA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nASAA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nASAA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n756A_end
+  n756A_c:
+    outflows:
+    - n756A_p3
+    inflows:
+    - n756A_p1
+  n756A_b:
+    outflows:
+    - n756A_p2
+    inflows:
+    - n756A_p1
+  n756A_a:
+    outflows:
+    - n756A_p1
+    updates:
+      n756A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n756A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n756A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n756A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n756A_start
+  n756A_g:
+    outflows:
+    - n756A_p8
+    updates:
+      n756A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n756A_p5
+  n756A_f:
+    outflows:
+    - n756A_p5
+    - n756A_p6
+    - n756A_p7
+    inflows:
+    - n756A_p4
+  n756A_e:
+    outflows:
+    - n756A_p4
+    inflows:
+    - n756A_p3
+  n756A_d:
+    outflows:
+    - n756A_p4
+    inflows:
+    - n756A_p2
+  n756A_i:
+    outflows:
+    - n756A_p10
+    updates:
+      n756A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n756A_p7
+  n756A_h:
+    outflows:
+    - n756A_p9
+    inflows:
+    - n756A_p6
+  n756A_o:
+    guard: n756A_second=2
+    outflows:
+    - n756A_p14
+    inflows:
+    - n756A_p12
+  n756A_n:
+    guard: n756A_first=1
+    outflows:
+    - n756A_p13
+    inflows:
+    - n756A_p12
+  n756A_m:
+    guard: n756A_number=5
+    outflows:
+    - n756A_p12
+    inflows:
+    - n756A_p10
+    - n756A_p8
+    - n756A_p9
+  n756A_l:
+    guard: n756A_number!=5
+    outflows:
+    - n756A_p7
+    inflows:
+    - n756A_p10
+  n756A_s:
+    outflows:
+    - n756A_p16
+    inflows:
+    - n756A_p14
+  n756A_r:
+    outflows:
+    - n756A_p16
+    inflows:
+    - n756A_p13
+  n756A_p:
+    guard: n756A_third=3
+    outflows:
+    - n756A_p15
+    inflows:
+    - n756A_p12
+  n756A_u:
+    outflows:
+    - n756A_end
+    inflows:
+    - n756A_p16
+  n756A_t:
+    outflows:
+    - n756A_p16
+    inflows:
+    - n756A_p15
+name: M2_dawnet_1_trace6_25

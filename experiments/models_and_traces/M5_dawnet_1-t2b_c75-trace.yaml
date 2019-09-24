@@ -1,0 +1,31 @@
+model: M5_dawnet_1
+name: t2b_c75
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_I6FQ_a
+  updates: {dawnet_1_I6FQ_first: '1', dawnet_1_I6FQ_fourth: '5', dawnet_1_I6FQ_second: '2',
+    dawnet_1_I6FQ_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_I6FQ_c
+- onlyin: [c75]
+  transition: dawnet_1_I6FQ_e
+- onlyin: [c75]
+  transition: dawnet_1_I6FQ_i
+  updates: {dawnet_1_I6FQ_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_I6FQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_I6FQ_i
+  updates: {dawnet_1_I6FQ_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_I6FQ_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_I6FQ_i
+  updates: {dawnet_1_I6FQ_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_I6FQ_g
+  updates: {dawnet_1_I6FQ_fifth: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_I6FQ_m
+- onlyin: [c75, c50]
+  transition: dawnet_1_I6FQ_u

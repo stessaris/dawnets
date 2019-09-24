@@ -1,0 +1,23 @@
+model: M5_dawnet_1_trace4_50
+trace:
+- transition: nQPOA_a
+  updates:
+    nQPOA_second: '2'
+    nQPOA_first: '2'
+    nQPOA_third: '4'
+    nQPOA_fourth: '2'
+- transition: nQPOA_b
+- transition: nQPOA_d
+- transition: nQPOA_c
+- transition: nQPOA_l
+- transition: nQPOA_i
+  updates:
+    nQPOA_number: '2'
+- transition: nQPOA_i
+  updates:
+    nQPOA_number: '5'
+- transition: nQPOA_g
+  updates:
+    nQPOA_fifth: '3'
+- transition: nQPOA_m
+- transition: nQPOA_u

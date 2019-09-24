@@ -1,0 +1,46 @@
+model: M3_dawnet_1_trace3_0
+trace:
+- transition: n4DSQ_a
+  updates:
+    n4DSQ_fourth: '2'
+    n4DSQ_second: '1'
+    n4DSQ_first: '3'
+    n4DSQ_third: '3'
+- transition: n4DSQ_b
+- transition: n4DSQ_d
+- transition: n4DSQ_c
+- transition: nRORA_a
+  updates:
+    nRORA_fourth: '2'
+    nRORA_first: '3'
+    nRORA_third: '3'
+    nRORA_second: '1'
+- transition: n4DSQ_e
+- transition: n4DSQ_f
+- transition: nRORA_b
+- transition: n4DSQ_g
+  updates:
+    n4DSQ_fifth: '1'
+- transition: nRORA_d
+- transition: nRORA_c
+- transition: nRORA_e
+- transition: nRORA_f
+- transition: n4DSQ_h
+- transition: nRORA_g
+  updates:
+    nRORA_fifth: '1'
+- transition: nRORA_h
+- transition: n4DSQ_i
+  updates:
+    n4DSQ_number: '5'
+- transition: nRORA_i
+  updates:
+    nRORA_number: '5'
+- transition: nRORA_m
+- transition: nRORA_p
+- transition: n4DSQ_m
+- transition: n4DSQ_p
+- transition: nRORA_t
+- transition: n4DSQ_t
+- transition: nRORA_u
+- transition: n4DSQ_u

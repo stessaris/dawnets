@@ -1,0 +1,70 @@
+name: M1_dawnet_1
+transitions:
+  dawnet_1_UPHA_a:
+    inflows: [dawnet_1_UPHA_start]
+    outflows: [dawnet_1_UPHA_p1]
+    updates:
+      dawnet_1_UPHA_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UPHA_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UPHA_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_UPHA_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UPHA_b:
+    inflows: [dawnet_1_UPHA_p1]
+    outflows: [dawnet_1_UPHA_p2]
+  dawnet_1_UPHA_c:
+    inflows: [dawnet_1_UPHA_p1]
+    outflows: [dawnet_1_UPHA_p3]
+  dawnet_1_UPHA_d:
+    inflows: [dawnet_1_UPHA_p2]
+    outflows: [dawnet_1_UPHA_p4]
+  dawnet_1_UPHA_e:
+    inflows: [dawnet_1_UPHA_p3]
+    outflows: [dawnet_1_UPHA_p4]
+  dawnet_1_UPHA_f:
+    inflows: [dawnet_1_UPHA_p4]
+    outflows: [dawnet_1_UPHA_p5, dawnet_1_UPHA_p6, dawnet_1_UPHA_p7]
+  dawnet_1_UPHA_g:
+    inflows: [dawnet_1_UPHA_p5]
+    outflows: [dawnet_1_UPHA_p8]
+    updates:
+      dawnet_1_UPHA_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UPHA_h:
+    inflows: [dawnet_1_UPHA_p6]
+    outflows: [dawnet_1_UPHA_p9]
+  dawnet_1_UPHA_i:
+    inflows: [dawnet_1_UPHA_p7]
+    outflows: [dawnet_1_UPHA_p10]
+    updates:
+      dawnet_1_UPHA_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_UPHA_l:
+    guard: dawnet_1_UPHA_number!=5
+    inflows: [dawnet_1_UPHA_p10]
+    outflows: [dawnet_1_UPHA_p7]
+  dawnet_1_UPHA_m:
+    guard: dawnet_1_UPHA_number=5
+    inflows: [dawnet_1_UPHA_p10, dawnet_1_UPHA_p8, dawnet_1_UPHA_p9]
+    outflows: [dawnet_1_UPHA_p12]
+  dawnet_1_UPHA_n:
+    guard: dawnet_1_UPHA_first=1
+    inflows: [dawnet_1_UPHA_p12]
+    outflows: [dawnet_1_UPHA_p13]
+  dawnet_1_UPHA_o:
+    guard: dawnet_1_UPHA_second=2
+    inflows: [dawnet_1_UPHA_p12]
+    outflows: [dawnet_1_UPHA_p14]
+  dawnet_1_UPHA_p:
+    guard: dawnet_1_UPHA_third=3
+    inflows: [dawnet_1_UPHA_p12]
+    outflows: [dawnet_1_UPHA_p15]
+  dawnet_1_UPHA_r:
+    inflows: [dawnet_1_UPHA_p13]
+    outflows: [dawnet_1_UPHA_p16]
+  dawnet_1_UPHA_s:
+    inflows: [dawnet_1_UPHA_p14]
+    outflows: [dawnet_1_UPHA_p16]
+  dawnet_1_UPHA_t:
+    inflows: [dawnet_1_UPHA_p15]
+    outflows: [dawnet_1_UPHA_p16]
+  dawnet_1_UPHA_u:
+    inflows: [dawnet_1_UPHA_p16]
+    outflows: [dawnet_1_UPHA_end]

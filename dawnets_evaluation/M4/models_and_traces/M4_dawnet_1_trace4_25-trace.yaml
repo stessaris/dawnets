@@ -1,0 +1,80 @@
+model: M4_dawnet_1_trace4_25
+trace:
+- transition: nQR3Q_a
+  updates:
+    nQR3Q_second: '2'
+    nQR3Q_fourth: '2'
+    nQR3Q_third: '4'
+    nQR3Q_first: '2'
+- transition: nQR3Q_b
+- transition: nQR3Q_d
+- transition: nQR3Q_c
+- transition: nQR3Q_e
+- transition: nQR3Q_i
+  updates:
+    nQR3Q_number: '1'
+- transition: nQR3Q_l
+- transition: nQR3Q_i
+  updates:
+    nQR3Q_number: '2'
+- transition: nQR3Q_l
+- transition: nQR3Q_i
+  updates:
+    nQR3Q_number: '5'
+- transition: nQR3Q_g
+  updates:
+    nQR3Q_fifth: '3'
+- transition: nQR3Q_m
+- transition: nQR3Q_u
+- transition: nAXLQ_a
+  updates:
+    nAXLQ_fourth: '2'
+    nAXLQ_first: '2'
+    nAXLQ_third: '4'
+    nAXLQ_second: '2'
+- transition: nAXLQ_b
+- transition: nAXLQ_d
+- transition: nAXLQ_c
+- transition: nAXLQ_e
+- transition: nAXLQ_i
+  updates:
+    nAXLQ_number: '1'
+- transition: nAXLQ_l
+- transition: nAXLQ_i
+  updates:
+    nAXLQ_number: '2'
+- transition: nAXLQ_l
+- transition: nAXLQ_i
+  updates:
+    nAXLQ_number: '5'
+- transition: nAXLQ_g
+  updates:
+    nAXLQ_fifth: '3'
+- transition: nAXLQ_m
+- transition: nAXLQ_u
+- transition: nUKUA_a
+  updates:
+    nUKUA_fourth: '2'
+    nUKUA_first: '2'
+    nUKUA_third: '4'
+    nUKUA_second: '2'
+- transition: nUKUA_b
+- transition: nUKUA_d
+- transition: nUKUA_c
+- transition: nUKUA_e
+- transition: nUKUA_i
+  updates:
+    nUKUA_number: '1'
+- transition: nUKUA_l
+- transition: nUKUA_i
+  updates:
+    nUKUA_number: '2'
+- transition: nUKUA_l
+- transition: nUKUA_i
+  updates:
+    nUKUA_number: '5'
+- transition: nUKUA_g
+  updates:
+    nUKUA_fifth: '3'
+- transition: nUKUA_m
+- transition: nUKUA_u

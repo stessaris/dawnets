@@ -1,0 +1,124 @@
+id: build-models
+exec: dawnets
+models_path: "."
+outdir: "build/{datetime}"
+workdir: "{outdir}/{name}"
+stderr: "{name}/{cmd}_err.txt"
+stdout: "{name}/{cmd}_out.txt"
+stats: "stats/{name}_{cmd}.json"
+logfile: "logfile.txt"
+tmpdir: "{name}"
+timeout: 180
+memory: 3221225472
+runs:
+  benchmark:
+    args: [ --outdir, "{outdir}../models_and_traces"]
+benchmarks:
+  get_conf:
+    files: []
+    runs: {config: {}}
+
+  M1-dawnet_1-t1:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1-trace.yaml']
+  M1-dawnet_1-t1b:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1b-trace.yaml']
+  M1-dawnet_1-t2:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2-trace.yaml']
+  M1-dawnet_1-t2b:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2b-trace.yaml']
+  M1-dawnet_1-t3:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t3-trace.yaml']
+  M1-dawnet_1-t4:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t4-trace.yaml']
+  M1-dawnet_1-t5:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t5-trace.yaml']
+  M1-dawnet_1-t6:
+    files: ['{models}M1_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t6-trace.yaml']
+  M1-dawnet_1-svg:
+    runs:
+      dot: { args: [-o, '{outdir}../models_and_traces/M1_dawnet_1-t1.svg']}
+    files: ['{outdir}../models_and_traces/M1_dawnet_1-t1.yaml']
+
+  M2-dawnet_1-t1:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1-trace.yaml']
+  M2-dawnet_1-t1b:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1b-trace.yaml']
+  M2-dawnet_1-t2:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2-trace.yaml']
+  M2-dawnet_1-t2b:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2b-trace.yaml']
+  M2-dawnet_1-t3:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t3-trace.yaml']
+  M2-dawnet_1-t4:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t4-trace.yaml']
+  M2-dawnet_1-t5:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t5-trace.yaml']
+  M2-dawnet_1-t6:
+    files: ['{models}M2_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t6-trace.yaml']
+  M2-dawnet_1-svg:
+    runs:
+      dot: { args: [-o, '{outdir}../models_and_traces/M2_dawnet_1-t1.svg']}
+    files: ['{outdir}../models_and_traces/M2_dawnet_1-t1.yaml']
+
+  M3-dawnet_1-t1:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1-trace.yaml']
+  M3-dawnet_1-t1b:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1b-trace.yaml']
+  M3-dawnet_1-t2:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2-trace.yaml']
+  M3-dawnet_1-t2b:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2b-trace.yaml']
+  M3-dawnet_1-t3:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t3-trace.yaml']
+  M3-dawnet_1-t4:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t4-trace.yaml']
+  M3-dawnet_1-t5:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t5-trace.yaml']
+  M3-dawnet_1-t6:
+    files: ['{models}M3_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t6-trace.yaml']
+  M3-dawnet_1-svg:
+    runs:
+      dot: { args: [-o, '{outdir}../models_and_traces/M3_dawnet_1-t1.svg']}
+    files: ['{outdir}../models_and_traces/M3_dawnet_1-t1.yaml']
+
+  M4-dawnet_1-t1:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1-trace.yaml']
+  M4-dawnet_1-t1b:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1b-trace.yaml']
+  M4-dawnet_1-t2:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2-trace.yaml']
+  M4-dawnet_1-t2b:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2b-trace.yaml']
+  M4-dawnet_1-t3:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t3-trace.yaml']
+  M4-dawnet_1-t4:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t4-trace.yaml']
+  M4-dawnet_1-t5:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t5-trace.yaml']
+  M4-dawnet_1-t6:
+    files: ['{models}M4_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t6-trace.yaml']
+  M4-dawnet_1-svg:
+    runs:
+      dot: { args: [-o, '{outdir}../models_and_traces/M4_dawnet_1-t1.svg']}
+    files: ['{outdir}../models_and_traces/M4_dawnet_1-t1.yaml']
+
+  M5-dawnet_1-t1:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1-trace.yaml']
+  M5-dawnet_1-t1b:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t1b-trace.yaml']
+  M5-dawnet_1-t2:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2-trace.yaml']
+  M5-dawnet_1-t2b:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t2b-trace.yaml']
+  M5-dawnet_1-t3:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t3-trace.yaml']
+  M5-dawnet_1-t4:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t4-trace.yaml']
+  M5-dawnet_1-t5:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t5-trace.yaml']
+  M5-dawnet_1-t6:
+    files: ['{models}M5_dawnet_1.pattern', '{models}dawnet_1.yaml', '{models}dawnet_1-t6-trace.yaml']
+  M5-dawnet_1-svg:
+    runs:
+      dot: { args: [-o, '{outdir}../models_and_traces/M5_dawnet_1-t1.svg']}
+    files: ['{outdir}../models_and_traces/M5_dawnet_1-t1.yaml']

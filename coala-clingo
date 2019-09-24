@@ -1,0 +1,77 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+set -o pipefail
+# set -x
+
+for dir in "$(python -c 'import os; from pkg_resources import resource_filename; print(os.path.join(os.path.abspath(resource_filename("coala", "..")), ""))' 2>/dev/null)" \
+    "${SCRIPT_DIR}/" \
+    "/usr/local/src/coala/"
+do
+    if [ -d "${dir}encodings" ]; then
+        ENC_DIR="${dir}encodings/"
+        break
+    fi
+done
+
+
+if [ -z "${ENC_DIR}" ]; then
+    >&2 echo "Missing Coala source files"
+    exit -1
+fi
+
+DEF_ENCODING=incremental_clingo
+DEF_HORIZON=10
+
+# by default don't filter output
+out_filter() { cat; }
+
+# see <https://stackoverflow.com/a/14203146>
+POSITIONAL=()
+BC_FILES=()
+COALA_ENCODINGS=()
+while [[ $# -gt 0 ]]
+do
+key="$1"
+
+case $key in
+    -z|--max_horizon)
+    DEF_HORIZON="$2"
+    shift 2
+    ;;
+    --enc)
+    if [ -f "${ENC_DIR}$2.lp" ]
+    then
+        COALA_ENCODINGS+=("${ENC_DIR}$2.lp")
+    fi
+    shift 2
+    ;;
+    --filter)
+    out_filter() { outputformatclingocoala; }
+    shift
+    ;;
+    *.bc)
+    BC_FILES+=("$1")
+    shift
+    ;;
+    *)    # unknown option
+    POSITIONAL+=("$1") # save it in an array for later
+    shift # past argument
+    ;;
+esac
+done
+
+if [[ "${#BC_FILES[@]}" -lt 1 ]] 
+then
+    >&2 echo "Missing BC file(s)"
+    exit -1
+fi
+
+if [[ "${#COALA_ENCODINGS[@]}" -lt 1 ]] 
+then
+    COALA_ENCODINGS=("${ENC_DIR}${DEF_ENCODING}.lp")
+fi
+
+set -e
+coala "${BC_FILES[@]}" | clingo - "${COALA_ENCODINGS[@]}" -c imax=${DEF_HORIZON} "${POSITIONAL[@]}" | out_filter

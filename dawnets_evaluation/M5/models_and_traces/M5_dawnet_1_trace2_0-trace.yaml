@@ -1,0 +1,58 @@
+model: M5_dawnet_1_trace2_0
+trace:
+- transition: nDQSQ_a
+  updates:
+    nDQSQ_second: '4'
+    nDQSQ_fourth: '5'
+    nDQSQ_third: '2'
+    nDQSQ_first: '1'
+- transition: nDQSQ_c
+- transition: nDQSQ_e
+- transition: nDQSQ_f
+- transition: nDQSQ_h
+- transition: nDQSQ_i
+  updates:
+    nDQSQ_number: '3'
+- transition: nDQSQ_l
+- transition: nDQSQ_i
+  updates:
+    nDQSQ_number: '2'
+- transition: nDQSQ_l
+- transition: nDQSQ_i
+  updates:
+    nDQSQ_number: '5'
+- transition: nDQSQ_g
+  updates:
+    nDQSQ_fifth: '3'
+- transition: nDQSQ_m
+- transition: nDQSQ_n
+- transition: nDQSQ_r
+- transition: nDQSQ_u
+- transition: nPIZA_a
+  updates:
+    nPIZA_fourth: '5'
+    nPIZA_first: '1'
+    nPIZA_third: '2'
+    nPIZA_second: '4'
+- transition: nPIZA_c
+- transition: nPIZA_e
+- transition: nPIZA_f
+- transition: nPIZA_h
+- transition: nPIZA_i
+  updates:
+    nPIZA_number: '3'
+- transition: nPIZA_l
+- transition: nPIZA_i
+  updates:
+    nPIZA_number: '2'
+- transition: nPIZA_l
+- transition: nPIZA_i
+  updates:
+    nPIZA_number: '5'
+- transition: nPIZA_g
+  updates:
+    nPIZA_fifth: '3'
+- transition: nPIZA_m
+- transition: nPIZA_n
+- transition: nPIZA_r
+- transition: nPIZA_u

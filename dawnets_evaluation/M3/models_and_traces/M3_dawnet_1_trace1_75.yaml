@@ -1,0 +1,302 @@
+transitions:
+  nSZ7A_o:
+    guard: nSZ7A_second=2
+    outflows:
+    - nSZ7A_p14
+    inflows:
+    - nSZ7A_p12
+  nSZ7A_n:
+    guard: nSZ7A_first=1
+    outflows:
+    - nSZ7A_p13
+    inflows:
+    - nSZ7A_p12
+  nSZ7A_m:
+    guard: nSZ7A_number=5
+    outflows:
+    - nSZ7A_p12
+    inflows:
+    - nSZ7A_p10
+    - nSZ7A_p8
+    - nSZ7A_p9
+  nSZ7A_l:
+    guard: nSZ7A_number!=5
+    outflows:
+    - nSZ7A_p7
+    inflows:
+    - nSZ7A_p10
+  nSZ7A_i:
+    outflows:
+    - nSZ7A_p10
+    updates:
+      nSZ7A_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nSZ7A_p7
+  nSZ7A_h:
+    outflows:
+    - nSZ7A_p9
+    inflows:
+    - nSZ7A_p6
+  nSZ7A_g:
+    outflows:
+    - nSZ7A_p8
+    updates:
+      nSZ7A_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nSZ7A_p5
+  nSZ7A_f:
+    outflows:
+    - nSZ7A_p5
+    - nSZ7A_p6
+    - nSZ7A_p7
+    inflows:
+    - nSZ7A_p4
+  nSZ7A_e:
+    outflows:
+    - nSZ7A_p4
+    inflows:
+    - nSZ7A_p3
+  nSZ7A_d:
+    outflows:
+    - nSZ7A_p4
+    inflows:
+    - nSZ7A_p2
+  nSZ7A_c:
+    outflows:
+    - nSZ7A_p3
+    inflows:
+    - nSZ7A_p1
+  nSZ7A_b:
+    outflows:
+    - nSZ7A_p2
+    inflows:
+    - nSZ7A_p1
+  nSZ7A_a:
+    outflows:
+    - nSZ7A_p1
+    updates:
+      nSZ7A_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nSZ7A_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nSZ7A_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nSZ7A_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nSZ7A_start
+  rt_pj_M3_dawnet_1_trace1_75:
+    outflows:
+    - rp_e_M3_dawnet_1_trace1_75
+    inflows:
+    - nUFEQ_end
+    - nSZ7A_end
+  rt_ps_M3_dawnet_1_trace1_75:
+    outflows:
+    - nUFEQ_start
+    - nSZ7A_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace1_75
+  nSZ7A_u:
+    outflows:
+    - nSZ7A_end
+    inflows:
+    - nSZ7A_p16
+  nSZ7A_t:
+    outflows:
+    - nSZ7A_p16
+    inflows:
+    - nSZ7A_p15
+  nSZ7A_s:
+    outflows:
+    - nSZ7A_p16
+    inflows:
+    - nSZ7A_p14
+  nSZ7A_r:
+    outflows:
+    - nSZ7A_p16
+    inflows:
+    - nSZ7A_p13
+  nSZ7A_p:
+    guard: nSZ7A_third=3
+    outflows:
+    - nSZ7A_p15
+    inflows:
+    - nSZ7A_p12
+  nUFEQ_o:
+    guard: nUFEQ_second=2
+    outflows:
+    - nUFEQ_p14
+    inflows:
+    - nUFEQ_p12
+  nUFEQ_n:
+    guard: nUFEQ_first=1
+    outflows:
+    - nUFEQ_p13
+    inflows:
+    - nUFEQ_p12
+  nUFEQ_m:
+    guard: nUFEQ_number=5
+    outflows:
+    - nUFEQ_p12
+    inflows:
+    - nUFEQ_p10
+    - nUFEQ_p8
+    - nUFEQ_p9
+  nUFEQ_l:
+    guard: nUFEQ_number!=5
+    outflows:
+    - nUFEQ_p7
+    inflows:
+    - nUFEQ_p10
+  nUFEQ_i:
+    outflows:
+    - nUFEQ_p10
+    updates:
+      nUFEQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUFEQ_p7
+  nUFEQ_h:
+    outflows:
+    - nUFEQ_p9
+    inflows:
+    - nUFEQ_p6
+  nUFEQ_g:
+    outflows:
+    - nUFEQ_p8
+    updates:
+      nUFEQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUFEQ_p5
+  nUFEQ_f:
+    outflows:
+    - nUFEQ_p5
+    - nUFEQ_p6
+    - nUFEQ_p7
+    inflows:
+    - nUFEQ_p4
+  nUFEQ_e:
+    outflows:
+    - nUFEQ_p4
+    inflows:
+    - nUFEQ_p3
+  nUFEQ_d:
+    outflows:
+    - nUFEQ_p4
+    inflows:
+    - nUFEQ_p2
+  nUFEQ_c:
+    outflows:
+    - nUFEQ_p3
+    inflows:
+    - nUFEQ_p1
+  nUFEQ_b:
+    outflows:
+    - nUFEQ_p2
+    inflows:
+    - nUFEQ_p1
+  nUFEQ_a:
+    outflows:
+    - nUFEQ_p1
+    updates:
+      nUFEQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUFEQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUFEQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nUFEQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nUFEQ_start
+  nUFEQ_u:
+    outflows:
+    - nUFEQ_end
+    inflows:
+    - nUFEQ_p16
+  nUFEQ_t:
+    outflows:
+    - nUFEQ_p16
+    inflows:
+    - nUFEQ_p15
+  nUFEQ_s:
+    outflows:
+    - nUFEQ_p16
+    inflows:
+    - nUFEQ_p14
+  nUFEQ_r:
+    outflows:
+    - nUFEQ_p16
+    inflows:
+    - nUFEQ_p13
+  nUFEQ_p:
+    guard: nUFEQ_third=3
+    outflows:
+    - nUFEQ_p15
+    inflows:
+    - nUFEQ_p12
+name: M3_dawnet_1_trace1_75

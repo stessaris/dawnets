@@ -1,0 +1,21 @@
+model: M2_dawnet_1
+name: t1_c25
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_VUBA_a
+  updates: {dawnet_1_VUBA_first: '4', dawnet_1_VUBA_fourth: '3', dawnet_1_VUBA_second: '2',
+    dawnet_1_VUBA_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_VUBA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_VUBA_i
+  updates: {dawnet_1_VUBA_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZWCA_a
+  updates: {dawnet_1_ZWCA_first: '4', dawnet_1_ZWCA_fourth: '3', dawnet_1_ZWCA_second: '2',
+    dawnet_1_ZWCA_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZWCA_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_ZWCA_i
+  updates: {dawnet_1_ZWCA_number: '5'}

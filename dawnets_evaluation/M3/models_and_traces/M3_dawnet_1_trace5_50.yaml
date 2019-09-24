@@ -1,0 +1,302 @@
+transitions:
+  nCLRQ_n:
+    guard: nCLRQ_first=1
+    outflows:
+    - nCLRQ_p13
+    inflows:
+    - nCLRQ_p12
+  nCLRQ_o:
+    guard: nCLRQ_second=2
+    outflows:
+    - nCLRQ_p14
+    inflows:
+    - nCLRQ_p12
+  nCLRQ_l:
+    guard: nCLRQ_number!=5
+    outflows:
+    - nCLRQ_p7
+    inflows:
+    - nCLRQ_p10
+  nCLRQ_m:
+    guard: nCLRQ_number=5
+    outflows:
+    - nCLRQ_p12
+    inflows:
+    - nCLRQ_p10
+    - nCLRQ_p8
+    - nCLRQ_p9
+  nCLRQ_h:
+    outflows:
+    - nCLRQ_p9
+    inflows:
+    - nCLRQ_p6
+  nCLRQ_i:
+    outflows:
+    - nCLRQ_p10
+    updates:
+      nCLRQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nCLRQ_p7
+  nCLRQ_f:
+    outflows:
+    - nCLRQ_p5
+    - nCLRQ_p6
+    - nCLRQ_p7
+    inflows:
+    - nCLRQ_p4
+  nCLRQ_g:
+    outflows:
+    - nCLRQ_p8
+    updates:
+      nCLRQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nCLRQ_p5
+  nCLRQ_d:
+    outflows:
+    - nCLRQ_p4
+    inflows:
+    - nCLRQ_p2
+  nCLRQ_e:
+    outflows:
+    - nCLRQ_p4
+    inflows:
+    - nCLRQ_p3
+  nCLRQ_b:
+    outflows:
+    - nCLRQ_p2
+    inflows:
+    - nCLRQ_p1
+  nCLRQ_c:
+    outflows:
+    - nCLRQ_p3
+    inflows:
+    - nCLRQ_p1
+  nCLRQ_a:
+    outflows:
+    - nCLRQ_p1
+    updates:
+      nCLRQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCLRQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCLRQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCLRQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nCLRQ_start
+  rt_pj_M3_dawnet_1_trace5_50:
+    outflows:
+    - rp_e_M3_dawnet_1_trace5_50
+    inflows:
+    - nEPCA_end
+    - nCLRQ_end
+  nCLRQ_t:
+    outflows:
+    - nCLRQ_p16
+    inflows:
+    - nCLRQ_p15
+  nCLRQ_u:
+    outflows:
+    - nCLRQ_end
+    inflows:
+    - nCLRQ_p16
+  nCLRQ_r:
+    outflows:
+    - nCLRQ_p16
+    inflows:
+    - nCLRQ_p13
+  nCLRQ_s:
+    outflows:
+    - nCLRQ_p16
+    inflows:
+    - nCLRQ_p14
+  nCLRQ_p:
+    guard: nCLRQ_third=3
+    outflows:
+    - nCLRQ_p15
+    inflows:
+    - nCLRQ_p12
+  rt_ps_M3_dawnet_1_trace5_50:
+    outflows:
+    - nEPCA_start
+    - nCLRQ_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace5_50
+  nEPCA_u:
+    outflows:
+    - nEPCA_end
+    inflows:
+    - nEPCA_p16
+  nEPCA_t:
+    outflows:
+    - nEPCA_p16
+    inflows:
+    - nEPCA_p15
+  nEPCA_s:
+    outflows:
+    - nEPCA_p16
+    inflows:
+    - nEPCA_p14
+  nEPCA_r:
+    outflows:
+    - nEPCA_p16
+    inflows:
+    - nEPCA_p13
+  nEPCA_p:
+    guard: nEPCA_third=3
+    outflows:
+    - nEPCA_p15
+    inflows:
+    - nEPCA_p12
+  nEPCA_o:
+    guard: nEPCA_second=2
+    outflows:
+    - nEPCA_p14
+    inflows:
+    - nEPCA_p12
+  nEPCA_n:
+    guard: nEPCA_first=1
+    outflows:
+    - nEPCA_p13
+    inflows:
+    - nEPCA_p12
+  nEPCA_m:
+    guard: nEPCA_number=5
+    outflows:
+    - nEPCA_p12
+    inflows:
+    - nEPCA_p10
+    - nEPCA_p8
+    - nEPCA_p9
+  nEPCA_l:
+    guard: nEPCA_number!=5
+    outflows:
+    - nEPCA_p7
+    inflows:
+    - nEPCA_p10
+  nEPCA_i:
+    outflows:
+    - nEPCA_p10
+    updates:
+      nEPCA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPCA_p7
+  nEPCA_h:
+    outflows:
+    - nEPCA_p9
+    inflows:
+    - nEPCA_p6
+  nEPCA_g:
+    outflows:
+    - nEPCA_p8
+    updates:
+      nEPCA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPCA_p5
+  nEPCA_f:
+    outflows:
+    - nEPCA_p5
+    - nEPCA_p6
+    - nEPCA_p7
+    inflows:
+    - nEPCA_p4
+  nEPCA_e:
+    outflows:
+    - nEPCA_p4
+    inflows:
+    - nEPCA_p3
+  nEPCA_d:
+    outflows:
+    - nEPCA_p4
+    inflows:
+    - nEPCA_p2
+  nEPCA_c:
+    outflows:
+    - nEPCA_p3
+    inflows:
+    - nEPCA_p1
+  nEPCA_b:
+    outflows:
+    - nEPCA_p2
+    inflows:
+    - nEPCA_p1
+  nEPCA_a:
+    outflows:
+    - nEPCA_p1
+    updates:
+      nEPCA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPCA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPCA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nEPCA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nEPCA_start
+name: M3_dawnet_1_trace5_50

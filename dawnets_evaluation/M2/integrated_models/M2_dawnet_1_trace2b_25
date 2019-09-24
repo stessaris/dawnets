@@ -1,0 +1,508 @@
+transitions:
+  nHYMQ_s:
+    outflows:
+    - nHYMQ_p16
+    inflows:
+    - nHYMQ_p14
+  nHYMQ_r:
+    outflows:
+    - nHYMQ_p16
+    inflows:
+    - nHYMQ_p13
+  nHYMQ_p:
+    guard: nHYMQ_third=3
+    outflows:
+    - nHYMQ_p15
+    inflows:
+    - nHYMQ_p12
+  nHYMQ_u:
+    outflows:
+    - nHYMQ_end
+    inflows:
+    - nHYMQ_p16
+  nHYMQ_t:
+    outflows:
+    - nHYMQ_p16
+    inflows:
+    - nHYMQ_p15
+  nHYMQ_c:
+    outflows:
+    - nHYMQ_p3
+    inflows:
+    - nHYMQ_p1
+  nHYMQ_b:
+    outflows:
+    - nHYMQ_p2
+    inflows:
+    - nHYMQ_p1
+  nHYMQ_a:
+    outflows:
+    - nHYMQ_p1
+    updates:
+      nHYMQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nHYMQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nHYMQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nHYMQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nHYMQ_start
+  nHYMQ_g:
+    outflows:
+    - nHYMQ_p8
+    updates:
+      nHYMQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nHYMQ_p5
+  nHYMQ_f:
+    outflows:
+    - nHYMQ_p5
+    - nHYMQ_p6
+    - nHYMQ_p7
+    inflows:
+    - nHYMQ_p4
+  nHYMQ_e:
+    outflows:
+    - nHYMQ_p4
+    inflows:
+    - nHYMQ_p3
+  nHYMQ_d:
+    outflows:
+    - nHYMQ_p4
+    inflows:
+    - nHYMQ_p2
+  nHYMQ_i:
+    outflows:
+    - nHYMQ_p10
+    updates:
+      nHYMQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nHYMQ_p7
+  nHYMQ_h:
+    outflows:
+    - nHYMQ_p9
+    inflows:
+    - nHYMQ_p6
+  nHYMQ_o:
+    guard: nHYMQ_second=2
+    outflows:
+    - nHYMQ_p14
+    inflows:
+    - nHYMQ_p12
+  nHYMQ_n:
+    guard: nHYMQ_first=1
+    outflows:
+    - nHYMQ_p13
+    inflows:
+    - nHYMQ_p12
+  nHYMQ_m:
+    guard: nHYMQ_number=5
+    outflows:
+    - nHYMQ_p12
+    inflows:
+    - nHYMQ_p10
+    - nHYMQ_p8
+    - nHYMQ_p9
+  nHYMQ_l:
+    guard: nHYMQ_number!=5
+    outflows:
+    - nHYMQ_p7
+    inflows:
+    - nHYMQ_p10
+  n2XYQ_d:
+    outflows:
+    - n2XYQ_p4
+    inflows:
+    - n2XYQ_p2
+  n2XYQ_e:
+    outflows:
+    - n2XYQ_p4
+    inflows:
+    - n2XYQ_p3
+  n2XYQ_f:
+    outflows:
+    - n2XYQ_p5
+    - n2XYQ_p6
+    - n2XYQ_p7
+    inflows:
+    - n2XYQ_p4
+  n2XYQ_g:
+    outflows:
+    - n2XYQ_p8
+    updates:
+      n2XYQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n2XYQ_p5
+  n2XYQ_a:
+    outflows:
+    - n2XYQ_p1
+    updates:
+      n2XYQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2XYQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2XYQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n2XYQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nHYMQ_end
+  n2XYQ_b:
+    outflows:
+    - n2XYQ_p2
+    inflows:
+    - n2XYQ_p1
+  n2XYQ_c:
+    outflows:
+    - n2XYQ_p3
+    inflows:
+    - n2XYQ_p1
+  n2XYQ_l:
+    guard: n2XYQ_number!=5
+    outflows:
+    - n2XYQ_p7
+    inflows:
+    - n2XYQ_p10
+  n2XYQ_m:
+    guard: n2XYQ_number=5
+    outflows:
+    - n2XYQ_p12
+    inflows:
+    - n2XYQ_p10
+    - n2XYQ_p8
+    - n2XYQ_p9
+  n2XYQ_n:
+    guard: n2XYQ_first=1
+    outflows:
+    - n2XYQ_p13
+    inflows:
+    - n2XYQ_p12
+  n2XYQ_o:
+    guard: n2XYQ_second=2
+    outflows:
+    - n2XYQ_p14
+    inflows:
+    - n2XYQ_p12
+  n2XYQ_h:
+    outflows:
+    - n2XYQ_p9
+    inflows:
+    - n2XYQ_p6
+  n2XYQ_i:
+    outflows:
+    - n2XYQ_p10
+    updates:
+      n2XYQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n2XYQ_p7
+  n2XYQ_t:
+    outflows:
+    - n2XYQ_p16
+    inflows:
+    - n2XYQ_p15
+  n2XYQ_u:
+    outflows:
+    - n2XYQ_end
+    inflows:
+    - n2XYQ_p16
+  n2XYQ_p:
+    guard: n2XYQ_third=3
+    outflows:
+    - n2XYQ_p15
+    inflows:
+    - n2XYQ_p12
+  n2XYQ_r:
+    outflows:
+    - n2XYQ_p16
+    inflows:
+    - n2XYQ_p13
+  n2XYQ_s:
+    outflows:
+    - n2XYQ_p16
+    inflows:
+    - n2XYQ_p14
+  tr_nHYMQ_a_1:
+    outflows:
+    - nHYMQ_p1
+    - tr_stp1
+    updates:
+      nHYMQ_fourth:
+      - '5'
+      nHYMQ_second:
+      - '2'
+      nHYMQ_third:
+      - '2'
+      nHYMQ_first:
+      - '1'
+    inflows:
+    - nHYMQ_start
+    - tr_stp0
+  tr_nHYMQ_c_2:
+    outflows:
+    - nHYMQ_p3
+    - tr_stp2
+    inflows:
+    - nHYMQ_p1
+    - tr_stp1
+  tr_nHYMQ_e_3:
+    outflows:
+    - nHYMQ_p4
+    - tr_stp3
+    inflows:
+    - nHYMQ_p3
+    - tr_stp2
+  tr_nHYMQ_i_4:
+    outflows:
+    - nHYMQ_p10
+    - tr_stp4
+    updates:
+      nHYMQ_number:
+      - '3'
+    inflows:
+    - nHYMQ_p7
+    - tr_stp3
+  tr_nHYMQ_l_5:
+    guard: nHYMQ_number!=5
+    outflows:
+    - nHYMQ_p7
+    - tr_stp5
+    inflows:
+    - nHYMQ_p10
+    - tr_stp4
+  tr_nHYMQ_i_6:
+    outflows:
+    - nHYMQ_p10
+    - tr_stp6
+    updates:
+      nHYMQ_number:
+      - '2'
+    inflows:
+    - nHYMQ_p7
+    - tr_stp5
+  tr_nHYMQ_l_7:
+    guard: nHYMQ_number!=5
+    outflows:
+    - nHYMQ_p7
+    - tr_stp7
+    inflows:
+    - nHYMQ_p10
+    - tr_stp6
+  tr_nHYMQ_i_8:
+    outflows:
+    - nHYMQ_p10
+    - tr_stp8
+    updates:
+      nHYMQ_number:
+      - '5'
+    inflows:
+    - nHYMQ_p7
+    - tr_stp7
+  tr_nHYMQ_g_9:
+    outflows:
+    - nHYMQ_p8
+    - tr_stp9
+    updates:
+      nHYMQ_fifth:
+      - '3'
+    inflows:
+    - nHYMQ_p5
+    - tr_stp8
+  tr_nHYMQ_m_10:
+    guard: nHYMQ_number=5
+    outflows:
+    - nHYMQ_p12
+    - tr_stp10
+    inflows:
+    - nHYMQ_p10
+    - nHYMQ_p8
+    - nHYMQ_p9
+    - tr_stp9
+  tr_nHYMQ_u_11:
+    outflows:
+    - nHYMQ_end
+    - tr_stp11
+    inflows:
+    - nHYMQ_p16
+    - tr_stp10
+  tr_n2XYQ_a_12:
+    outflows:
+    - n2XYQ_p1
+    - tr_stp12
+    updates:
+      n2XYQ_third:
+      - '2'
+      n2XYQ_fourth:
+      - '5'
+      n2XYQ_first:
+      - '1'
+      n2XYQ_second:
+      - '2'
+    inflows:
+    - nHYMQ_end
+    - tr_stp11
+  tr_n2XYQ_c_13:
+    outflows:
+    - n2XYQ_p3
+    - tr_stp13
+    inflows:
+    - n2XYQ_p1
+    - tr_stp12
+  tr_n2XYQ_e_14:
+    outflows:
+    - n2XYQ_p4
+    - tr_stp14
+    inflows:
+    - n2XYQ_p3
+    - tr_stp13
+  tr_n2XYQ_i_15:
+    outflows:
+    - n2XYQ_p10
+    - tr_stp15
+    updates:
+      n2XYQ_number:
+      - '3'
+    inflows:
+    - n2XYQ_p7
+    - tr_stp14
+  tr_n2XYQ_l_16:
+    guard: n2XYQ_number!=5
+    outflows:
+    - n2XYQ_p7
+    - tr_stp16
+    inflows:
+    - n2XYQ_p10
+    - tr_stp15
+  tr_n2XYQ_i_17:
+    outflows:
+    - n2XYQ_p10
+    - tr_stp17
+    updates:
+      n2XYQ_number:
+      - '2'
+    inflows:
+    - n2XYQ_p7
+    - tr_stp16
+  tr_n2XYQ_l_18:
+    guard: n2XYQ_number!=5
+    outflows:
+    - n2XYQ_p7
+    - tr_stp18
+    inflows:
+    - n2XYQ_p10
+    - tr_stp17
+  tr_n2XYQ_i_19:
+    outflows:
+    - n2XYQ_p10
+    - tr_stp19
+    updates:
+      n2XYQ_number:
+      - '5'
+    inflows:
+    - n2XYQ_p7
+    - tr_stp18
+  tr_n2XYQ_g_20:
+    outflows:
+    - n2XYQ_p8
+    - tr_stp20
+    updates:
+      n2XYQ_fifth:
+      - '3'
+    inflows:
+    - n2XYQ_p5
+    - tr_stp19
+  tr_n2XYQ_m_21:
+    guard: n2XYQ_number=5
+    outflows:
+    - n2XYQ_p12
+    - tr_stp21
+    inflows:
+    - n2XYQ_p10
+    - n2XYQ_p8
+    - n2XYQ_p9
+    - tr_stp20
+  tr_n2XYQ_u_22:
+    outflows:
+    - n2XYQ_end
+    - tr_stp22
+    inflows:
+    - n2XYQ_p16
+    - tr_stp21
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nHYMQ_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp22
+    - n2XYQ_end
+name: M2_dawnet_1_trace2b_25

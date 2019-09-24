@@ -1,0 +1,22 @@
+model: M2_dawnet_1_trace1_75
+trace:
+- transition: n5YDQ_a
+  updates:
+    n5YDQ_fourth: '3'
+    n5YDQ_third: '4'
+    n5YDQ_second: '2'
+    n5YDQ_first: '4'
+- transition: n5YDQ_d
+- transition: n5YDQ_i
+  updates:
+    n5YDQ_number: '5'
+- transition: nYM5Q_a
+  updates:
+    nYM5Q_fourth: '3'
+    nYM5Q_second: '2'
+    nYM5Q_first: '4'
+    nYM5Q_third: '4'
+- transition: nYM5Q_d
+- transition: nYM5Q_i
+  updates:
+    nYM5Q_number: '5'

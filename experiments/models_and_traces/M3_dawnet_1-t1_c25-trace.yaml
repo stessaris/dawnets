@@ -1,0 +1,21 @@
+model: M3_dawnet_1
+name: t1_c25
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3SHQ_a
+  updates: {dawnet_1_3SHQ_first: '4', dawnet_1_3SHQ_fourth: '3', dawnet_1_3SHQ_second: '2',
+    dawnet_1_3SHQ_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UZEQ_a
+  updates: {dawnet_1_UZEQ_first: '4', dawnet_1_UZEQ_fourth: '3', dawnet_1_UZEQ_second: '2',
+    dawnet_1_UZEQ_third: '4'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3SHQ_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UZEQ_d
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_UZEQ_i
+  updates: {dawnet_1_UZEQ_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_3SHQ_i
+  updates: {dawnet_1_3SHQ_number: '5'}

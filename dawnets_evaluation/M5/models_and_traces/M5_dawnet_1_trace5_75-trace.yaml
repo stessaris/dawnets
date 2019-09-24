@@ -1,0 +1,18 @@
+model: M5_dawnet_1_trace5_75
+trace:
+- transition: nZDXA_a
+  updates:
+    nZDXA_second: '5'
+    nZDXA_first: '4'
+    nZDXA_fourth: '1'
+    nZDXA_third: '3'
+- transition: nZDXA_d
+- transition: nZDXA_o
+- transition: nOGBQ_a
+  updates:
+    nOGBQ_second: '5'
+    nOGBQ_fourth: '1'
+    nOGBQ_third: '3'
+    nOGBQ_first: '4'
+- transition: nOGBQ_d
+- transition: nOGBQ_o

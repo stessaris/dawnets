@@ -1,0 +1,67 @@
+model: M3_dawnet_1
+name: t2b
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_737Q_a
+  updates: {dawnet_1_737Q_first: '1', dawnet_1_737Q_fourth: '5', dawnet_1_737Q_second: '2',
+    dawnet_1_737Q_third: '2'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_737Q_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_BZBA_a
+  updates: {dawnet_1_BZBA_first: '1', dawnet_1_BZBA_fourth: '5', dawnet_1_BZBA_second: '2',
+    dawnet_1_BZBA_third: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_737Q_e
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_BZBA_c
+- onlyin: [c75]
+  transition: dawnet_1_BZBA_e
+- {transition: dawnet_1_BZBA_f}
+- {transition: dawnet_1_737Q_f}
+- {transition: dawnet_1_BZBA_h}
+- onlyin: [c75]
+  transition: dawnet_1_BZBA_i
+  updates: {dawnet_1_BZBA_number: '3'}
+- {transition: dawnet_1_737Q_h}
+- onlyin: [c75, c50]
+  transition: dawnet_1_BZBA_l
+- onlyin: [c75]
+  transition: dawnet_1_737Q_i
+  updates: {dawnet_1_737Q_number: '3'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_737Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_737Q_i
+  updates: {dawnet_1_737Q_number: '2'}
+- onlyin: [c75]
+  transition: dawnet_1_737Q_l
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_737Q_i
+  updates: {dawnet_1_737Q_number: '5'}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_BZBA_i
+  updates: {dawnet_1_BZBA_number: '2'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_737Q_g
+  updates: {dawnet_1_737Q_fifth: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_BZBA_l
+- onlyin: [c75, c50]
+  transition: dawnet_1_737Q_m
+- {transition: dawnet_1_737Q_n}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_BZBA_i
+  updates: {dawnet_1_BZBA_number: '5'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_BZBA_g
+  updates: {dawnet_1_BZBA_fifth: '3'}
+- {transition: dawnet_1_737Q_r}
+- onlyin: [c75, c50]
+  transition: dawnet_1_737Q_u
+- onlyin: [c75, c50]
+  transition: dawnet_1_BZBA_m
+- {transition: dawnet_1_BZBA_n}
+- {transition: dawnet_1_BZBA_r}
+- onlyin: [c75, c50]
+  transition: dawnet_1_BZBA_u

@@ -1,0 +1,50 @@
+model: M5_dawnet_1_trace6_25
+trace:
+- transition: n5BEA_a
+  updates:
+    n5BEA_fourth: '1'
+    n5BEA_third: '5'
+    n5BEA_second: '2'
+    n5BEA_first: '4'
+- transition: n5BEA_c
+- transition: n5BEA_e
+- transition: n5BEA_i
+  updates:
+    n5BEA_number: '5'
+- transition: n5BEA_l
+- transition: n5BEA_i
+  updates:
+    n5BEA_number: '5'
+- transition: n5BEA_l
+- transition: n5BEA_i
+  updates:
+    n5BEA_number: '5'
+- transition: n5BEA_g
+  updates:
+    n5BEA_fifth: '2'
+- transition: n5BEA_m
+- transition: n5BEA_u
+- transition: n76YA_a
+  updates:
+    n76YA_second: '2'
+    n76YA_fourth: '1'
+    n76YA_third: '5'
+    n76YA_first: '4'
+- transition: n76YA_c
+- transition: n76YA_e
+- transition: n76YA_i
+  updates:
+    n76YA_number: '5'
+- transition: n76YA_l
+- transition: n76YA_i
+  updates:
+    n76YA_number: '5'
+- transition: n76YA_l
+- transition: n76YA_i
+  updates:
+    n76YA_number: '5'
+- transition: n76YA_g
+  updates:
+    n76YA_fifth: '2'
+- transition: n76YA_m
+- transition: n76YA_u

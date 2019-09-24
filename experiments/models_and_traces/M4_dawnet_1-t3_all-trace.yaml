@@ -1,0 +1,84 @@
+model: M4_dawnet_1
+name: t3
+trace:
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_DJXQ_a
+  updates: {dawnet_1_DJXQ_first: '3', dawnet_1_DJXQ_fourth: '2', dawnet_1_DJXQ_second: '1',
+    dawnet_1_DJXQ_third: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_DJXQ_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_DJXQ_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_DJXQ_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_DJXQ_e
+- onlyin: [c75]
+  transition: dawnet_1_DJXQ_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_DJXQ_g
+  updates: {dawnet_1_DJXQ_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_DJXQ_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_DJXQ_i
+  updates: {dawnet_1_DJXQ_number: '5'}
+- onlyin: [c75]
+  transition: dawnet_1_DJXQ_m
+- {transition: dawnet_1_DJXQ_p}
+- {transition: dawnet_1_DJXQ_t}
+- {transition: dawnet_1_DJXQ_u}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_WEJA_a
+  updates: {dawnet_1_WEJA_first: '3', dawnet_1_WEJA_fourth: '2', dawnet_1_WEJA_second: '1',
+    dawnet_1_WEJA_third: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_WEJA_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_WEJA_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_WEJA_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_WEJA_e
+- onlyin: [c75]
+  transition: dawnet_1_WEJA_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_WEJA_g
+  updates: {dawnet_1_WEJA_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_WEJA_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_WEJA_i
+  updates: {dawnet_1_WEJA_number: '5'}
+- onlyin: [c75]
+  transition: dawnet_1_WEJA_m
+- {transition: dawnet_1_WEJA_p}
+- {transition: dawnet_1_WEJA_t}
+- {transition: dawnet_1_WEJA_u}
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_W6CQ_a
+  updates: {dawnet_1_W6CQ_first: '3', dawnet_1_W6CQ_fourth: '2', dawnet_1_W6CQ_second: '1',
+    dawnet_1_W6CQ_third: '3'}
+- onlyin: [c75]
+  transition: dawnet_1_W6CQ_b
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_W6CQ_d
+- onlyin: [c75, c50]
+  transition: dawnet_1_W6CQ_c
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_W6CQ_e
+- onlyin: [c75]
+  transition: dawnet_1_W6CQ_f
+- onlyin: [c75, c50]
+  transition: dawnet_1_W6CQ_g
+  updates: {dawnet_1_W6CQ_fifth: '1'}
+- onlyin: [c75, c50]
+  transition: dawnet_1_W6CQ_h
+- onlyin: [c75, c50, c25]
+  transition: dawnet_1_W6CQ_i
+  updates: {dawnet_1_W6CQ_number: '5'}
+- onlyin: [c75]
+  transition: dawnet_1_W6CQ_m
+- {transition: dawnet_1_W6CQ_p}
+- {transition: dawnet_1_W6CQ_t}
+- {transition: dawnet_1_W6CQ_u}

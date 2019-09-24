@@ -1,0 +1,70 @@
+name: M1_dawnet_1
+transitions:
+  dawnet_1_WIHQ_a:
+    inflows: [dawnet_1_WIHQ_start]
+    outflows: [dawnet_1_WIHQ_p1]
+    updates:
+      dawnet_1_WIHQ_first: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_WIHQ_fourth: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_WIHQ_second: ['0', '1', '2', '3', '4', '5']
+      dawnet_1_WIHQ_third: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_WIHQ_b:
+    inflows: [dawnet_1_WIHQ_p1]
+    outflows: [dawnet_1_WIHQ_p2]
+  dawnet_1_WIHQ_c:
+    inflows: [dawnet_1_WIHQ_p1]
+    outflows: [dawnet_1_WIHQ_p3]
+  dawnet_1_WIHQ_d:
+    inflows: [dawnet_1_WIHQ_p2]
+    outflows: [dawnet_1_WIHQ_p4]
+  dawnet_1_WIHQ_e:
+    inflows: [dawnet_1_WIHQ_p3]
+    outflows: [dawnet_1_WIHQ_p4]
+  dawnet_1_WIHQ_f:
+    inflows: [dawnet_1_WIHQ_p4]
+    outflows: [dawnet_1_WIHQ_p5, dawnet_1_WIHQ_p6, dawnet_1_WIHQ_p7]
+  dawnet_1_WIHQ_g:
+    inflows: [dawnet_1_WIHQ_p5]
+    outflows: [dawnet_1_WIHQ_p8]
+    updates:
+      dawnet_1_WIHQ_fifth: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_WIHQ_h:
+    inflows: [dawnet_1_WIHQ_p6]
+    outflows: [dawnet_1_WIHQ_p9]
+  dawnet_1_WIHQ_i:
+    inflows: [dawnet_1_WIHQ_p7]
+    outflows: [dawnet_1_WIHQ_p10]
+    updates:
+      dawnet_1_WIHQ_number: ['0', '1', '2', '3', '4', '5']
+  dawnet_1_WIHQ_l:
+    guard: dawnet_1_WIHQ_number!=5
+    inflows: [dawnet_1_WIHQ_p10]
+    outflows: [dawnet_1_WIHQ_p7]
+  dawnet_1_WIHQ_m:
+    guard: dawnet_1_WIHQ_number=5
+    inflows: [dawnet_1_WIHQ_p10, dawnet_1_WIHQ_p8, dawnet_1_WIHQ_p9]
+    outflows: [dawnet_1_WIHQ_p12]
+  dawnet_1_WIHQ_n:
+    guard: dawnet_1_WIHQ_first=1
+    inflows: [dawnet_1_WIHQ_p12]
+    outflows: [dawnet_1_WIHQ_p13]
+  dawnet_1_WIHQ_o:
+    guard: dawnet_1_WIHQ_second=2
+    inflows: [dawnet_1_WIHQ_p12]
+    outflows: [dawnet_1_WIHQ_p14]
+  dawnet_1_WIHQ_p:
+    guard: dawnet_1_WIHQ_third=3
+    inflows: [dawnet_1_WIHQ_p12]
+    outflows: [dawnet_1_WIHQ_p15]
+  dawnet_1_WIHQ_r:
+    inflows: [dawnet_1_WIHQ_p13]
+    outflows: [dawnet_1_WIHQ_p16]
+  dawnet_1_WIHQ_s:
+    inflows: [dawnet_1_WIHQ_p14]
+    outflows: [dawnet_1_WIHQ_p16]
+  dawnet_1_WIHQ_t:
+    inflows: [dawnet_1_WIHQ_p15]
+    outflows: [dawnet_1_WIHQ_p16]
+  dawnet_1_WIHQ_u:
+    inflows: [dawnet_1_WIHQ_p16]
+    outflows: [dawnet_1_WIHQ_end]

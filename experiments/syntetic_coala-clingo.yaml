@@ -1,0 +1,182 @@
+id: syntetic_coala-clingo
+models_path: models_and_traces
+outdir: "results/{datetime}"
+workdir: "{outdir}/{name}"
+stderr: "{name}/{cmd}_err.txt"
+stdout: "{name}/{cmd}_out.txt"
+stats: "stats/{name}_{cmd}.json"
+logfile: "logfile.txt"
+tmpdir: "{name}"
+timeout: 3600
+memory: 8589934592
+runs:
+  coala: {args: [-z, '50']}
+config:
+  coala:
+    command: "coala-clingo --filter --warn=no-atom-undefined"
+benchmarks:
+  M1_dawnet_1-tempty_c000: { files: ['{models}M1_dawnet_1-t1.yaml'] }
+  M1_dawnet_1-t1_c100: { files: ['{models}M1_dawnet_1-t1.yaml', '{models}M1_dawnet_1-t1_all-trace.yaml'] }
+  M1_dawnet_1-t1_c025: { files: ['{models}M1_dawnet_1-t1.yaml', '{models}M1_dawnet_1-t1_c25-trace.yaml'] }
+  M1_dawnet_1-t2_c050: { files: ['{models}M1_dawnet_1-t1b.yaml', '{models}M1_dawnet_1-t1b_c50-trace.yaml'] }
+  M1_dawnet_1-t2_c075: { files: ['{models}M1_dawnet_1-t1b.yaml', '{models}M1_dawnet_1-t1b_c75-trace.yaml'] }
+  M1_dawnet_1-t1_c050: { files: ['{models}M1_dawnet_1-t1.yaml', '{models}M1_dawnet_1-t1_c50-trace.yaml'] }
+  M1_dawnet_1-t2_c100: { files: ['{models}M1_dawnet_1-t1b.yaml', '{models}M1_dawnet_1-t1b_all-trace.yaml'] }
+  M1_dawnet_1-t2_c025: { files: ['{models}M1_dawnet_1-t1b.yaml', '{models}M1_dawnet_1-t1b_c25-trace.yaml'] }
+  M1_dawnet_1-t1_c075: { files: ['{models}M1_dawnet_1-t1.yaml', '{models}M1_dawnet_1-t1_c75-trace.yaml'] }
+  M1_dawnet_1-t3_c100: { files: ['{models}M1_dawnet_1-t2.yaml', '{models}M1_dawnet_1-t2_all-trace.yaml'] }
+  M1_dawnet_1-t4_c100: { files: ['{models}M1_dawnet_1-t2b.yaml', '{models}M1_dawnet_1-t2b_all-trace.yaml'] }
+  M1_dawnet_1-t3_c050: { files: ['{models}M1_dawnet_1-t2.yaml', '{models}M1_dawnet_1-t2_c50-trace.yaml'] }
+  M1_dawnet_1-t3_c025: { files: ['{models}M1_dawnet_1-t2.yaml', '{models}M1_dawnet_1-t2_c25-trace.yaml'] }
+  M1_dawnet_1-t3_c075: { files: ['{models}M1_dawnet_1-t2.yaml', '{models}M1_dawnet_1-t2_c75-trace.yaml'] }
+  M1_dawnet_1-t4_c025: { files: ['{models}M1_dawnet_1-t2b.yaml', '{models}M1_dawnet_1-t2b_c25-trace.yaml'] }
+  M1_dawnet_1-t4_c050: { files: ['{models}M1_dawnet_1-t2b.yaml', '{models}M1_dawnet_1-t2b_c50-trace.yaml'] }
+  M1_dawnet_1-t4_c075: { files: ['{models}M1_dawnet_1-t2b.yaml', '{models}M1_dawnet_1-t2b_c75-trace.yaml'] }
+  M1_dawnet_1-t6_c100: { files: ['{models}M1_dawnet_1-t4.yaml', '{models}M1_dawnet_1-t4_all-trace.yaml'] }
+  M1_dawnet_1-t5_c050: { files: ['{models}M1_dawnet_1-t3.yaml', '{models}M1_dawnet_1-t3_c50-trace.yaml'] }
+  M1_dawnet_1-t6_c075: { files: ['{models}M1_dawnet_1-t4.yaml', '{models}M1_dawnet_1-t4_c75-trace.yaml'] }
+  M1_dawnet_1-t7_c100: { files: ['{models}M1_dawnet_1-t5.yaml', '{models}M1_dawnet_1-t5_all-trace.yaml'] }
+  M1_dawnet_1-t5_c100: { files: ['{models}M1_dawnet_1-t3.yaml', '{models}M1_dawnet_1-t3_all-trace.yaml'] }
+  M1_dawnet_1-t6_c050: { files: ['{models}M1_dawnet_1-t4.yaml', '{models}M1_dawnet_1-t4_c50-trace.yaml'] }
+  M1_dawnet_1-t5_c075: { files: ['{models}M1_dawnet_1-t3.yaml', '{models}M1_dawnet_1-t3_c75-trace.yaml'] }
+  M1_dawnet_1-t5_c025: { files: ['{models}M1_dawnet_1-t3.yaml', '{models}M1_dawnet_1-t3_c25-trace.yaml'] }
+  M1_dawnet_1-t6_c025: { files: ['{models}M1_dawnet_1-t4.yaml', '{models}M1_dawnet_1-t4_c25-trace.yaml'] }
+  M1_dawnet_1-t7_c025: { files: ['{models}M1_dawnet_1-t5.yaml', '{models}M1_dawnet_1-t5_c25-trace.yaml'] }
+  M1_dawnet_1-t8_c100: { files: ['{models}M1_dawnet_1-t6.yaml', '{models}M1_dawnet_1-t6_all-trace.yaml'] }
+  M1_dawnet_1-t8_c025: { files: ['{models}M1_dawnet_1-t6.yaml', '{models}M1_dawnet_1-t6_c25-trace.yaml'] }
+  M1_dawnet_1-t7_c050: { files: ['{models}M1_dawnet_1-t5.yaml', '{models}M1_dawnet_1-t5_c50-trace.yaml'] }
+  M1_dawnet_1-t7_c075: { files: ['{models}M1_dawnet_1-t5.yaml', '{models}M1_dawnet_1-t5_c75-trace.yaml'] }
+  M1_dawnet_1-t8_c050: { files: ['{models}M1_dawnet_1-t6.yaml', '{models}M1_dawnet_1-t6_c50-trace.yaml'] }
+  M1_dawnet_1-t8_c075: { files: ['{models}M1_dawnet_1-t6.yaml', '{models}M1_dawnet_1-t6_c75-trace.yaml'] }
+  M2_dawnet_1-tempty_c000: { files: ['{models}M2_dawnet_1-t1.yaml'] }
+  M2_dawnet_1-t1_c100: { files: ['{models}M2_dawnet_1-t1.yaml', '{models}M2_dawnet_1-t1_all-trace.yaml'] }
+  M2_dawnet_1-t1_c025: { files: ['{models}M2_dawnet_1-t1.yaml', '{models}M2_dawnet_1-t1_c25-trace.yaml'] }
+  M2_dawnet_1-t2_c050: { files: ['{models}M2_dawnet_1-t1b.yaml', '{models}M2_dawnet_1-t1b_c50-trace.yaml'] }
+  M2_dawnet_1-t2_c075: { files: ['{models}M2_dawnet_1-t1b.yaml', '{models}M2_dawnet_1-t1b_c75-trace.yaml'] }
+  M2_dawnet_1-t1_c050: { files: ['{models}M2_dawnet_1-t1.yaml', '{models}M2_dawnet_1-t1_c50-trace.yaml'] }
+  M2_dawnet_1-t2_c100: { files: ['{models}M2_dawnet_1-t1b.yaml', '{models}M2_dawnet_1-t1b_all-trace.yaml'] }
+  M2_dawnet_1-t2_c025: { files: ['{models}M2_dawnet_1-t1b.yaml', '{models}M2_dawnet_1-t1b_c25-trace.yaml'] }
+  M2_dawnet_1-t1_c075: { files: ['{models}M2_dawnet_1-t1.yaml', '{models}M2_dawnet_1-t1_c75-trace.yaml'] }
+  M2_dawnet_1-t3_c100: { files: ['{models}M2_dawnet_1-t2.yaml', '{models}M2_dawnet_1-t2_all-trace.yaml'] }
+  M2_dawnet_1-t4_c100: { files: ['{models}M2_dawnet_1-t2b.yaml', '{models}M2_dawnet_1-t2b_all-trace.yaml'] }
+  M2_dawnet_1-t3_c050: { files: ['{models}M2_dawnet_1-t2.yaml', '{models}M2_dawnet_1-t2_c50-trace.yaml'] }
+  M2_dawnet_1-t3_c025: { files: ['{models}M2_dawnet_1-t2.yaml', '{models}M2_dawnet_1-t2_c25-trace.yaml'] }
+  M2_dawnet_1-t3_c075: { files: ['{models}M2_dawnet_1-t2.yaml', '{models}M2_dawnet_1-t2_c75-trace.yaml'] }
+  M2_dawnet_1-t4_c025: { files: ['{models}M2_dawnet_1-t2b.yaml', '{models}M2_dawnet_1-t2b_c25-trace.yaml'] }
+  M2_dawnet_1-t4_c050: { files: ['{models}M2_dawnet_1-t2b.yaml', '{models}M2_dawnet_1-t2b_c50-trace.yaml'] }
+  M2_dawnet_1-t4_c075: { files: ['{models}M2_dawnet_1-t2b.yaml', '{models}M2_dawnet_1-t2b_c75-trace.yaml'] }
+  M2_dawnet_1-t6_c100: { files: ['{models}M2_dawnet_1-t4.yaml', '{models}M2_dawnet_1-t4_all-trace.yaml'] }
+  M2_dawnet_1-t5_c050: { files: ['{models}M2_dawnet_1-t3.yaml', '{models}M2_dawnet_1-t3_c50-trace.yaml'] }
+  M2_dawnet_1-t6_c075: { files: ['{models}M2_dawnet_1-t4.yaml', '{models}M2_dawnet_1-t4_c75-trace.yaml'] }
+  M2_dawnet_1-t7_c100: { files: ['{models}M2_dawnet_1-t5.yaml', '{models}M2_dawnet_1-t5_all-trace.yaml'] }
+  M2_dawnet_1-t5_c100: { files: ['{models}M2_dawnet_1-t3.yaml', '{models}M2_dawnet_1-t3_all-trace.yaml'] }
+  M2_dawnet_1-t6_c050: { files: ['{models}M2_dawnet_1-t4.yaml', '{models}M2_dawnet_1-t4_c50-trace.yaml'] }
+  M2_dawnet_1-t5_c075: { files: ['{models}M2_dawnet_1-t3.yaml', '{models}M2_dawnet_1-t3_c75-trace.yaml'] }
+  M2_dawnet_1-t5_c025: { files: ['{models}M2_dawnet_1-t3.yaml', '{models}M2_dawnet_1-t3_c25-trace.yaml'] }
+  M2_dawnet_1-t6_c025: { files: ['{models}M2_dawnet_1-t4.yaml', '{models}M2_dawnet_1-t4_c25-trace.yaml'] }
+  M2_dawnet_1-t7_c025: { files: ['{models}M2_dawnet_1-t5.yaml', '{models}M2_dawnet_1-t5_c25-trace.yaml'] }
+  M2_dawnet_1-t8_c100: { files: ['{models}M2_dawnet_1-t6.yaml', '{models}M2_dawnet_1-t6_all-trace.yaml'] }
+  M2_dawnet_1-t8_c025: { files: ['{models}M2_dawnet_1-t6.yaml', '{models}M2_dawnet_1-t6_c25-trace.yaml'] }
+  M2_dawnet_1-t7_c050: { files: ['{models}M2_dawnet_1-t5.yaml', '{models}M2_dawnet_1-t5_c50-trace.yaml'] }
+  M2_dawnet_1-t7_c075: { files: ['{models}M2_dawnet_1-t5.yaml', '{models}M2_dawnet_1-t5_c75-trace.yaml'] }
+  M2_dawnet_1-t8_c050: { files: ['{models}M2_dawnet_1-t6.yaml', '{models}M2_dawnet_1-t6_c50-trace.yaml'] }
+  M2_dawnet_1-t8_c075: { files: ['{models}M2_dawnet_1-t6.yaml', '{models}M2_dawnet_1-t6_c75-trace.yaml'] }
+  M3_dawnet_1-tempty_c000: { files: ['{models}M3_dawnet_1-t1.yaml'] }
+  M3_dawnet_1-t1_c100: { files: ['{models}M3_dawnet_1-t1.yaml', '{models}M3_dawnet_1-t1_all-trace.yaml'] }
+  M3_dawnet_1-t1_c025: { files: ['{models}M3_dawnet_1-t1.yaml', '{models}M3_dawnet_1-t1_c25-trace.yaml'] }
+  M3_dawnet_1-t2_c050: { files: ['{models}M3_dawnet_1-t1b.yaml', '{models}M3_dawnet_1-t1b_c50-trace.yaml'] }
+  M3_dawnet_1-t2_c075: { files: ['{models}M3_dawnet_1-t1b.yaml', '{models}M3_dawnet_1-t1b_c75-trace.yaml'] }
+  M3_dawnet_1-t1_c050: { files: ['{models}M3_dawnet_1-t1.yaml', '{models}M3_dawnet_1-t1_c50-trace.yaml'] }
+  M3_dawnet_1-t2_c100: { files: ['{models}M3_dawnet_1-t1b.yaml', '{models}M3_dawnet_1-t1b_all-trace.yaml'] }
+  M3_dawnet_1-t2_c025: { files: ['{models}M3_dawnet_1-t1b.yaml', '{models}M3_dawnet_1-t1b_c25-trace.yaml'] }
+  M3_dawnet_1-t1_c075: { files: ['{models}M3_dawnet_1-t1.yaml', '{models}M3_dawnet_1-t1_c75-trace.yaml'] }
+  M3_dawnet_1-t3_c100: { files: ['{models}M3_dawnet_1-t2.yaml', '{models}M3_dawnet_1-t2_all-trace.yaml'] }
+  M3_dawnet_1-t4_c100: { files: ['{models}M3_dawnet_1-t2b.yaml', '{models}M3_dawnet_1-t2b_all-trace.yaml'] }
+  M3_dawnet_1-t3_c050: { files: ['{models}M3_dawnet_1-t2.yaml', '{models}M3_dawnet_1-t2_c50-trace.yaml'] }
+  M3_dawnet_1-t3_c025: { files: ['{models}M3_dawnet_1-t2.yaml', '{models}M3_dawnet_1-t2_c25-trace.yaml'] }
+  M3_dawnet_1-t3_c075: { files: ['{models}M3_dawnet_1-t2.yaml', '{models}M3_dawnet_1-t2_c75-trace.yaml'] }
+  M3_dawnet_1-t4_c025: { files: ['{models}M3_dawnet_1-t2b.yaml', '{models}M3_dawnet_1-t2b_c25-trace.yaml'] }
+  M3_dawnet_1-t4_c050: { files: ['{models}M3_dawnet_1-t2b.yaml', '{models}M3_dawnet_1-t2b_c50-trace.yaml'] }
+  M3_dawnet_1-t4_c075: { files: ['{models}M3_dawnet_1-t2b.yaml', '{models}M3_dawnet_1-t2b_c75-trace.yaml'] }
+  M3_dawnet_1-t6_c100: { files: ['{models}M3_dawnet_1-t4.yaml', '{models}M3_dawnet_1-t4_all-trace.yaml'] }
+  M3_dawnet_1-t5_c050: { files: ['{models}M3_dawnet_1-t3.yaml', '{models}M3_dawnet_1-t3_c50-trace.yaml'] }
+  M3_dawnet_1-t6_c075: { files: ['{models}M3_dawnet_1-t4.yaml', '{models}M3_dawnet_1-t4_c75-trace.yaml'] }
+  M3_dawnet_1-t7_c100: { files: ['{models}M3_dawnet_1-t5.yaml', '{models}M3_dawnet_1-t5_all-trace.yaml'] }
+  M3_dawnet_1-t5_c100: { files: ['{models}M3_dawnet_1-t3.yaml', '{models}M3_dawnet_1-t3_all-trace.yaml'] }
+  M3_dawnet_1-t6_c050: { files: ['{models}M3_dawnet_1-t4.yaml', '{models}M3_dawnet_1-t4_c50-trace.yaml'] }
+  M3_dawnet_1-t5_c075: { files: ['{models}M3_dawnet_1-t3.yaml', '{models}M3_dawnet_1-t3_c75-trace.yaml'] }
+  M3_dawnet_1-t5_c025: { files: ['{models}M3_dawnet_1-t3.yaml', '{models}M3_dawnet_1-t3_c25-trace.yaml'] }
+  M3_dawnet_1-t6_c025: { files: ['{models}M3_dawnet_1-t4.yaml', '{models}M3_dawnet_1-t4_c25-trace.yaml'] }
+  M3_dawnet_1-t7_c025: { files: ['{models}M3_dawnet_1-t5.yaml', '{models}M3_dawnet_1-t5_c25-trace.yaml'] }
+  M3_dawnet_1-t8_c100: { files: ['{models}M3_dawnet_1-t6.yaml', '{models}M3_dawnet_1-t6_all-trace.yaml'] }
+  M3_dawnet_1-t8_c025: { files: ['{models}M3_dawnet_1-t6.yaml', '{models}M3_dawnet_1-t6_c25-trace.yaml'] }
+  M3_dawnet_1-t7_c050: { files: ['{models}M3_dawnet_1-t5.yaml', '{models}M3_dawnet_1-t5_c50-trace.yaml'] }
+  M3_dawnet_1-t7_c075: { files: ['{models}M3_dawnet_1-t5.yaml', '{models}M3_dawnet_1-t5_c75-trace.yaml'] }
+  M3_dawnet_1-t8_c050: { files: ['{models}M3_dawnet_1-t6.yaml', '{models}M3_dawnet_1-t6_c50-trace.yaml'] }
+  M3_dawnet_1-t8_c075: { files: ['{models}M3_dawnet_1-t6.yaml', '{models}M3_dawnet_1-t6_c75-trace.yaml'] }
+  M4_dawnet_1-tempty_c000: { files: ['{models}M4_dawnet_1-t1.yaml'] }
+  M4_dawnet_1-t1_c100: { files: ['{models}M4_dawnet_1-t1.yaml', '{models}M4_dawnet_1-t1_all-trace.yaml'] }
+  M4_dawnet_1-t1_c025: { files: ['{models}M4_dawnet_1-t1.yaml', '{models}M4_dawnet_1-t1_c25-trace.yaml'] }
+  M4_dawnet_1-t2_c050: { files: ['{models}M4_dawnet_1-t1b.yaml', '{models}M4_dawnet_1-t1b_c50-trace.yaml'] }
+  M4_dawnet_1-t2_c075: { files: ['{models}M4_dawnet_1-t1b.yaml', '{models}M4_dawnet_1-t1b_c75-trace.yaml'] }
+  M4_dawnet_1-t1_c050: { files: ['{models}M4_dawnet_1-t1.yaml', '{models}M4_dawnet_1-t1_c50-trace.yaml'] }
+  M4_dawnet_1-t2_c100: { files: ['{models}M4_dawnet_1-t1b.yaml', '{models}M4_dawnet_1-t1b_all-trace.yaml'] }
+  M4_dawnet_1-t2_c025: { files: ['{models}M4_dawnet_1-t1b.yaml', '{models}M4_dawnet_1-t1b_c25-trace.yaml'] }
+  M4_dawnet_1-t1_c075: { files: ['{models}M4_dawnet_1-t1.yaml', '{models}M4_dawnet_1-t1_c75-trace.yaml'] }
+  M4_dawnet_1-t3_c100: { files: ['{models}M4_dawnet_1-t2.yaml', '{models}M4_dawnet_1-t2_all-trace.yaml'] }
+  M4_dawnet_1-t4_c100: { files: ['{models}M4_dawnet_1-t2b.yaml', '{models}M4_dawnet_1-t2b_all-trace.yaml'] }
+  M4_dawnet_1-t3_c050: { files: ['{models}M4_dawnet_1-t2.yaml', '{models}M4_dawnet_1-t2_c50-trace.yaml'] }
+  M4_dawnet_1-t3_c025: { files: ['{models}M4_dawnet_1-t2.yaml', '{models}M4_dawnet_1-t2_c25-trace.yaml'] }
+  M4_dawnet_1-t3_c075: { files: ['{models}M4_dawnet_1-t2.yaml', '{models}M4_dawnet_1-t2_c75-trace.yaml'] }
+  M4_dawnet_1-t4_c025: { files: ['{models}M4_dawnet_1-t2b.yaml', '{models}M4_dawnet_1-t2b_c25-trace.yaml'] }
+  M4_dawnet_1-t4_c050: { files: ['{models}M4_dawnet_1-t2b.yaml', '{models}M4_dawnet_1-t2b_c50-trace.yaml'] }
+  M4_dawnet_1-t4_c075: { files: ['{models}M4_dawnet_1-t2b.yaml', '{models}M4_dawnet_1-t2b_c75-trace.yaml'] }
+  M4_dawnet_1-t6_c100: { files: ['{models}M4_dawnet_1-t4.yaml', '{models}M4_dawnet_1-t4_all-trace.yaml'] }
+  M4_dawnet_1-t5_c050: { files: ['{models}M4_dawnet_1-t3.yaml', '{models}M4_dawnet_1-t3_c50-trace.yaml'] }
+  M4_dawnet_1-t6_c075: { files: ['{models}M4_dawnet_1-t4.yaml', '{models}M4_dawnet_1-t4_c75-trace.yaml'] }
+  M4_dawnet_1-t7_c100: { files: ['{models}M4_dawnet_1-t5.yaml', '{models}M4_dawnet_1-t5_all-trace.yaml'] }
+  M4_dawnet_1-t5_c100: { files: ['{models}M4_dawnet_1-t3.yaml', '{models}M4_dawnet_1-t3_all-trace.yaml'] }
+  M4_dawnet_1-t6_c050: { files: ['{models}M4_dawnet_1-t4.yaml', '{models}M4_dawnet_1-t4_c50-trace.yaml'] }
+  M4_dawnet_1-t5_c075: { files: ['{models}M4_dawnet_1-t3.yaml', '{models}M4_dawnet_1-t3_c75-trace.yaml'] }
+  M4_dawnet_1-t5_c025: { files: ['{models}M4_dawnet_1-t3.yaml', '{models}M4_dawnet_1-t3_c25-trace.yaml'] }
+  M4_dawnet_1-t6_c025: { files: ['{models}M4_dawnet_1-t4.yaml', '{models}M4_dawnet_1-t4_c25-trace.yaml'] }
+  M4_dawnet_1-t7_c025: { files: ['{models}M4_dawnet_1-t5.yaml', '{models}M4_dawnet_1-t5_c25-trace.yaml'] }
+  M4_dawnet_1-t8_c100: { files: ['{models}M4_dawnet_1-t6.yaml', '{models}M4_dawnet_1-t6_all-trace.yaml'] }
+  M4_dawnet_1-t8_c025: { files: ['{models}M4_dawnet_1-t6.yaml', '{models}M4_dawnet_1-t6_c25-trace.yaml'] }
+  M4_dawnet_1-t7_c050: { files: ['{models}M4_dawnet_1-t5.yaml', '{models}M4_dawnet_1-t5_c50-trace.yaml'] }
+  M4_dawnet_1-t7_c075: { files: ['{models}M4_dawnet_1-t5.yaml', '{models}M4_dawnet_1-t5_c75-trace.yaml'] }
+  M4_dawnet_1-t8_c050: { files: ['{models}M4_dawnet_1-t6.yaml', '{models}M4_dawnet_1-t6_c50-trace.yaml'] }
+  M4_dawnet_1-t8_c075: { files: ['{models}M4_dawnet_1-t6.yaml', '{models}M4_dawnet_1-t6_c75-trace.yaml'] }
+  M5_dawnet_1-tempty_c000: { files: ['{models}M5_dawnet_1-t1.yaml'] }
+  M5_dawnet_1-t1_c100: { files: ['{models}M5_dawnet_1-t1.yaml', '{models}M5_dawnet_1-t1_all-trace.yaml'] }
+  M5_dawnet_1-t1_c025: { files: ['{models}M5_dawnet_1-t1.yaml', '{models}M5_dawnet_1-t1_c25-trace.yaml'] }
+  M5_dawnet_1-t2_c050: { files: ['{models}M5_dawnet_1-t1b.yaml', '{models}M5_dawnet_1-t1b_c50-trace.yaml'] }
+  M5_dawnet_1-t2_c075: { files: ['{models}M5_dawnet_1-t1b.yaml', '{models}M5_dawnet_1-t1b_c75-trace.yaml'] }
+  M5_dawnet_1-t1_c050: { files: ['{models}M5_dawnet_1-t1.yaml', '{models}M5_dawnet_1-t1_c50-trace.yaml'] }
+  M5_dawnet_1-t2_c100: { files: ['{models}M5_dawnet_1-t1b.yaml', '{models}M5_dawnet_1-t1b_all-trace.yaml'] }
+  M5_dawnet_1-t2_c025: { files: ['{models}M5_dawnet_1-t1b.yaml', '{models}M5_dawnet_1-t1b_c25-trace.yaml'] }
+  M5_dawnet_1-t1_c075: { files: ['{models}M5_dawnet_1-t1.yaml', '{models}M5_dawnet_1-t1_c75-trace.yaml'] }
+  M5_dawnet_1-t3_c100: { files: ['{models}M5_dawnet_1-t2.yaml', '{models}M5_dawnet_1-t2_all-trace.yaml'] }
+  M5_dawnet_1-t4_c100: { files: ['{models}M5_dawnet_1-t2b.yaml', '{models}M5_dawnet_1-t2b_all-trace.yaml'] }
+  M5_dawnet_1-t3_c050: { files: ['{models}M5_dawnet_1-t2.yaml', '{models}M5_dawnet_1-t2_c50-trace.yaml'] }
+  M5_dawnet_1-t3_c025: { files: ['{models}M5_dawnet_1-t2.yaml', '{models}M5_dawnet_1-t2_c25-trace.yaml'] }
+  M5_dawnet_1-t3_c075: { files: ['{models}M5_dawnet_1-t2.yaml', '{models}M5_dawnet_1-t2_c75-trace.yaml'] }
+  M5_dawnet_1-t4_c025: { files: ['{models}M5_dawnet_1-t2b.yaml', '{models}M5_dawnet_1-t2b_c25-trace.yaml'] }
+  M5_dawnet_1-t4_c050: { files: ['{models}M5_dawnet_1-t2b.yaml', '{models}M5_dawnet_1-t2b_c50-trace.yaml'] }
+  M5_dawnet_1-t4_c075: { files: ['{models}M5_dawnet_1-t2b.yaml', '{models}M5_dawnet_1-t2b_c75-trace.yaml'] }
+  M5_dawnet_1-t6_c100: { files: ['{models}M5_dawnet_1-t4.yaml', '{models}M5_dawnet_1-t4_all-trace.yaml'] }
+  M5_dawnet_1-t5_c050: { files: ['{models}M5_dawnet_1-t3.yaml', '{models}M5_dawnet_1-t3_c50-trace.yaml'] }
+  M5_dawnet_1-t6_c075: { files: ['{models}M5_dawnet_1-t4.yaml', '{models}M5_dawnet_1-t4_c75-trace.yaml'] }
+  M5_dawnet_1-t7_c100: { files: ['{models}M5_dawnet_1-t5.yaml', '{models}M5_dawnet_1-t5_all-trace.yaml'] }
+  M5_dawnet_1-t5_c100: { files: ['{models}M5_dawnet_1-t3.yaml', '{models}M5_dawnet_1-t3_all-trace.yaml'] }
+  M5_dawnet_1-t6_c050: { files: ['{models}M5_dawnet_1-t4.yaml', '{models}M5_dawnet_1-t4_c50-trace.yaml'] }
+  M5_dawnet_1-t5_c075: { files: ['{models}M5_dawnet_1-t3.yaml', '{models}M5_dawnet_1-t3_c75-trace.yaml'] }
+  M5_dawnet_1-t5_c025: { files: ['{models}M5_dawnet_1-t3.yaml', '{models}M5_dawnet_1-t3_c25-trace.yaml'] }
+  M5_dawnet_1-t6_c025: { files: ['{models}M5_dawnet_1-t4.yaml', '{models}M5_dawnet_1-t4_c25-trace.yaml'] }
+  M5_dawnet_1-t7_c025: { files: ['{models}M5_dawnet_1-t5.yaml', '{models}M5_dawnet_1-t5_c25-trace.yaml'] }
+  M5_dawnet_1-t8_c100: { files: ['{models}M5_dawnet_1-t6.yaml', '{models}M5_dawnet_1-t6_all-trace.yaml'] }
+  M5_dawnet_1-t8_c025: { files: ['{models}M5_dawnet_1-t6.yaml', '{models}M5_dawnet_1-t6_c25-trace.yaml'] }
+  M5_dawnet_1-t7_c050: { files: ['{models}M5_dawnet_1-t5.yaml', '{models}M5_dawnet_1-t5_c50-trace.yaml'] }
+  M5_dawnet_1-t7_c075: { files: ['{models}M5_dawnet_1-t5.yaml', '{models}M5_dawnet_1-t5_c75-trace.yaml'] }
+  M5_dawnet_1-t8_c050: { files: ['{models}M5_dawnet_1-t6.yaml', '{models}M5_dawnet_1-t6_c50-trace.yaml'] }
+  M5_dawnet_1-t8_c075: { files: ['{models}M5_dawnet_1-t6.yaml', '{models}M5_dawnet_1-t6_c75-trace.yaml'] }

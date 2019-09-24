@@ -1,0 +1,19 @@
+model: M5_dawnet_1_trace5_25
+trace:
+- transition: nRFSQ_a
+  updates:
+    nRFSQ_fourth: '1'
+    nRFSQ_second: '5'
+    nRFSQ_first: '4'
+    nRFSQ_third: '3'
+- transition: nRFSQ_d
+- transition: nRFSQ_f
+- transition: nRFSQ_g
+  updates:
+    nRFSQ_fifth: '3'
+- transition: nRFSQ_h
+- transition: nRFSQ_i
+  updates:
+    nRFSQ_number: '5'
+- transition: nRFSQ_m
+- transition: nRFSQ_o

@@ -1,0 +1,15 @@
+model: M5_dawnet_1_trace6_75
+trace:
+- transition: nV3FA_a
+  updates:
+    nV3FA_first: '4'
+    nV3FA_third: '5'
+    nV3FA_second: '2'
+    nV3FA_fourth: '1'
+- transition: nV3FA_c
+- transition: nV3FA_i
+  updates:
+    nV3FA_number: '5'
+- transition: nV3FA_i
+  updates:
+    nV3FA_number: '5'

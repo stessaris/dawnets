@@ -1,0 +1,30 @@
+model: M5_dawnet_1_trace5_50
+trace:
+- transition: nBORQ_a
+  updates:
+    nBORQ_fourth: '1'
+    nBORQ_first: '4'
+    nBORQ_third: '3'
+    nBORQ_second: '5'
+- transition: nBORQ_d
+- transition: nBORQ_g
+  updates:
+    nBORQ_fifth: '3'
+- transition: nBORQ_i
+  updates:
+    nBORQ_number: '5'
+- transition: nBORQ_o
+- transition: n5LTA_a
+  updates:
+    n5LTA_fourth: '1'
+    n5LTA_first: '4'
+    n5LTA_third: '3'
+    n5LTA_second: '5'
+- transition: n5LTA_d
+- transition: n5LTA_g
+  updates:
+    n5LTA_fifth: '3'
+- transition: n5LTA_i
+  updates:
+    n5LTA_number: '5'
+- transition: n5LTA_o

@@ -1,0 +1,21 @@
+model: M5_dawnet_1_trace3_25
+trace:
+- transition: nJ22Q_a
+  updates:
+    nJ22Q_second: '1'
+    nJ22Q_first: '3'
+    nJ22Q_third: '3'
+    nJ22Q_fourth: '2'
+- transition: nJ22Q_b
+- transition: nJ22Q_d
+- transition: nJ22Q_c
+- transition: nJ22Q_e
+- transition: nJ22Q_f
+- transition: nJ22Q_g
+  updates:
+    nJ22Q_fifth: '1'
+- transition: nJ22Q_h
+- transition: nJ22Q_i
+  updates:
+    nJ22Q_number: '5'
+- transition: nJ22Q_m

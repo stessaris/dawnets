@@ -1,0 +1,30 @@
+model: M3_dawnet_1_trace5_50
+trace:
+- transition: nCLRQ_a
+  updates:
+    nCLRQ_fourth: '1'
+    nCLRQ_first: '4'
+    nCLRQ_third: '3'
+    nCLRQ_second: '5'
+- transition: nEPCA_a
+  updates:
+    nEPCA_second: '5'
+    nEPCA_first: '4'
+    nEPCA_fourth: '1'
+    nEPCA_third: '3'
+- transition: nEPCA_d
+- transition: nEPCA_g
+  updates:
+    nEPCA_fifth: '3'
+- transition: nEPCA_i
+  updates:
+    nEPCA_number: '5'
+- transition: nCLRQ_d
+- transition: nCLRQ_g
+  updates:
+    nCLRQ_fifth: '3'
+- transition: nEPCA_o
+- transition: nCLRQ_i
+  updates:
+    nCLRQ_number: '5'
+- transition: nCLRQ_o

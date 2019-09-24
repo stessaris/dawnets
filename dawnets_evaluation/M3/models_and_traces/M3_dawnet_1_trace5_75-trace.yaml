@@ -1,0 +1,18 @@
+model: M3_dawnet_1_trace5_75
+trace:
+- transition: n6YUA_a
+  updates:
+    n6YUA_second: '5'
+    n6YUA_fourth: '1'
+    n6YUA_third: '3'
+    n6YUA_first: '4'
+- transition: n6YUA_d
+- transition: nD2KQ_a
+  updates:
+    nD2KQ_first: '4'
+    nD2KQ_third: '3'
+    nD2KQ_second: '5'
+    nD2KQ_fourth: '1'
+- transition: n6YUA_o
+- transition: nD2KQ_d
+- transition: nD2KQ_o

@@ -1,0 +1,434 @@
+transitions:
+  nCXRA_h:
+    outflows:
+    - nCXRA_p9
+    inflows:
+    - nCXRA_p6
+  nCXRA_i:
+    outflows:
+    - nCXRA_p10
+    updates:
+      nCXRA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nCXRA_p7
+  nCXRA_n:
+    guard: nCXRA_first=1
+    outflows:
+    - nCXRA_p13
+    inflows:
+    - nCXRA_p12
+  nCXRA_o:
+    guard: nCXRA_second=2
+    outflows:
+    - nCXRA_p14
+    inflows:
+    - nCXRA_p12
+  nCXRA_l:
+    guard: nCXRA_number!=5
+    outflows:
+    - nCXRA_p7
+    inflows:
+    - nCXRA_p10
+  nCXRA_m:
+    guard: nCXRA_number=5
+    outflows:
+    - nCXRA_p12
+    inflows:
+    - nCXRA_p10
+    - nCXRA_p8
+    - nCXRA_p9
+  nCXRA_b:
+    outflows:
+    - nCXRA_p2
+    inflows:
+    - nCXRA_p1
+  nCXRA_c:
+    outflows:
+    - nCXRA_p3
+    inflows:
+    - nCXRA_p1
+  nCXRA_a:
+    outflows:
+    - nCXRA_p1
+    updates:
+      nCXRA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCXRA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCXRA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nCXRA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n32SQ_end
+  nCXRA_f:
+    outflows:
+    - nCXRA_p5
+    - nCXRA_p6
+    - nCXRA_p7
+    inflows:
+    - nCXRA_p4
+  nCXRA_g:
+    outflows:
+    - nCXRA_p8
+    updates:
+      nCXRA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nCXRA_p5
+  nCXRA_d:
+    outflows:
+    - nCXRA_p4
+    inflows:
+    - nCXRA_p2
+  nCXRA_e:
+    outflows:
+    - nCXRA_p4
+    inflows:
+    - nCXRA_p3
+  nCXRA_r:
+    outflows:
+    - nCXRA_p16
+    inflows:
+    - nCXRA_p13
+  nCXRA_s:
+    outflows:
+    - nCXRA_p16
+    inflows:
+    - nCXRA_p14
+  nCXRA_p:
+    guard: nCXRA_third=3
+    outflows:
+    - nCXRA_p15
+    inflows:
+    - nCXRA_p12
+  nCXRA_t:
+    outflows:
+    - nCXRA_p16
+    inflows:
+    - nCXRA_p15
+  nCXRA_u:
+    outflows:
+    - nCXRA_end
+    inflows:
+    - nCXRA_p16
+  n32SQ_s:
+    outflows:
+    - n32SQ_p16
+    inflows:
+    - n32SQ_p14
+  n32SQ_r:
+    outflows:
+    - n32SQ_p16
+    inflows:
+    - n32SQ_p13
+  n32SQ_p:
+    guard: n32SQ_third=3
+    outflows:
+    - n32SQ_p15
+    inflows:
+    - n32SQ_p12
+  n32SQ_u:
+    outflows:
+    - n32SQ_end
+    inflows:
+    - n32SQ_p16
+  n32SQ_t:
+    outflows:
+    - n32SQ_p16
+    inflows:
+    - n32SQ_p15
+  n32SQ_i:
+    outflows:
+    - n32SQ_p10
+    updates:
+      n32SQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n32SQ_p7
+  n32SQ_h:
+    outflows:
+    - n32SQ_p9
+    inflows:
+    - n32SQ_p6
+  n32SQ_o:
+    guard: n32SQ_second=2
+    outflows:
+    - n32SQ_p14
+    inflows:
+    - n32SQ_p12
+  n32SQ_n:
+    guard: n32SQ_first=1
+    outflows:
+    - n32SQ_p13
+    inflows:
+    - n32SQ_p12
+  n32SQ_m:
+    guard: n32SQ_number=5
+    outflows:
+    - n32SQ_p12
+    inflows:
+    - n32SQ_p10
+    - n32SQ_p8
+    - n32SQ_p9
+  n32SQ_l:
+    guard: n32SQ_number!=5
+    outflows:
+    - n32SQ_p7
+    inflows:
+    - n32SQ_p10
+  n32SQ_c:
+    outflows:
+    - n32SQ_p3
+    inflows:
+    - n32SQ_p1
+  n32SQ_b:
+    outflows:
+    - n32SQ_p2
+    inflows:
+    - n32SQ_p1
+  n32SQ_a:
+    outflows:
+    - n32SQ_p1
+    updates:
+      n32SQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n32SQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n32SQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n32SQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNYMA_end
+  n32SQ_g:
+    outflows:
+    - n32SQ_p8
+    updates:
+      n32SQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n32SQ_p5
+  n32SQ_f:
+    outflows:
+    - n32SQ_p5
+    - n32SQ_p6
+    - n32SQ_p7
+    inflows:
+    - n32SQ_p4
+  n32SQ_e:
+    outflows:
+    - n32SQ_p4
+    inflows:
+    - n32SQ_p3
+  n32SQ_d:
+    outflows:
+    - n32SQ_p4
+    inflows:
+    - n32SQ_p2
+  nNYMA_i:
+    outflows:
+    - nNYMA_p10
+    updates:
+      nNYMA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNYMA_p7
+  nNYMA_h:
+    outflows:
+    - nNYMA_p9
+    inflows:
+    - nNYMA_p6
+  nNYMA_m:
+    guard: nNYMA_number=5
+    outflows:
+    - nNYMA_p12
+    inflows:
+    - nNYMA_p10
+    - nNYMA_p8
+    - nNYMA_p9
+  nNYMA_l:
+    guard: nNYMA_number!=5
+    outflows:
+    - nNYMA_p7
+    inflows:
+    - nNYMA_p10
+  nNYMA_o:
+    guard: nNYMA_second=2
+    outflows:
+    - nNYMA_p14
+    inflows:
+    - nNYMA_p12
+  nNYMA_n:
+    guard: nNYMA_first=1
+    outflows:
+    - nNYMA_p13
+    inflows:
+    - nNYMA_p12
+  nNYMA_a:
+    outflows:
+    - nNYMA_p1
+    updates:
+      nNYMA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNYMA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNYMA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nNYMA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNYMA_start
+  nNYMA_c:
+    outflows:
+    - nNYMA_p3
+    inflows:
+    - nNYMA_p1
+  nNYMA_b:
+    outflows:
+    - nNYMA_p2
+    inflows:
+    - nNYMA_p1
+  nNYMA_e:
+    outflows:
+    - nNYMA_p4
+    inflows:
+    - nNYMA_p3
+  nNYMA_d:
+    outflows:
+    - nNYMA_p4
+    inflows:
+    - nNYMA_p2
+  nNYMA_g:
+    outflows:
+    - nNYMA_p8
+    updates:
+      nNYMA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nNYMA_p5
+  nNYMA_f:
+    outflows:
+    - nNYMA_p5
+    - nNYMA_p6
+    - nNYMA_p7
+    inflows:
+    - nNYMA_p4
+  nNYMA_p:
+    guard: nNYMA_third=3
+    outflows:
+    - nNYMA_p15
+    inflows:
+    - nNYMA_p12
+  nNYMA_s:
+    outflows:
+    - nNYMA_p16
+    inflows:
+    - nNYMA_p14
+  nNYMA_r:
+    outflows:
+    - nNYMA_p16
+    inflows:
+    - nNYMA_p13
+  nNYMA_u:
+    outflows:
+    - nNYMA_end
+    inflows:
+    - nNYMA_p16
+  nNYMA_t:
+    outflows:
+    - nNYMA_p16
+    inflows:
+    - nNYMA_p15
+name: M4_dawnet_1_trace4_0

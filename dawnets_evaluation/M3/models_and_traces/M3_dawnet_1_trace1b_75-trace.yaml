@@ -1,0 +1,22 @@
+model: M3_dawnet_1_trace1b_75
+trace:
+- transition: n47OQ_a
+  updates:
+    n47OQ_fourth: '3'
+    n47OQ_third: '3'
+    n47OQ_second: '2'
+    n47OQ_first: '4'
+- transition: nVJMA_a
+  updates:
+    nVJMA_fourth: '3'
+    nVJMA_first: '4'
+    nVJMA_third: '3'
+    nVJMA_second: '2'
+- transition: n47OQ_d
+- transition: nVJMA_d
+- transition: nVJMA_i
+  updates:
+    nVJMA_number: '5'
+- transition: n47OQ_i
+  updates:
+    n47OQ_number: '5'

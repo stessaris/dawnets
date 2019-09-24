@@ -1,0 +1,404 @@
+transitions:
+  nY2BA_r:
+    outflows:
+    - nY2BA_p16
+    inflows:
+    - nY2BA_p13
+  nY2BA_s:
+    outflows:
+    - nY2BA_p16
+    inflows:
+    - nY2BA_p14
+  nY2BA_p:
+    guard: nY2BA_third=3
+    outflows:
+    - nY2BA_p15
+    inflows:
+    - nY2BA_p12
+  nY2BA_t:
+    outflows:
+    - nY2BA_p16
+    inflows:
+    - nY2BA_p15
+  nY2BA_u:
+    outflows:
+    - nY2BA_end
+    inflows:
+    - nY2BA_p16
+  nY2BA_b:
+    outflows:
+    - nY2BA_p2
+    inflows:
+    - nY2BA_p1
+  nY2BA_c:
+    outflows:
+    - nY2BA_p3
+    inflows:
+    - nY2BA_p1
+  nY2BA_a:
+    outflows:
+    - nY2BA_p1
+    updates:
+      nY2BA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY2BA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY2BA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nY2BA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY2BA_start
+  nY2BA_f:
+    outflows:
+    - nY2BA_p5
+    - nY2BA_p6
+    - nY2BA_p7
+    inflows:
+    - nY2BA_p4
+  nY2BA_g:
+    outflows:
+    - nY2BA_p8
+    updates:
+      nY2BA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY2BA_p5
+  nY2BA_d:
+    outflows:
+    - nY2BA_p4
+    inflows:
+    - nY2BA_p2
+  nY2BA_e:
+    outflows:
+    - nY2BA_p4
+    inflows:
+    - nY2BA_p3
+  nY2BA_h:
+    outflows:
+    - nY2BA_p9
+    inflows:
+    - nY2BA_p6
+  nY2BA_i:
+    outflows:
+    - nY2BA_p10
+    updates:
+      nY2BA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY2BA_p7
+  nY2BA_n:
+    guard: nY2BA_first=1
+    outflows:
+    - nY2BA_p13
+    inflows:
+    - nY2BA_p12
+  nY2BA_o:
+    guard: nY2BA_second=2
+    outflows:
+    - nY2BA_p14
+    inflows:
+    - nY2BA_p12
+  nY2BA_l:
+    guard: nY2BA_number!=5
+    outflows:
+    - nY2BA_p7
+    inflows:
+    - nY2BA_p10
+  nY2BA_m:
+    guard: nY2BA_number=5
+    outflows:
+    - nY2BA_p12
+    inflows:
+    - nY2BA_p10
+    - nY2BA_p8
+    - nY2BA_p9
+  nIKEA_r:
+    outflows:
+    - nIKEA_p16
+    inflows:
+    - nIKEA_p13
+  nIKEA_s:
+    outflows:
+    - nIKEA_p16
+    inflows:
+    - nIKEA_p14
+  nIKEA_p:
+    guard: nIKEA_third=3
+    outflows:
+    - nIKEA_p15
+    inflows:
+    - nIKEA_p12
+  nIKEA_t:
+    outflows:
+    - nIKEA_p16
+    inflows:
+    - nIKEA_p15
+  nIKEA_u:
+    outflows:
+    - nIKEA_end
+    inflows:
+    - nIKEA_p16
+  nIKEA_b:
+    outflows:
+    - nIKEA_p2
+    inflows:
+    - nIKEA_p1
+  nIKEA_c:
+    outflows:
+    - nIKEA_p3
+    inflows:
+    - nIKEA_p1
+  nIKEA_a:
+    outflows:
+    - nIKEA_p1
+    updates:
+      nIKEA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKEA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKEA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nIKEA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nY2BA_end
+  nIKEA_f:
+    outflows:
+    - nIKEA_p5
+    - nIKEA_p6
+    - nIKEA_p7
+    inflows:
+    - nIKEA_p4
+  nIKEA_g:
+    outflows:
+    - nIKEA_p8
+    updates:
+      nIKEA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKEA_p5
+  nIKEA_d:
+    outflows:
+    - nIKEA_p4
+    inflows:
+    - nIKEA_p2
+  nIKEA_e:
+    outflows:
+    - nIKEA_p4
+    inflows:
+    - nIKEA_p3
+  nIKEA_h:
+    outflows:
+    - nIKEA_p9
+    inflows:
+    - nIKEA_p6
+  nIKEA_i:
+    outflows:
+    - nIKEA_p10
+    updates:
+      nIKEA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nIKEA_p7
+  nIKEA_n:
+    guard: nIKEA_first=1
+    outflows:
+    - nIKEA_p13
+    inflows:
+    - nIKEA_p12
+  nIKEA_o:
+    guard: nIKEA_second=2
+    outflows:
+    - nIKEA_p14
+    inflows:
+    - nIKEA_p12
+  nIKEA_l:
+    guard: nIKEA_number!=5
+    outflows:
+    - nIKEA_p7
+    inflows:
+    - nIKEA_p10
+  nIKEA_m:
+    guard: nIKEA_number=5
+    outflows:
+    - nIKEA_p12
+    inflows:
+    - nIKEA_p10
+    - nIKEA_p8
+    - nIKEA_p9
+  tr_nY2BA_a_1:
+    outflows:
+    - nY2BA_p1
+    - tr_stp1
+    updates:
+      nY2BA_first:
+      - '4'
+      nY2BA_third:
+      - '3'
+      nY2BA_second:
+      - '5'
+      nY2BA_fourth:
+      - '1'
+    inflows:
+    - nY2BA_start
+    - tr_stp0
+  tr_nY2BA_d_2:
+    outflows:
+    - nY2BA_p4
+    - tr_stp2
+    inflows:
+    - nY2BA_p2
+    - tr_stp1
+  tr_nY2BA_g_3:
+    outflows:
+    - nY2BA_p8
+    - tr_stp3
+    updates:
+      nY2BA_fifth:
+      - '3'
+    inflows:
+    - nY2BA_p5
+    - tr_stp2
+  tr_nY2BA_i_4:
+    outflows:
+    - nY2BA_p10
+    - tr_stp4
+    updates:
+      nY2BA_number:
+      - '5'
+    inflows:
+    - nY2BA_p7
+    - tr_stp3
+  tr_nY2BA_o_5:
+    guard: nY2BA_second=2
+    outflows:
+    - nY2BA_p14
+    - tr_stp5
+    inflows:
+    - nY2BA_p12
+    - tr_stp4
+  tr_nIKEA_a_6:
+    outflows:
+    - nIKEA_p1
+    - tr_stp6
+    updates:
+      nIKEA_first:
+      - '4'
+      nIKEA_third:
+      - '3'
+      nIKEA_second:
+      - '5'
+      nIKEA_fourth:
+      - '1'
+    inflows:
+    - nY2BA_end
+    - tr_stp5
+  tr_nIKEA_d_7:
+    outflows:
+    - nIKEA_p4
+    - tr_stp7
+    inflows:
+    - nIKEA_p2
+    - tr_stp6
+  tr_nIKEA_g_8:
+    outflows:
+    - nIKEA_p8
+    - tr_stp8
+    updates:
+      nIKEA_fifth:
+      - '3'
+    inflows:
+    - nIKEA_p5
+    - tr_stp7
+  tr_nIKEA_i_9:
+    outflows:
+    - nIKEA_p10
+    - tr_stp9
+    updates:
+      nIKEA_number:
+      - '5'
+    inflows:
+    - nIKEA_p7
+    - tr_stp8
+  tr_nIKEA_o_10:
+    guard: nIKEA_second=2
+    outflows:
+    - nIKEA_p14
+    - tr_stp10
+    inflows:
+    - nIKEA_p12
+    - tr_stp9
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - nY2BA_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp10
+    - nIKEA_end
+name: M2_dawnet_1_trace5_50

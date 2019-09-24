@@ -1,0 +1,92 @@
+model: M4_dawnet_1_trace4_0
+trace:
+- transition: nNYMA_a
+  updates:
+    nNYMA_second: '2'
+    nNYMA_fourth: '2'
+    nNYMA_third: '4'
+    nNYMA_first: '2'
+- transition: nNYMA_b
+- transition: nNYMA_d
+- transition: nNYMA_c
+- transition: nNYMA_e
+- transition: nNYMA_f
+- transition: nNYMA_h
+- transition: nNYMA_i
+  updates:
+    nNYMA_number: '1'
+- transition: nNYMA_l
+- transition: nNYMA_i
+  updates:
+    nNYMA_number: '2'
+- transition: nNYMA_l
+- transition: nNYMA_i
+  updates:
+    nNYMA_number: '5'
+- transition: nNYMA_g
+  updates:
+    nNYMA_fifth: '3'
+- transition: nNYMA_m
+- transition: nNYMA_o
+- transition: nNYMA_s
+- transition: nNYMA_u
+- transition: n32SQ_a
+  updates:
+    n32SQ_fourth: '2'
+    n32SQ_third: '4'
+    n32SQ_second: '2'
+    n32SQ_first: '2'
+- transition: n32SQ_b
+- transition: n32SQ_d
+- transition: n32SQ_c
+- transition: n32SQ_e
+- transition: n32SQ_f
+- transition: n32SQ_h
+- transition: n32SQ_i
+  updates:
+    n32SQ_number: '1'
+- transition: n32SQ_l
+- transition: n32SQ_i
+  updates:
+    n32SQ_number: '2'
+- transition: n32SQ_l
+- transition: n32SQ_i
+  updates:
+    n32SQ_number: '5'
+- transition: n32SQ_g
+  updates:
+    n32SQ_fifth: '3'
+- transition: n32SQ_m
+- transition: n32SQ_o
+- transition: n32SQ_s
+- transition: n32SQ_u
+- transition: nCXRA_a
+  updates:
+    nCXRA_first: '2'
+    nCXRA_third: '4'
+    nCXRA_second: '2'
+    nCXRA_fourth: '2'
+- transition: nCXRA_b
+- transition: nCXRA_d
+- transition: nCXRA_c
+- transition: nCXRA_e
+- transition: nCXRA_f
+- transition: nCXRA_h
+- transition: nCXRA_i
+  updates:
+    nCXRA_number: '1'
+- transition: nCXRA_l
+- transition: nCXRA_i
+  updates:
+    nCXRA_number: '2'
+- transition: nCXRA_l
+- transition: nCXRA_i
+  updates:
+    nCXRA_number: '5'
+- transition: nCXRA_g
+  updates:
+    nCXRA_fifth: '3'
+- transition: nCXRA_m
+- transition: nCXRA_o
+- transition: nCXRA_s
+- transition: nCXRA_u

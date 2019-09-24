@@ -1,0 +1,24 @@
+model: M2_dawnet_1_trace3_75
+trace:
+- transition: nMYAQ_a
+  updates:
+    nMYAQ_second: '1'
+    nMYAQ_first: '3'
+    nMYAQ_third: '3'
+    nMYAQ_fourth: '2'
+- transition: nMYAQ_d
+- transition: nMYAQ_e
+- transition: nMYAQ_i
+  updates:
+    nMYAQ_number: '5'
+- transition: nPEFQ_a
+  updates:
+    nPEFQ_fourth: '2'
+    nPEFQ_first: '3'
+    nPEFQ_third: '3'
+    nPEFQ_second: '1'
+- transition: nPEFQ_d
+- transition: nPEFQ_e
+- transition: nPEFQ_i
+  updates:
+    nPEFQ_number: '5'

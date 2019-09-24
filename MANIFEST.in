@@ -1,0 +1,7 @@
+recursive-include dawnet *.ini
+recursive-include dawnet/benchmarks *.tx
+recursive-include dawnet/coala *.bc
+recursive-include dawnet/graphviz *.dot
+recursive-include dawnet/nusmv *.smv
+recursive-include dawnet/parser *.json *.tx 
+recursive-include dawnet/pddl *.pddl

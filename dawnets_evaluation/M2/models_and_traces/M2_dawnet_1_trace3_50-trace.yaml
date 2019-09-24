@@ -1,0 +1,34 @@
+model: M2_dawnet_1_trace3_50
+trace:
+- transition: nARPA_a
+  updates:
+    nARPA_fourth: '2'
+    nARPA_second: '1'
+    nARPA_first: '3'
+    nARPA_third: '3'
+- transition: nARPA_d
+- transition: nARPA_c
+- transition: nARPA_e
+- transition: nARPA_g
+  updates:
+    nARPA_fifth: '1'
+- transition: nARPA_h
+- transition: nARPA_i
+  updates:
+    nARPA_number: '5'
+- transition: nP72Q_a
+  updates:
+    nP72Q_fourth: '2'
+    nP72Q_second: '1'
+    nP72Q_first: '3'
+    nP72Q_third: '3'
+- transition: nP72Q_d
+- transition: nP72Q_c
+- transition: nP72Q_e
+- transition: nP72Q_g
+  updates:
+    nP72Q_fifth: '1'
+- transition: nP72Q_h
+- transition: nP72Q_i
+  updates:
+    nP72Q_number: '5'

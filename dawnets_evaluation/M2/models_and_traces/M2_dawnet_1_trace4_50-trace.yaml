@@ -1,0 +1,44 @@
+model: M2_dawnet_1_trace4_50
+trace:
+- transition: nIKTA_a
+  updates:
+    nIKTA_second: '2'
+    nIKTA_fourth: '2'
+    nIKTA_third: '4'
+    nIKTA_first: '2'
+- transition: nIKTA_b
+- transition: nIKTA_d
+- transition: nIKTA_c
+- transition: nIKTA_l
+- transition: nIKTA_i
+  updates:
+    nIKTA_number: '2'
+- transition: nIKTA_i
+  updates:
+    nIKTA_number: '5'
+- transition: nIKTA_g
+  updates:
+    nIKTA_fifth: '3'
+- transition: nIKTA_m
+- transition: nIKTA_u
+- transition: nDOVA_a
+  updates:
+    nDOVA_fourth: '2'
+    nDOVA_second: '2'
+    nDOVA_first: '2'
+    nDOVA_third: '4'
+- transition: nDOVA_b
+- transition: nDOVA_d
+- transition: nDOVA_c
+- transition: nDOVA_l
+- transition: nDOVA_i
+  updates:
+    nDOVA_number: '2'
+- transition: nDOVA_i
+  updates:
+    nDOVA_number: '5'
+- transition: nDOVA_g
+  updates:
+    nDOVA_fifth: '3'
+- transition: nDOVA_m
+- transition: nDOVA_u

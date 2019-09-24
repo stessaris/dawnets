@@ -1,0 +1,42 @@
+model: M2_dawnet_1_trace1_0
+trace:
+- transition: nQ3AQ_a
+  updates:
+    nQ3AQ_fourth: '3'
+    nQ3AQ_first: '4'
+    nQ3AQ_third: '4'
+    nQ3AQ_second: '2'
+- transition: nQ3AQ_b
+- transition: nQ3AQ_d
+- transition: nQ3AQ_f
+- transition: nQ3AQ_g
+  updates:
+    nQ3AQ_fifth: '2'
+- transition: nQ3AQ_h
+- transition: nQ3AQ_i
+  updates:
+    nQ3AQ_number: '5'
+- transition: nQ3AQ_m
+- transition: nQ3AQ_o
+- transition: nQ3AQ_s
+- transition: nQ3AQ_u
+- transition: nEVLA_a
+  updates:
+    nEVLA_second: '2'
+    nEVLA_first: '4'
+    nEVLA_third: '4'
+    nEVLA_fourth: '3'
+- transition: nEVLA_b
+- transition: nEVLA_d
+- transition: nEVLA_f
+- transition: nEVLA_g
+  updates:
+    nEVLA_fifth: '2'
+- transition: nEVLA_h
+- transition: nEVLA_i
+  updates:
+    nEVLA_number: '5'
+- transition: nEVLA_m
+- transition: nEVLA_o
+- transition: nEVLA_s
+- transition: nEVLA_u

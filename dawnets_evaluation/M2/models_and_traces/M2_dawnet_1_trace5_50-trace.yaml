@@ -1,0 +1,30 @@
+model: M2_dawnet_1_trace5_50
+trace:
+- transition: nY2BA_a
+  updates:
+    nY2BA_first: '4'
+    nY2BA_third: '3'
+    nY2BA_second: '5'
+    nY2BA_fourth: '1'
+- transition: nY2BA_d
+- transition: nY2BA_g
+  updates:
+    nY2BA_fifth: '3'
+- transition: nY2BA_i
+  updates:
+    nY2BA_number: '5'
+- transition: nY2BA_o
+- transition: nIKEA_a
+  updates:
+    nIKEA_first: '4'
+    nIKEA_third: '3'
+    nIKEA_second: '5'
+    nIKEA_fourth: '1'
+- transition: nIKEA_d
+- transition: nIKEA_g
+  updates:
+    nIKEA_fifth: '3'
+- transition: nIKEA_i
+  updates:
+    nIKEA_number: '5'
+- transition: nIKEA_o

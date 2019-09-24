@@ -1,0 +1,41 @@
+model: M4_dawnet_1_trace6_75
+trace:
+- transition: nA2FQ_a
+  updates:
+    nA2FQ_fourth: '1'
+    nA2FQ_first: '4'
+    nA2FQ_third: '5'
+    nA2FQ_second: '2'
+- transition: nA2FQ_c
+- transition: nA2FQ_i
+  updates:
+    nA2FQ_number: '5'
+- transition: nA2FQ_i
+  updates:
+    nA2FQ_number: '5'
+- transition: nPLLQ_a
+  updates:
+    nPLLQ_second: '2'
+    nPLLQ_fourth: '1'
+    nPLLQ_third: '5'
+    nPLLQ_first: '4'
+- transition: nPLLQ_c
+- transition: nPLLQ_i
+  updates:
+    nPLLQ_number: '5'
+- transition: nPLLQ_i
+  updates:
+    nPLLQ_number: '5'
+- transition: n52NQ_a
+  updates:
+    n52NQ_first: '4'
+    n52NQ_third: '5'
+    n52NQ_second: '2'
+    n52NQ_fourth: '1'
+- transition: n52NQ_c
+- transition: n52NQ_i
+  updates:
+    n52NQ_number: '5'
+- transition: n52NQ_i
+  updates:
+    n52NQ_number: '5'

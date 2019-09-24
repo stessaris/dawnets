@@ -1,0 +1,40 @@
+model: M2_dawnet_1_trace6_50
+trace:
+- transition: nDR6A_a
+  updates:
+    nDR6A_third: '5'
+    nDR6A_first: '4'
+    nDR6A_fourth: '1'
+    nDR6A_second: '2'
+- transition: nDR6A_c
+- transition: nDR6A_l
+- transition: nDR6A_i
+  updates:
+    nDR6A_number: '5'
+- transition: nDR6A_i
+  updates:
+    nDR6A_number: '5'
+- transition: nDR6A_g
+  updates:
+    nDR6A_fifth: '2'
+- transition: nDR6A_m
+- transition: nDR6A_u
+- transition: nWEZQ_a
+  updates:
+    nWEZQ_second: '2'
+    nWEZQ_first: '4'
+    nWEZQ_third: '5'
+    nWEZQ_fourth: '1'
+- transition: nWEZQ_c
+- transition: nWEZQ_l
+- transition: nWEZQ_i
+  updates:
+    nWEZQ_number: '5'
+- transition: nWEZQ_i
+  updates:
+    nWEZQ_number: '5'
+- transition: nWEZQ_g
+  updates:
+    nWEZQ_fifth: '2'
+- transition: nWEZQ_m
+- transition: nWEZQ_u

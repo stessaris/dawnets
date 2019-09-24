@@ -1,0 +1,61 @@
+id: bpichallenge-noise20-full-pddl-json
+exec: [dawnets]
+models_path: EnglishBPIChallenge2011_noise_020
+outdir: "results/{datetime}"
+workdir: "{outdir}/{name}"
+stderr: "{name}/{cmd}_err.txt"
+stdout: "{name}/{cmd}_out.txt"
+stats: "stats/{name}_{cmd}.json"
+logfile: "logfile.txt"
+tmpdir: "{name}"
+timeout: 3600
+memory: 8589934592
+runs:
+  pddl: {}
+config:
+  Main:
+    usejson: True
+  pddl:
+    command: "fast-downward --alias seq-sat-lama-2011 --plan-file '{outdir}{name}/{cmd}_plan.txt'"
+benchmarks:
+  bpichallenge_n20-tempty_c000: { files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json'] }
+  bpichallenge_n20-t00000610_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000610_100.yaml.json'] }
+  bpichallenge_n20-t00000610_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000610_25.yaml.json'] }
+  bpichallenge_n20-t00000610_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000610_50.yaml.json'] }
+  bpichallenge_n20-t00000610_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000610_75.yaml.json'] }
+  bpichallenge_n20-t00000365_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000365_100.yaml.json'] }
+  bpichallenge_n20-t00000365_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000365_25.yaml.json'] }
+  bpichallenge_n20-t00000365_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000365_50.yaml.json'] }
+  bpichallenge_n20-t00000365_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000365_75.yaml.json'] }
+  bpichallenge_n20-t00000847_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000847_100.yaml.json'] }
+  bpichallenge_n20-t00000847_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000847_25.yaml.json'] }
+  bpichallenge_n20-t00000847_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000847_50.yaml.json'] }
+  bpichallenge_n20-t00000847_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000847_75.yaml.json'] }
+  bpichallenge_n20-t00000296_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000296_100.yaml.json'] }
+  bpichallenge_n20-t00000296_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000296_25.yaml.json'] }
+  bpichallenge_n20-t00000296_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000296_50.yaml.json'] }
+  bpichallenge_n20-t00000296_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000296_75.yaml.json'] }
+  bpichallenge_n20-t00000533_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000533_100.yaml.json'] }
+  bpichallenge_n20-t00000533_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000533_25.yaml.json'] }
+  bpichallenge_n20-t00000533_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000533_50.yaml.json'] }
+  bpichallenge_n20-t00000533_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000533_75.yaml.json'] }
+  bpichallenge_n20-t00000207_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000207_100.yaml.json'] }
+  bpichallenge_n20-t00000207_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000207_25.yaml.json'] }
+  bpichallenge_n20-t00000207_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000207_50.yaml.json'] }
+  bpichallenge_n20-t00000207_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000207_75.yaml.json'] }
+  bpichallenge_n20-t00001132_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00001132_100.yaml.json'] }
+  bpichallenge_n20-t00001132_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00001132_25.yaml.json'] }
+  bpichallenge_n20-t00001132_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00001132_50.yaml.json'] }
+  bpichallenge_n20-t00001132_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00001132_75.yaml.json'] }
+  bpichallenge_n20-t00000679_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000679_100.yaml.json'] }
+  bpichallenge_n20-t00000679_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000679_25.yaml.json'] }
+  bpichallenge_n20-t00000679_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000679_50.yaml.json'] }
+  bpichallenge_n20-t00000679_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000679_75.yaml.json'] }
+  bpichallenge_n20-t00000729_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000729_100.yaml.json'] }
+  bpichallenge_n20-t00000729_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000729_25.yaml.json'] }
+  bpichallenge_n20-t00000729_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000729_50.yaml.json'] }
+  bpichallenge_n20-t00000729_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000729_75.yaml.json'] }
+  bpichallenge_n20-t00000774_c100: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_100/trace_00000774_100.yaml.json'] }
+  bpichallenge_n20-t00000774_c025: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_25/trace_00000774_25.yaml.json'] }
+  bpichallenge_n20-t00000774_c050: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_50/trace_00000774_50.yaml.json'] }
+  bpichallenge_n20-t00000774_c075: {files: ['{models}EnglishBPIChallenge2011_020_annotated.yaml.json', '{models}EnglishBPIChallenge2011_020_3_filtered_75/trace_00000774_75.yaml.json'] }

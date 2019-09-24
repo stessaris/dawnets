@@ -1,0 +1,302 @@
+transitions:
+  nDUTQ_d:
+    outflows:
+    - nDUTQ_p4
+    inflows:
+    - nDUTQ_p2
+  nDUTQ_e:
+    outflows:
+    - nDUTQ_p4
+    inflows:
+    - nDUTQ_p3
+  nDUTQ_f:
+    outflows:
+    - nDUTQ_p5
+    - nDUTQ_p6
+    - nDUTQ_p7
+    inflows:
+    - nDUTQ_p4
+  nDUTQ_g:
+    outflows:
+    - nDUTQ_p8
+    updates:
+      nDUTQ_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDUTQ_p5
+  nDUTQ_a:
+    outflows:
+    - nDUTQ_p1
+    updates:
+      nDUTQ_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDUTQ_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDUTQ_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      nDUTQ_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDUTQ_start
+  nDUTQ_b:
+    outflows:
+    - nDUTQ_p2
+    inflows:
+    - nDUTQ_p1
+  nDUTQ_c:
+    outflows:
+    - nDUTQ_p3
+    inflows:
+    - nDUTQ_p1
+  nDUTQ_l:
+    guard: nDUTQ_number!=5
+    outflows:
+    - nDUTQ_p7
+    inflows:
+    - nDUTQ_p10
+  nDUTQ_m:
+    guard: nDUTQ_number=5
+    outflows:
+    - nDUTQ_p12
+    inflows:
+    - nDUTQ_p10
+    - nDUTQ_p8
+    - nDUTQ_p9
+  nDUTQ_n:
+    guard: nDUTQ_first=1
+    outflows:
+    - nDUTQ_p13
+    inflows:
+    - nDUTQ_p12
+  nDUTQ_o:
+    guard: nDUTQ_second=2
+    outflows:
+    - nDUTQ_p14
+    inflows:
+    - nDUTQ_p12
+  nDUTQ_h:
+    outflows:
+    - nDUTQ_p9
+    inflows:
+    - nDUTQ_p6
+  nDUTQ_i:
+    outflows:
+    - nDUTQ_p10
+    updates:
+      nDUTQ_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - nDUTQ_p7
+  n35QA_t:
+    outflows:
+    - n35QA_p16
+    inflows:
+    - n35QA_p15
+  n35QA_u:
+    outflows:
+    - n35QA_end
+    inflows:
+    - n35QA_p16
+  nDUTQ_t:
+    outflows:
+    - nDUTQ_p16
+    inflows:
+    - nDUTQ_p15
+  nDUTQ_u:
+    outflows:
+    - nDUTQ_end
+    inflows:
+    - nDUTQ_p16
+  n35QA_h:
+    outflows:
+    - n35QA_p9
+    inflows:
+    - n35QA_p6
+  n35QA_i:
+    outflows:
+    - n35QA_p10
+    updates:
+      n35QA_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n35QA_p7
+  nDUTQ_p:
+    guard: nDUTQ_third=3
+    outflows:
+    - nDUTQ_p15
+    inflows:
+    - nDUTQ_p12
+  n35QA_o:
+    guard: n35QA_second=2
+    outflows:
+    - n35QA_p14
+    inflows:
+    - n35QA_p12
+  nDUTQ_r:
+    outflows:
+    - nDUTQ_p16
+    inflows:
+    - nDUTQ_p13
+  nDUTQ_s:
+    outflows:
+    - nDUTQ_p16
+    inflows:
+    - nDUTQ_p14
+  n35QA_b:
+    outflows:
+    - n35QA_p2
+    inflows:
+    - n35QA_p1
+  n35QA_c:
+    outflows:
+    - n35QA_p3
+    inflows:
+    - n35QA_p1
+  rt_pj_M3_dawnet_1_trace3_75:
+    outflows:
+    - rp_e_M3_dawnet_1_trace3_75
+    inflows:
+    - nDUTQ_end
+    - n35QA_end
+  n35QA_a:
+    outflows:
+    - n35QA_p1
+    updates:
+      n35QA_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n35QA_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n35QA_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      n35QA_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n35QA_start
+  n35QA_f:
+    outflows:
+    - n35QA_p5
+    - n35QA_p6
+    - n35QA_p7
+    inflows:
+    - n35QA_p4
+  n35QA_g:
+    outflows:
+    - n35QA_p8
+    updates:
+      n35QA_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - n35QA_p5
+  n35QA_d:
+    outflows:
+    - n35QA_p4
+    inflows:
+    - n35QA_p2
+  n35QA_e:
+    outflows:
+    - n35QA_p4
+    inflows:
+    - n35QA_p3
+  n35QA_l:
+    guard: n35QA_number!=5
+    outflows:
+    - n35QA_p7
+    inflows:
+    - n35QA_p10
+  rt_ps_M3_dawnet_1_trace3_75:
+    outflows:
+    - nDUTQ_start
+    - n35QA_start
+    inflows:
+    - rp_s_M3_dawnet_1_trace3_75
+  n35QA_r:
+    outflows:
+    - n35QA_p16
+    inflows:
+    - n35QA_p13
+  n35QA_m:
+    guard: n35QA_number=5
+    outflows:
+    - n35QA_p12
+    inflows:
+    - n35QA_p10
+    - n35QA_p8
+    - n35QA_p9
+  n35QA_s:
+    outflows:
+    - n35QA_p16
+    inflows:
+    - n35QA_p14
+  n35QA_n:
+    guard: n35QA_first=1
+    outflows:
+    - n35QA_p13
+    inflows:
+    - n35QA_p12
+  n35QA_p:
+    guard: n35QA_third=3
+    outflows:
+    - n35QA_p15
+    inflows:
+    - n35QA_p12
+name: M3_dawnet_1_trace3_75

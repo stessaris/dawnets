@@ -1,0 +1,42 @@
+model: M3_dawnet_1_trace1b_0
+trace:
+- transition: nSUXA_a
+  updates:
+    nSUXA_second: '2'
+    nSUXA_fourth: '3'
+    nSUXA_third: '3'
+    nSUXA_first: '4'
+- transition: n7RBA_a
+  updates:
+    n7RBA_second: '2'
+    n7RBA_first: '4'
+    n7RBA_third: '3'
+    n7RBA_fourth: '3'
+- transition: nSUXA_b
+- transition: n7RBA_b
+- transition: n7RBA_d
+- transition: n7RBA_f
+- transition: nSUXA_d
+- transition: n7RBA_g
+  updates:
+    n7RBA_fifth: '2'
+- transition: n7RBA_h
+- transition: nSUXA_f
+- transition: n7RBA_i
+  updates:
+    n7RBA_number: '5'
+- transition: nSUXA_g
+  updates:
+    nSUXA_fifth: '2'
+- transition: nSUXA_h
+- transition: n7RBA_m
+- transition: n7RBA_o
+- transition: nSUXA_i
+  updates:
+    nSUXA_number: '5'
+- transition: n7RBA_s
+- transition: nSUXA_m
+- transition: nSUXA_o
+- transition: nSUXA_s
+- transition: nSUXA_u
+- transition: n7RBA_u

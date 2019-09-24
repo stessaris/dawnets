@@ -1,0 +1,201 @@
+transitions:
+  M1_dawnet_1_trace6_75_p:
+    guard: M1_dawnet_1_trace6_75_third=3
+    outflows:
+    - M1_dawnet_1_trace6_75_p15
+    inflows:
+    - M1_dawnet_1_trace6_75_p12
+  M1_dawnet_1_trace6_75_s:
+    outflows:
+    - M1_dawnet_1_trace6_75_p16
+    inflows:
+    - M1_dawnet_1_trace6_75_p14
+  M1_dawnet_1_trace6_75_r:
+    outflows:
+    - M1_dawnet_1_trace6_75_p16
+    inflows:
+    - M1_dawnet_1_trace6_75_p13
+  M1_dawnet_1_trace6_75_u:
+    outflows:
+    - M1_dawnet_1_trace6_75_end
+    inflows:
+    - M1_dawnet_1_trace6_75_p16
+  M1_dawnet_1_trace6_75_t:
+    outflows:
+    - M1_dawnet_1_trace6_75_p16
+    inflows:
+    - M1_dawnet_1_trace6_75_p15
+  M1_dawnet_1_trace6_75_a:
+    outflows:
+    - M1_dawnet_1_trace6_75_p1
+    updates:
+      M1_dawnet_1_trace6_75_fourth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace6_75_second:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace6_75_third:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      M1_dawnet_1_trace6_75_first:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace6_75_start
+  M1_dawnet_1_trace6_75_c:
+    outflows:
+    - M1_dawnet_1_trace6_75_p3
+    inflows:
+    - M1_dawnet_1_trace6_75_p1
+  M1_dawnet_1_trace6_75_b:
+    outflows:
+    - M1_dawnet_1_trace6_75_p2
+    inflows:
+    - M1_dawnet_1_trace6_75_p1
+  M1_dawnet_1_trace6_75_e:
+    outflows:
+    - M1_dawnet_1_trace6_75_p4
+    inflows:
+    - M1_dawnet_1_trace6_75_p3
+  M1_dawnet_1_trace6_75_d:
+    outflows:
+    - M1_dawnet_1_trace6_75_p4
+    inflows:
+    - M1_dawnet_1_trace6_75_p2
+  M1_dawnet_1_trace6_75_g:
+    outflows:
+    - M1_dawnet_1_trace6_75_p8
+    updates:
+      M1_dawnet_1_trace6_75_fifth:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace6_75_p5
+  M1_dawnet_1_trace6_75_f:
+    outflows:
+    - M1_dawnet_1_trace6_75_p5
+    - M1_dawnet_1_trace6_75_p6
+    - M1_dawnet_1_trace6_75_p7
+    inflows:
+    - M1_dawnet_1_trace6_75_p4
+  M1_dawnet_1_trace6_75_i:
+    outflows:
+    - M1_dawnet_1_trace6_75_p10
+    updates:
+      M1_dawnet_1_trace6_75_number:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace6_75_p7
+  M1_dawnet_1_trace6_75_h:
+    outflows:
+    - M1_dawnet_1_trace6_75_p9
+    inflows:
+    - M1_dawnet_1_trace6_75_p6
+  M1_dawnet_1_trace6_75_m:
+    guard: M1_dawnet_1_trace6_75_number=5
+    outflows:
+    - M1_dawnet_1_trace6_75_p12
+    inflows:
+    - M1_dawnet_1_trace6_75_p10
+    - M1_dawnet_1_trace6_75_p8
+    - M1_dawnet_1_trace6_75_p9
+  M1_dawnet_1_trace6_75_l:
+    guard: M1_dawnet_1_trace6_75_number!=5
+    outflows:
+    - M1_dawnet_1_trace6_75_p7
+    inflows:
+    - M1_dawnet_1_trace6_75_p10
+  M1_dawnet_1_trace6_75_o:
+    guard: M1_dawnet_1_trace6_75_second=2
+    outflows:
+    - M1_dawnet_1_trace6_75_p14
+    inflows:
+    - M1_dawnet_1_trace6_75_p12
+  M1_dawnet_1_trace6_75_n:
+    guard: M1_dawnet_1_trace6_75_first=1
+    outflows:
+    - M1_dawnet_1_trace6_75_p13
+    inflows:
+    - M1_dawnet_1_trace6_75_p12
+  tr_M1_dawnet_1_trace6_75_a_1:
+    outflows:
+    - M1_dawnet_1_trace6_75_p1
+    - tr_stp1
+    updates:
+      M1_dawnet_1_trace6_75_second:
+      - '2'
+      M1_dawnet_1_trace6_75_fourth:
+      - '1'
+      M1_dawnet_1_trace6_75_third:
+      - '5'
+      M1_dawnet_1_trace6_75_first:
+      - '4'
+    inflows:
+    - M1_dawnet_1_trace6_75_start
+    - tr_stp0
+  tr_M1_dawnet_1_trace6_75_c_2:
+    outflows:
+    - M1_dawnet_1_trace6_75_p3
+    - tr_stp2
+    inflows:
+    - M1_dawnet_1_trace6_75_p1
+    - tr_stp1
+  tr_M1_dawnet_1_trace6_75_i_3:
+    outflows:
+    - M1_dawnet_1_trace6_75_p10
+    - tr_stp3
+    updates:
+      M1_dawnet_1_trace6_75_number:
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace6_75_p7
+    - tr_stp2
+  tr_M1_dawnet_1_trace6_75_i_4:
+    outflows:
+    - M1_dawnet_1_trace6_75_p10
+    - tr_stp4
+    updates:
+      M1_dawnet_1_trace6_75_number:
+      - '5'
+    inflows:
+    - M1_dawnet_1_trace6_75_p7
+    - tr_stp3
+  tr_start_:
+    outflows:
+    - tr_stp0
+    - M1_dawnet_1_trace6_75_start
+    inflows:
+    - tr_pstart_
+  tr_end_:
+    outflows:
+    - tr_pend_
+    inflows:
+    - tr_stp4
+    - M1_dawnet_1_trace6_75_end
+name: M1_dawnet_1_trace6_75

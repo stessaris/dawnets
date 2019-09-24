@@ -1,0 +1,36 @@
+model: M2_dawnet_1_trace1b_25
+trace:
+- transition: nBJVA_a
+  updates:
+    nBJVA_fourth: '3'
+    nBJVA_third: '3'
+    nBJVA_second: '2'
+    nBJVA_first: '4'
+- transition: nBJVA_b
+- transition: nBJVA_d
+- transition: nBJVA_f
+- transition: nBJVA_g
+  updates:
+    nBJVA_fifth: '2'
+- transition: nBJVA_h
+- transition: nBJVA_i
+  updates:
+    nBJVA_number: '5'
+- transition: nBJVA_m
+- transition: nIMAQ_a
+  updates:
+    nIMAQ_second: '2'
+    nIMAQ_first: '4'
+    nIMAQ_third: '3'
+    nIMAQ_fourth: '3'
+- transition: nIMAQ_b
+- transition: nIMAQ_d
+- transition: nIMAQ_f
+- transition: nIMAQ_g
+  updates:
+    nIMAQ_fifth: '2'
+- transition: nIMAQ_h
+- transition: nIMAQ_i
+  updates:
+    nIMAQ_number: '5'
+- transition: nIMAQ_m

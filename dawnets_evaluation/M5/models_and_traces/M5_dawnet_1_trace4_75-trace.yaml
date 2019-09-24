@@ -1,0 +1,32 @@
+model: M5_dawnet_1_trace4_75
+trace:
+- transition: nV5VA_a
+  updates:
+    nV5VA_second: '2'
+    nV5VA_first: '2'
+    nV5VA_third: '4'
+    nV5VA_fourth: '2'
+- transition: nV5VA_d
+- transition: nV5VA_c
+- transition: nV5VA_l
+- transition: nV5VA_i
+  updates:
+    nV5VA_number: '2'
+- transition: nV5VA_i
+  updates:
+    nV5VA_number: '5'
+- transition: nTOHA_a
+  updates:
+    nTOHA_fourth: '2'
+    nTOHA_first: '2'
+    nTOHA_third: '4'
+    nTOHA_second: '2'
+- transition: nTOHA_d
+- transition: nTOHA_c
+- transition: nTOHA_l
+- transition: nTOHA_i
+  updates:
+    nTOHA_number: '2'
+- transition: nTOHA_i
+  updates:
+    nTOHA_number: '5'

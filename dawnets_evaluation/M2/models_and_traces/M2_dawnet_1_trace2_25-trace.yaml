@@ -1,0 +1,50 @@
+model: M2_dawnet_1_trace2_25
+trace:
+- transition: nHN7A_a
+  updates:
+    nHN7A_fourth: '5'
+    nHN7A_first: '1'
+    nHN7A_third: '2'
+    nHN7A_second: '4'
+- transition: nHN7A_c
+- transition: nHN7A_e
+- transition: nHN7A_i
+  updates:
+    nHN7A_number: '3'
+- transition: nHN7A_l
+- transition: nHN7A_i
+  updates:
+    nHN7A_number: '2'
+- transition: nHN7A_l
+- transition: nHN7A_i
+  updates:
+    nHN7A_number: '5'
+- transition: nHN7A_g
+  updates:
+    nHN7A_fifth: '3'
+- transition: nHN7A_m
+- transition: nHN7A_u
+- transition: nWUNA_a
+  updates:
+    nWUNA_fourth: '5'
+    nWUNA_third: '2'
+    nWUNA_second: '4'
+    nWUNA_first: '1'
+- transition: nWUNA_c
+- transition: nWUNA_e
+- transition: nWUNA_i
+  updates:
+    nWUNA_number: '3'
+- transition: nWUNA_l
+- transition: nWUNA_i
+  updates:
+    nWUNA_number: '2'
+- transition: nWUNA_l
+- transition: nWUNA_i
+  updates:
+    nWUNA_number: '5'
+- transition: nWUNA_g
+  updates:
+    nWUNA_fifth: '3'
+- transition: nWUNA_m
+- transition: nWUNA_u

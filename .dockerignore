@@ -1,0 +1,10 @@
+# Files to be excluded from COPY/ADD commands
+#   using whitelist pattern
+*
+!MANIFEST.in
+!README.md
+!dawnet
+!experiments
+!setup.*
+!tests
+!coala-clingo

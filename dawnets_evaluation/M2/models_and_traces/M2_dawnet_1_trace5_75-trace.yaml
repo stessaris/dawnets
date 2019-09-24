@@ -1,0 +1,18 @@
+model: M2_dawnet_1_trace5_75
+trace:
+- transition: n5SMA_a
+  updates:
+    n5SMA_fourth: '1'
+    n5SMA_first: '4'
+    n5SMA_third: '3'
+    n5SMA_second: '5'
+- transition: n5SMA_d
+- transition: n5SMA_o
+- transition: nAXUA_a
+  updates:
+    nAXUA_third: '3'
+    nAXUA_first: '4'
+    nAXUA_fourth: '1'
+    nAXUA_second: '5'
+- transition: nAXUA_d
+- transition: nAXUA_o

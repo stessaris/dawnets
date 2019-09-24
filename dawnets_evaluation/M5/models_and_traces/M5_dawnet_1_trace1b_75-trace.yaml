@@ -1,0 +1,22 @@
+model: M5_dawnet_1_trace1b_75
+trace:
+- transition: nQ5KA_a
+  updates:
+    nQ5KA_fourth: '3'
+    nQ5KA_first: '4'
+    nQ5KA_third: '3'
+    nQ5KA_second: '2'
+- transition: nQ5KA_d
+- transition: nQ5KA_i
+  updates:
+    nQ5KA_number: '5'
+- transition: n2GBA_a
+  updates:
+    n2GBA_fourth: '3'
+    n2GBA_first: '4'
+    n2GBA_third: '3'
+    n2GBA_second: '2'
+- transition: n2GBA_d
+- transition: n2GBA_i
+  updates:
+    n2GBA_number: '5'

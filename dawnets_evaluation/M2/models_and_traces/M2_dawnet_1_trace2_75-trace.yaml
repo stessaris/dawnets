@@ -1,0 +1,28 @@
+model: M2_dawnet_1_trace2_75
+trace:
+- transition: nYFHA_a
+  updates:
+    nYFHA_second: '4'
+    nYFHA_first: '1'
+    nYFHA_third: '2'
+    nYFHA_fourth: '5'
+- transition: nYFHA_c
+- transition: nYFHA_i
+  updates:
+    nYFHA_number: '2'
+- transition: nYFHA_i
+  updates:
+    nYFHA_number: '5'
+- transition: nAO6A_a
+  updates:
+    nAO6A_second: '4'
+    nAO6A_first: '1'
+    nAO6A_fourth: '5'
+    nAO6A_third: '2'
+- transition: nAO6A_c
+- transition: nAO6A_i
+  updates:
+    nAO6A_number: '2'
+- transition: nAO6A_i
+  updates:
+    nAO6A_number: '5'

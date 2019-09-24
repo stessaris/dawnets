@@ -1,0 +1,30 @@
+model: M5_dawnet_1_trace1_50
+trace:
+- transition: nLYOQ_a
+  updates:
+    nLYOQ_third: '4'
+    nLYOQ_first: '4'
+    nLYOQ_fourth: '3'
+    nLYOQ_second: '2'
+- transition: nLYOQ_d
+- transition: nLYOQ_g
+  updates:
+    nLYOQ_fifth: '2'
+- transition: nLYOQ_h
+- transition: nLYOQ_i
+  updates:
+    nLYOQ_number: '5'
+- transition: n6EPA_a
+  updates:
+    n6EPA_first: '4'
+    n6EPA_third: '4'
+    n6EPA_second: '2'
+    n6EPA_fourth: '3'
+- transition: n6EPA_d
+- transition: n6EPA_g
+  updates:
+    n6EPA_fifth: '2'
+- transition: n6EPA_h
+- transition: n6EPA_i
+  updates:
+    n6EPA_number: '5'

@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+
+    "definitions": {
+
+        "placesSeq": { 
+            "type":"array", 
+            "items": { "type":"string", "pattern": "^[_a-zA-Z][-_.a-zA-Z0-9]*$" } 
+        },
+
+        "varRange": { 
+            "type":"array", 
+            "items": {
+                "anyOf":[
+                    { "type":"string" },
+                    { "type": "number"}
+                ]
+            } 
+        },
+
+        "guardSpecs": { 
+            "type":"object",
+            "properties": {
+                "default": {"type":"string"},
+                "coala": {"type":"string"}
+            },
+            "additionalProperties": false,
+            "required": [ "default" ]
+        },
+
+        "guard": { 
+            "oneOf": [
+                { "type":"string" },
+                { "$ref": "#/definitions/guardSpecs" }
+            ]
+        },
+
+        "transition": {
+            "type":"object",
+            "properties": {
+                "name": { "type":"string" },
+                "description": { "type":"string" },
+                "inflows": { "$ref": "#/definitions/placesSeq" },
+                "outflows": { "$ref": "#/definitions/placesSeq" },
+                "updates": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^[_a-zA-Z][-_.a-zA-Z0-9]*$": { "$ref": "#/definitions/varRange" }
+                    },
+                    "additionalProperties": false
+                },
+                "guard": { "$ref": "#/definitions/guard" }
+            },
+            "required":[
+                "inflows", "outflows"
+            ]
+        }
+    },
+
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "transitions": {
+            "type": "object",
+            "patternProperties": {
+                "^[_a-zA-Z][-_.a-zA-Z0-9]*$": { "$ref": "#/definitions/transition" }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "transitions" ]
+}
