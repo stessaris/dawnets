@@ -47,7 +47,7 @@ setup(
         'future==0.17.1',   # Python 2/3 compatibility
         'Jinja2==2.10.1',   # Template library
         'jsonschema==3.0.2',
-        'psutil==5.6.3',   # to get HW details
+        'psutil==5.6.6',   # to get HW details
         'ruamel.yaml==0.16.5',
         'textx==2.0.1'     # Parser for guard expressions
     ],
