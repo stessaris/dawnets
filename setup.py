@@ -45,7 +45,7 @@ setup(
         'click==7.0',    # CLI library
         'py-cpuinfo==5.0.0',  # to get HW details
         'future==0.17.1',   # Python 2/3 compatibility
-        'Jinja2==2.10.1',   # Template library
+        'Jinja2==2.11.3',   # Template library
         'jsonschema==3.0.2',
         'psutil==5.6.3',   # to get HW details
         'ruamel.yaml==0.16.5',
